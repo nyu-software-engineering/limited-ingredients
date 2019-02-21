@@ -22,5 +22,9 @@ How we solve their issues: Our application should save Stephen’s time by aggre
 
 ![Image of Input Ingredients use case](https://github.com/nyu-software-engineering/limited-ingredients/blob/master/UseCase2.png)
 
+## Domain Model
+
+![Image of Input Ingredients use case](https://github.com/nyu-software-engineering/limited-ingredients/blob/master/domain.png)
+
 
 
