@@ -5,7 +5,7 @@
 
 ## How can you contribute?
 
-- we are currently in the inital phase of planning the project. Any advice would be very helpful.
+- We are currently in the inital phase of planning the project. Any advice would be very helpful.
 
 ## How to build & test project?
 Clone the project
