@@ -14,8 +14,7 @@ Title: Input ingredients
 Actor: User
 Scenario: User is alone at home and it’s snowing outside. He decides not to go outside and cook with the food in the fridge. He opens “Limited Ingredients” and inputs a list of ingredients he currently has at home to see what recipes he can cook at home in a convenient fashion.
  
-![Image of Input Ingredients use case]
-(https://github.com/nyu-software-engineering/limited-ingredients/blob/master/use-case.png)
+![Image of Input Ingredients use case](https://github.com/nyu-software-engineering/limited-ingredients/blob/master/use-case.png)
 
 Title: Save recipes
 Actor: User
