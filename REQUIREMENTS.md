@@ -20,5 +20,7 @@ How we solve their issues: Our application should save Stephen’s time by aggre
 <p>Actor: User</p>
 <p>Scenario: User is in the same situation where he has the same leftover ingredients. He wants to use it, but can’t remember the recipe he used. He logs into his LimitedIngredients account and finds the saved recipe.</p>
 
+![Image of Input Ingredients use case](https://github.com/nyu-software-engineering/limited-ingredients/blob/master/UseCase2.png)
+
 
 
