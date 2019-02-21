@@ -24,7 +24,7 @@ How we solve their issues: Our application should save Stephen’s time by aggre
 
 ## Domain Model
 
-![Image of Input Ingredients use case](https://github.com/nyu-software-engineering/limited-ingredients/blob/master/domain.png)
+![Image of Input Ingredients use case](https://github.com/nyu-software-engineering/limited-ingredients/blob/master/domain%20(1).png)
 
 
 
