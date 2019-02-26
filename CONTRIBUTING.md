@@ -15,8 +15,7 @@
 #### Git Workflow
 - Trunk Based Workflow
 #### Standups Schedule
-Monday: 12:20 PM
-Tuesday: 12:20 PM
-Wednesday: 12:20 PM
-Thursday: 12:20 PM
-
+- Monday: 12:20 PM (REMOTE)
+- Tuesday: 12:20 PM
+- Wednesday: 12:20 PM
+- Thursday: 12:20 PM
