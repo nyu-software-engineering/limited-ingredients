@@ -16,7 +16,7 @@ Install modules
 ```js
 npm init
 npm install .
-npm install --save mongoose passport passport-local hbs passport-facebook connect-flash bcrypt-nodejs morgan body-parser cookie-parser express express-session method-override
+npm install --save mongoose passport passport-local passport-facebook connect-flash bcrypt-nodejs morgan body-parser cookie-parser express express-session method-override
 
 ```
 Start project
