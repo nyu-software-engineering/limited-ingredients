@@ -14,11 +14,16 @@ git clone https://github.com/nyu-software-engineering/limited-ingredients.git
 ```
 Install modules
 ```js
-npm install
+npm init
+npm install .
+npm install --save mongoose passport passport-local hbs passport-facebook connect-flash bcrypt-nodejs morgan body-parser cookie-parser express express-session method-override
+
 ```
 Start project
 ```js
 npm start
+or 
+node(mon) server.js
 ```
 
 
