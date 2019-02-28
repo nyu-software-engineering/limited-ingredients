@@ -1,16 +1,18 @@
 /** require dependencies */
 const express = require("express");
-const routes = require('./routes/');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+
+const app = express();
+
+const routes = require('./routes/');
 const passport = require('passport');
 const morgan = require('morgan');
 
 const cookieParser = require('cookie-parser');
-const bodyParser = require('body-parser');
 const session = require('express-session');
 const flash = require('connect-flash');
 
-const app = express();
 const router = express.Router();
 //const React = require('react');
 //const ReactDOMServer = require('react-dom/server');
@@ -30,15 +32,22 @@ const router = express.Router();
 //    
 //}
 
-let port = 5000 || process.env.PORT;
 
 /* set up routes  WHAT DOES THIS DO */
 routes(router);
 // routes ======================================================================
 app.use(bodyParser.urlencoded({ extended: false }));
-//require('./routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
 /** set up middlewares */
 app.use(bodyParser.json());
+//DB Config
+const db = require("./config/keys").mongoURI;
+//connect to MongoDB
+mongoose.connect(db, {useNewUrlParser: true})
+.then(() => console.log("MongoDB successfully connected"))
+.catch(err => console.log(err));
+
+const port = 5000 || process.env.PORT;
+
 //app.use('/static',express.static(path.join(__dirname,'static')))
 app.use('/api', router);
 app.use(morgan('dev')); // log every request to the console
@@ -56,5 +65,5 @@ router.get('/', (req,res) => {
 });
 /** start server */
 app.listen(port, () => {
-    console.log(`Server started at port: ${port}`);
+    console.log(`Server up and running at port: ${port} !`);
 });
