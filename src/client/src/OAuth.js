@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import FontAwesome from 'react-fontawesome'
 import { API_URL } from './config'
-
+//setup code from tutorial: https://codeburst.io/react-authentication-with-twitter-google-facebook-and-github-862d59583105
 export default class OAuth extends Component {
   
   state = {
@@ -10,12 +10,12 @@ export default class OAuth extends Component {
   }
 
   componentDidMount() {
-    const { socket, provider } = this.props
+    const { socket, provider } = this.props;
 
     socket.on(provider, user => {  
       this.popup.close()
       this.setState({user})
-    })
+    });
   }
 
   // Routinely checks the popup to re-enable the login button 
