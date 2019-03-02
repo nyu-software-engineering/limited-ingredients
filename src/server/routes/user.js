@@ -11,7 +11,7 @@ const validateLoginInput = require("./login");
 
 //Load User model
 const User = require("../models/User").User;
-// @route POST api/users/register
+  // @route POST api/users/register
   // @desc Register user
   // @access Public
   router.post("/register", (req, res) => {
@@ -23,6 +23,7 @@ const User = require("../models/User").User;
     }
     User.findOne({ email: req.body.email }).then(user => {
       if (user) {
+        console.log ("found user: ", user);
         return res.status(400).json({ email: "Email already exists" });
       } 
       const newUser = new User({
@@ -75,7 +76,7 @@ const User = require("../models/User").User;
               name: user.name
             };
             // Sign token
-            jwt.sign(payload, keys.secretOrKey,{expiresIn: 31556926 },
+            jwt.sign(payload, keys.mongoURI.secretOrKey,{expiresIn: 31556926 },
               (err, token) => {
                 if (err){
                   console.log(err);
