@@ -25,6 +25,11 @@ npm start
 or 
 node(mon) server.js
 ```
+Test project (backend)
+```
+cd src/server
+npm test
+```
 
 
 

@@ -5,6 +5,7 @@
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
     "config": "^3.0.1",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.4",
@@ -26,13 +27,19 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "nyc": "^13.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "mocha --timeout 10000",
-    "eject": "react-scripts eject"
+    "test-with-coverage": "nyc --reporter=text mocha",
+    "eject": "react-scripts eject",
+    "client-install": "npm install --prefix ../client",
+    "start": "node server.js",
+    "server": "nodemon app.js",
+    "client": "npm start --prefix ../client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "browserslist": [
     ">0.2%",

@@ -28,9 +28,11 @@ describe ('User',  () => {
                 password: "password1"
             };
             chai.request(server)
-                .post('/register')
+                .post('/api/users/register')
                 .send(user)
                 .end ((err,res) => {
+                    res.should.have.status(200);
+                    /*
                     if (err){
                         done(err);
                         console.log("err: ", err);
@@ -45,8 +47,11 @@ describe ('User',  () => {
                         res.body.should.have.property('password');
                         done();    
                     }
+                    */
+                   done();
                     
                 });
+           
                 
         });
 
