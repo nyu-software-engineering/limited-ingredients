@@ -35,7 +35,9 @@ node(mon) server.js
 Test project (backend)
 ```
 cd src/server
-npm test
+npm test 
+or
+npm run test-with-coverage
 ```
 
 
