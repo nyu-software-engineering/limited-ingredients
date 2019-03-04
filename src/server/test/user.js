@@ -1,7 +1,8 @@
+/*
 process.env.NODE_ENV = 'test';
 let mongoose = require('mongoose');
 let User = require('../models/User').User;
-
+let logger = require ("mocha-logger");
 
 //require dev-dependencies
 let chai = require('chai');
@@ -21,6 +22,11 @@ let user_login = {
     email: "email1@gmail.com",
     password: "password1"
 }
+let user_taken = new User();
+user_taken.name = "Taken"; 
+user_taken.email = "alreadytaken@gmail.com"; 
+user_taken.password = "12345678";
+
 describe ('User',  () => {
     
     beforeEach((done) => {
@@ -30,8 +36,36 @@ describe ('User',  () => {
         });  
     });
     
-    /* Test the register route */
+    //Test the register route 
     describe('/POST api/users/register', () => {
+        
+        user_taken.save().then(
+            function(err, result){
+                if (err){
+                    console.log(err);
+                }
+                else{
+                    console.log("user saved succesfully!");
+                }
+        });
+        it ('should not register an account whose email is already stored in the db', done => {
+            chai.request(server)
+                .post('/api/users/register')
+                .send(user_taken)
+                .end((err, result) => {
+                    if (err){
+                        done(err);
+                    }
+                    else{
+                        res.should.have.status(400);
+                        res.body.should.have.property('email').deep.equal({
+                            "email": "Email already exists"
+                        });
+                    }
+                    
+                }).finally(done);
+        });
+        
         it ('should register and login a user if the input is valid', (done) => {
             
             chai.request(server)
@@ -40,7 +74,7 @@ describe ('User',  () => {
                 .end ((err,res) => {
                     if (err){
                         done(err);
-                        console.log("err: ", err);
+                        logger.log("err: ", err);
                     }
                     else{
                         console.log("res: ", res);
@@ -56,15 +90,17 @@ describe ('User',  () => {
                             .post('/api/users/login')
                             .send(user_login)
                             .end((err,res) => {
-                                console.log("login");
+                                logger.log("login");
                                 res.should.have.status(200);
                                 res.body.should.have.property('token');
                                 let token = res.body.token;
-                                console.log("token: ", token);
+                                logger.log("token: ", token);
                                 //done();
-                        }).finally(done);      
+                        }).finally(done); 
+                           
                     }                                     
-                });     
+                });    
         });
     });
 });
+*/
