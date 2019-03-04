@@ -66,7 +66,40 @@ const User = require("../models/User").User;
         console.log ("found user!");
 
         // Check password
-        bcrypt.compare(password, user.password, function (err, res) {
+        bcrypt.compare(password, user.password, function (err, result){
+          if (result){
+            console.log("passwords matched!");
+            const payload = {
+              id: user.id,
+              name: user.name
+            };
+
+            // Sign token
+            jwt.sign(payload, keys.mongoURI.secretOrKey,{expiresIn: 31556926 },
+              (err, token) => {
+                if (err){
+                  console.log(err);
+                }
+                else{
+                  console.log("before sending response");
+                  
+                  return res.json({
+                    success: true,
+                    token: "Bearer " + token
+                  });
+                }  
+              });
+          }
+          else {
+            return res
+              .status(400)
+              .json({ passwordincorrect: "Password incorrect" });
+          }
+        });
+          
+       
+       /* 
+        {
           if (res){
             // User matched
             // Create JWT Payload
@@ -97,9 +130,10 @@ const User = require("../models/User").User;
               .status(400)
               .json({ passwordincorrect: "Password incorrect" });
           }
-        });
-      }); 
-    });
+          */
+        
+        }); 
+      });
     module.exports = router;
   
     
