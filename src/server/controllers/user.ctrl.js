@@ -1,3 +1,4 @@
+/*
 const User = require('./../models/User');
 module.exports = {
 	editUserPage: (req, res, next) => {
@@ -7,3 +8,4 @@ module.exports = {
     return res.send("<h2>Hello World</h2>");
   }
 };
+*/

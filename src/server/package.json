@@ -3,17 +3,43 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "config": "^3.0.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "express-session": "^1.15.6",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.0",
+    "method-override": "^3.0.0",
     "mongoose": "^5.4.15",
+    "morgan": "^1.9.1",
     "nodemon": "^1.18.10",
+    "passport": "^0.4.0",
+    "passport-facebook": "^3.0.0",
+    "passport-jwt": "^4.0.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.5.3",
+    "nyc": "^13.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "mocha --timeout 10000",
+    "test-with-coverage": "nyc --reporter=text mocha",
+    "eject": "react-scripts eject",
+    "client-install": "npm install --prefix ../client",
+    "start": "node server.js",
+    "server": "nodemon app.js",
+    "client": "npm start --prefix ../client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "browserslist": [
     ">0.2%",
