@@ -1,4 +1,4 @@
-const userController = require('./../controllers/user.ctrl');
+//const userController = require('./../controllers/user.ctrl');
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcrypt-nodejs");
@@ -95,45 +95,9 @@ const User = require("../models/User").User;
               .status(400)
               .json({ passwordincorrect: "Password incorrect" });
           }
-        });
-          
-       
-       /* 
-        {
-          if (res){
-            // User matched
-            // Create JWT Payload
-            console.log("passwords matched!");
-            const payload = {
-              id: user.id,
-              name: user.name
-            };
-            // Sign token
-            jwt.sign(payload, keys.mongoURI.secretOrKey,{expiresIn: 31556926 },
-              (err, token) => {
-                if (err){
-                  console.log(err);
-                }
-                else{
-                  console.log("before sending response");
-                  //issue?
-                  return res.json({
-                    success: true,
-                    token: "Bearer " + token
-                  });
-                }  
-              });
-          }
-          //err, passwords dont match
-          else {
-            return res
-              .status(400)
-              .json({ passwordincorrect: "Password incorrect" });
-          }
-          */
-        
-        }); 
-      });
+        });  
+      }); 
+    });
     module.exports = router;
   
     

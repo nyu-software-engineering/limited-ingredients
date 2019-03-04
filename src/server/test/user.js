@@ -50,7 +50,7 @@ describe ('User',  () => {
                         res.body.should.have.propety('name');
                         res.body.should.have.property('email');
                         res.body.should.have.property('password');
-
+                          
                         //follow up with login
                         chai.request(server)
                             .post('/api/users/login')
@@ -61,17 +61,10 @@ describe ('User',  () => {
                                 res.body.should.have.property('token');
                                 let token = res.body.token;
                                 console.log("token: ", token);
-                                done();
-                            });
-                           
-                    }
-                                        
-                });
-           
-                
+                                //done();
+                        }).finally(done);      
+                    }                                     
+                });     
         });
-
     });
-
-
 });
