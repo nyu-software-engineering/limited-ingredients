@@ -9,15 +9,22 @@
 
 ## How to build & test project?
 Clone the project
-```
+``` 
 git clone https://github.com/nyu-software-engineering/limited-ingredients.git
 ```
-Install modules
+Install modules (in the server directory)
 ```js
+cd src/server
 npm init
 npm install .
-npm install --save mongoose passport passport-local passport-facebook connect-flash bcrypt-nodejs morgan body-parser cookie-parser express express-session method-override
-
+npm install --save bcrypt-nodejs body-parser concurrently config connect-flash cookie-parser express-session is-empty jsonwebtoken method-override mongoose
+morgan nodemon passport passport-facebook passport-jwt react react-dom react-scripts
+validator
+```
+Install modules (in the client directory)
+```
+cd src/client
+npm install --save axios chai classnames enzyme enzyme-adapter-react-16 jwt-decode mocha react react-dom react-redux react-router-dom react-scripts redux redux-thunk sinon
 ```
 Start project
 ```js
