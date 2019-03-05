@@ -1,6 +1,5 @@
 *.class
 .mtj.tmp/
-*.jar
 .metadata
 .classpath
 .project
