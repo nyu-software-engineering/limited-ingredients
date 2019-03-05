@@ -12,4 +12,4 @@ tmp/
 *~.nib
 local.properties
 .loadpath
-data.json
+*.json
