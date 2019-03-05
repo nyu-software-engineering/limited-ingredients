@@ -3,4 +3,4 @@ limited_ingredients/src/server/node_modules
 limited_ingredients/src/client/node_modules
 .DS_Store
 src/server/config/keys.js
-.vscode/*
+.vscode/
