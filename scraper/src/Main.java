@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 public class Main {
 	public static void main(String[] args) {
 		//link of 100 recipes
@@ -25,5 +24,6 @@ public class Main {
 			jsonObj.put("nutrition", first100.get(i).getNutrition());
 			jsonArray.put(jsonObj);
 		}
+		System.out.println(jsonArray.toString(4));
 	}
 }
