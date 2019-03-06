@@ -38,7 +38,7 @@ describe ('User',  () => {
     
     //Test the register route 
     describe('/POST api/users/register', () => {
-        /*
+        
         user_taken.save().then(
             function(err, result){
                 if (err){
@@ -65,7 +65,7 @@ describe ('User',  () => {
                     
                 }).finally(done);
         });
-        */
+        
         it ('should register and login a user if the input is valid', (done) => {
             
             chai.request(server)
@@ -103,3 +103,4 @@ describe ('User',  () => {
         });
     });
 });
+*/
