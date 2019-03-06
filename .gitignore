@@ -4,3 +4,4 @@ limited_ingredients/src/client/node_modules
 .DS_Store
 src/server/config/keys.js
 .vscode/
+src/.idea/
