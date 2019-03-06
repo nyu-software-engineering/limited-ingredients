@@ -108,7 +108,7 @@ function loginUser(req, res) {
         };
 
         // Sign token- Why need the token? Can we use passport instead. Much easier tool to use if its possible - Casey Note
-        jwt.sign(payload, keys.mongoURI.secretOrKey, {expiresIn: 31556926},
+        jwt.sign(payload, "secret", {expiresIn: 31556926},
             (err, token) => {
               if (err) {
                 console.log(err);
