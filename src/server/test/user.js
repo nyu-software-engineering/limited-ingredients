@@ -1,4 +1,4 @@
-process.env.NODE_ENV = 'test';//is this neccesary? - casey note
+process.env.NODE_ENV = 'test';//is this neccesary? - casey note 
 
 let mongoose = require('mongoose');
 let User = require('../models/User');
