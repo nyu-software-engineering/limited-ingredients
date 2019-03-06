@@ -1,8 +1,9 @@
-process.env.NODE_ENV = 'test';
+process.env.NODE_ENV = 'test';//is this neccesary? - casey note
 var assert = require('assert');
 var should = require('chai').should();
 
-let validator = require('../routes/register')
+const validator = require('./../services/AuthenticationManager').validateRegisterInput;
+
 let invalid_email_data = {name: "test", email: "asdfg", password: "12345678"};
 let short_password_data = {name: "test", email: "valid@email.com", password: "12345"};
 let long_password_data = {name: "test", email: "valid@email.com", password: "1234567891123456789012345678901"};
