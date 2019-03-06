@@ -1,76 +1,46 @@
 /** require dependencies */
-const express = require("express");
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-const passport = require('passport');
+const express = require("express");//framework
+const mongoose = require('mongoose');//connect to mongodb
+const cors = require('cors');//too allow api hits from external sites - post 5000 and 3000 are different
+const bodyParser = require('body-parser');//to get body of post requests
+//const passport = require('passport');//neccesary for user auth
+const morgan = require('morgan');//show all api reqs and res
+const cookieParser = require('cookie-parser');//neccesary to keep session info. 'Remember me?'
 
-const users = require("./routes/user");
+const url = "mongodb://localhost:27017/limitedIngredients";//hardcoded for now, add parameters.json
+
+
+/** connect to MongoDB datastore */
+try {
+    mongoose.connect(url, {
+      useNewUrlParser: true
+    });
+} catch (error) {
+    console.log(error);
+}
+
 const app = express();
 
-//const routes = require('./routes/');
-const morgan = require('morgan');
-
-const cookieParser = require('cookie-parser');
-//const session = require('express-session');
-//const flash = require('connect-flash');
-
-const router = express.Router();
-//const React = require('react');
-//const ReactDOMServer = require('react-dom/server');
-
-//const url = process.env.MONGODB_URI || "mongodb://localhost:27017/limited_ingredients"
-
-/* set up routes */
-//routes(router);
-// routes 
+/* Middle Ware */
 app.use(bodyParser.urlencoded({ extended: false }));
-/** set up middlewares */
 app.use(bodyParser.json());
-//DB Config
-//const db = require("./config/keys").mongoURI;
-const config_keys = require("./config/keys");
-const config = require("config");
-console.log('NODE_ENV: ' + config.util.getEnv('NODE_ENV'));
-
-//connect to MongoDB
-/*
-mongoose.connect(db, {useNewUrlParser: true})
-.then(() => console.log("MongoDB successfully connected"))
-.catch(err => console.log(err));
-*/
-console.log("app.settings.env: ", app.settings.env);
-mongoose.connect(config_keys.mongoURI[app.settings.env], function(err, res) {
-    if(err) {
-      console.log('Error connecting to the database. ' + err);
-    } else {
-      console.log('Connected to Database: ' + config_keys.mongoURI[app.settings.env]);
-    }
-  });
-// Passport middleware
-app.use(passport.initialize());
-// Passport config
-require("./config/passport")(passport);
-// Routes
-app.use("/api/users", users);
-
-const port = 5000 || process.env.PORT;
-
-//app.use('/static',express.static(path.join(__dirname,'static')))
-app.use('/api', router);
-//don't show the log when it is test
-if(config.util.getEnv('NODE_ENV') !== 'test') {
-    //use morgan to log at command line
-    app.use(morgan('combined')); //'combined' outputs the Apache style LOGs
-}
-//app.use(morgan('dev')); // log every request to the console
+//app.use(passport.initialize());
 app.use(cookieParser()); // read cookies (needed for auth)
-app.use(bodyParser);//get info from html forms
+app.use(morgan('dev')); // if dev, every request to the console
+//app.use(morgan('combined'));// if production, add parameter.json
 
-router.get('/', (req,res) => {
-	res.json({message: 'Hello, world!'});
-});
+/** set up routes **/
+const router = express.Router();
+const routes = require('./routes/');//paths of our site
+routes(router);
+app.use('/api', router);//this is root of the server
+
+const port = 5000; //hardcoded for now, add parameters.json
+ 
+//app.use('/static',express.static(path.join(__dirname,'static'))) // If we want static resources in server
+
 /** start server */
 app.listen(port, () => {
-    console.log(`Server up and running at port: ${port} !`);
+    console.log(`SERVER ON PORT: ${port}`);
 });
 module.exports = app; //for testing

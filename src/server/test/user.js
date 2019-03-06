@@ -1,7 +1,7 @@
-/*
-process.env.NODE_ENV = 'test';
+process.env.NODE_ENV = 'test';//is this neccesary? - casey note
+
 let mongoose = require('mongoose');
-let User = require('../models/User').User;
+let User = require('../models/User');
 let logger = require ("mocha-logger");
 
 //require dev-dependencies
@@ -69,7 +69,7 @@ describe ('User',  () => {
         it ('should register and login a user if the input is valid', (done) => {
             
             chai.request(server)
-                .post('/api/users/register')
+                .post('/api/register')
                 .send(user)
                 .end ((err,res) => {
                     if (err){
@@ -77,17 +77,17 @@ describe ('User',  () => {
                         logger.log("err: ", err);
                     }
                     else{
-                        console.log("res: ", res);
+                        logger.log("res name: ", res.body.name);
                         res.should.have.status(200);
-                        res.body.should.be.json;
+                        res.body.should.be.object;
                         res.body.should.have.property('_id');
-                        res.body.should.have.propety('name');
+                        res.body.should.have.property('name');
                         res.body.should.have.property('email');
                         res.body.should.have.property('password');
                           
                         //follow up with login
                         chai.request(server)
-                            .post('/api/users/login')
+                            .post('/api/login')
                             .send(user_login)
                             .end((err,res) => {
                                 logger.log("login");
@@ -95,8 +95,8 @@ describe ('User',  () => {
                                 res.body.should.have.property('token');
                                 let token = res.body.token;
                                 logger.log("token: ", token);
-                                //done();
-                        }).finally(done); 
+                                done();
+                        }); 
                            
                     }                                     
                 });    
