@@ -17,7 +17,7 @@ Install modules (in the server directory)
 cd src/server
 npm init
 npm install .
-npm install --save bcrypt-nodejs body-parser concurrently config connect-flash cookie-parser express-session is-empty jsonwebtoken method-override mongoose
+npm install --save bcrypt-nodejs body-parser concurrently config connect-flash cookie-parser cors express-session is-empty jsonwebtoken method-override mongoose
 morgan nodemon passport passport-facebook passport-jwt react react-dom react-scripts
 validator
 ```
