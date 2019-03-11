@@ -39,18 +39,23 @@ function validateRegisterInput(data){
 */
 function registerUser(req, res) {
   const data = req.body;
+  console.log("request: ", req);
   // Form validation
+  console.log("form validation")
   const {errors, isValid} = validateRegisterInput(data);
+  
   // Check validation
   if (!isValid) {
 //      return res.status(400).json(errors);
     return {status: 400, json: errors};
   }
+  console.log("looking if user exists");
   User.findOne({email: data.email}).then(user => {
     if (user) {
       console.log("found user: ", user);
       return res.status(400).json({ email: "Email already exists" });
     }
+    console.log("registering user");
     const newUser = new User({
       name: data.name,
       email: data.email,
