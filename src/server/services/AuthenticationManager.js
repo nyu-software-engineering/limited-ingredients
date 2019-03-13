@@ -27,9 +27,12 @@ function validateRegisterInput(data){
   // Password checks
   if (Validator.isEmpty(data.password)) {
     errors.password = "Password field is required";
-  }else if (!Validator.isLength(data.password, { min: 6, max: 30 })) {
-    errors.password = "Password must be at least 6 characters";
-  }
+  }else if (!Validator.isLength(data.password, { min: 6, max: 30})) {
+    errors.password = "Password must be at least 6 characters and less than 30 characters";
+  }/*
+  if (!Validator.isLength(data.password, {max: 30 })) {
+    errors.password = "Password must not exceed 30 characters";
+  }*/
 
   return { errors, isValid: isEmpty(errors) };
 }
