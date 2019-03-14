@@ -16,6 +16,7 @@ Install modules (in the server directory)
 ```js
 cd src/server
 npm install .
+```
 
 ```
 Install modules (in the client directory)
