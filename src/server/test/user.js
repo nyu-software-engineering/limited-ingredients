@@ -1,4 +1,4 @@
-process.env.NODE_ENV = 'test';//is this neccesary? - casey note
+process.env.NODE_ENV = 'test';//is this neccesary? - casey note 
 
 let mongoose = require('mongoose');
 let User = require('../models/User');
@@ -37,34 +37,36 @@ describe ('User',  () => {
     });
     
     //Test the register route 
-    describe('/POST api/users/register', () => {
+    describe('/POST api/register', () => {
         
         user_taken.save().then(
             function(err, result){
                 if (err){
-                    console.log(err);
+                    logger.log(err);
                 }
                 else{
-                    console.log("user saved succesfully!");
+                    logger.log("user saved succesfully!");
+                    it ('should not register an account whose email is already stored in the db', done => {
+                        chai.request(server)
+                            .post('/api/register')
+                            .send(user_taken)
+                            .end((err, res) => {
+                                if (err){
+                                    done(err);
+                                }
+                                else{
+                                    logger.log(res);
+                                    res.should.have.status(400);
+                                    res.body.should.have.property('email').deep.equal({
+                                        "email": "Email already exists"
+                                    });
+                                }
+                               done() 
+                            });
+                    });
                 }
         });
-        it ('should not register an account whose email is already stored in the db', done => {
-            chai.request(server)
-                .post('/api/users/register')
-                .send(user_taken)
-                .end((err, result) => {
-                    if (err){
-                        done(err);
-                    }
-                    else{
-                        res.should.have.status(400);
-                        res.body.should.have.property('email').deep.equal({
-                            "email": "Email already exists"
-                        });
-                    }
-                    
-                }).finally(done);
-        });
+        
         
         it ('should register and login a user if the input is valid', (done) => {
             

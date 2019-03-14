@@ -18,14 +18,14 @@ describe ('Basic Register Validator Testing', function () {
 
     it ('should return a short password error', function (){
         let error_object = validator(short_password_data);
-        let expected_err = { password: "Password must be at least 6 characters"}
+        let expected_err = { password: "Password must be at least 6 characters and less than 30 characters"}
         error_object.should.have.property('isValid').equal(false);
         error_object.should.have.property('errors').deep.equal(expected_err);
     });
 
   it ('should return a long password error', function (){
     let error_object = validator(long_password_data);
-    let expected_err = { password: "Password must be at least 6 characters"}
+    let expected_err = { password: "Password must be at least 6 characters and less than 30 characters"}
     error_object.should.have.property('isValid').equal(false);
     error_object.should.have.property('errors').deep.equal(expected_err);
   });

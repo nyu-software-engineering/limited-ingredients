@@ -15,22 +15,20 @@ git clone https://github.com/nyu-software-engineering/limited-ingredients.git
 Install modules (in the server directory)
 ```js
 cd src/server
-npm init
 npm install .
-npm install --save bcrypt-nodejs body-parser concurrently config connect-flash cookie-parser cors express-session is-empty jsonwebtoken method-override mongoose
-morgan nodemon passport passport-facebook passport-jwt react react-dom react-scripts
-validator
+```
+
 ```
 Install modules (in the client directory)
-```
+```js
 cd src/client
-npm install --save axios chai classnames enzyme enzyme-adapter-react-16 jwt-decode mocha react react-dom react-redux react-router-dom react-scripts redux redux-thunk sinon
+npm install .
 ```
+
 Start project
 ```js
-npm start
-or 
-node(mon) server.js
+cd src/server
+npm run dev
 ```
 Test project (backend)
 ```

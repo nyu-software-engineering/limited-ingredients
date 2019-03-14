@@ -27,9 +27,12 @@ function validateRegisterInput(data){
   // Password checks
   if (Validator.isEmpty(data.password)) {
     errors.password = "Password field is required";
-  }else if (!Validator.isLength(data.password, { min: 6, max: 30 })) {
-    errors.password = "Password must be at least 6 characters";
-  }
+  }else if (!Validator.isLength(data.password, { min: 6, max: 30})) {
+    errors.password = "Password must be at least 6 characters and less than 30 characters";
+  }/*
+  if (!Validator.isLength(data.password, {max: 30 })) {
+    errors.password = "Password must not exceed 30 characters";
+  }*/
 
   return { errors, isValid: isEmpty(errors) };
 }
@@ -39,18 +42,23 @@ function validateRegisterInput(data){
 */
 function registerUser(req, res) {
   const data = req.body;
+  console.log("request: ", req);
   // Form validation
+  console.log("form validation")
   const {errors, isValid} = validateRegisterInput(data);
+  
   // Check validation
   if (!isValid) {
 //      return res.status(400).json(errors);
     return {status: 400, json: errors};
   }
+  console.log("looking if user exists");
   User.findOne({email: data.email}).then(user => {
     if (user) {
       console.log("found user: ", user);
       return res.status(400).json({ email: "Email already exists" });
     }
+    console.log("registering user");
     const newUser = new User({
       name: data.name,
       email: data.email,

@@ -11,7 +11,7 @@ let long_password_data = {name: "test", email: "valid@email.com", password: "123
 describe ('Basic Login Validator Testing', function () {
     it ('should return a short password error', function (){
         let error_object = validator(invalid_password_data);
-        let expected_err = {password: "Password must be at least 6 characters"};
+        let expected_err = {password: "Password field is required"};
         error_object.should.have.property('isValid').equal(false);
 				console.log(error_object);
         error_object.should.have.property('errors').deep.equal(expected_err);
@@ -25,7 +25,7 @@ describe ('Basic Login Validator Testing', function () {
     });
   it ('should return a long password error', function (){
     let error_object = validator(long_password_data);
-    let expected_err = { password: "Password must be at least 6 characters"}
+    let expected_err = { password: "Password must be at least 6 characters and less than 30 characters"}
     error_object.should.have.property('isValid').equal(false);
     error_object.should.have.property('errors').deep.equal(expected_err);
   });
