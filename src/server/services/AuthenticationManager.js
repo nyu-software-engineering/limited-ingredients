@@ -42,9 +42,9 @@ function validateRegisterInput(data){
 */
 function registerUser(req, res) {
   const data = req.body;
-  console.log("request: ", req);
+  //console.log("request: ", req);
   // Form validation
-  console.log("form validation")
+  //console.log("form validation")
   const {errors, isValid} = validateRegisterInput(data);
   
   // Check validation

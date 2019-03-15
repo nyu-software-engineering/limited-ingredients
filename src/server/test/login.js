@@ -13,7 +13,7 @@ describe ('Basic Login Validator Testing', function () {
         let error_object = validator(invalid_password_data);
         let expected_err = {password: "Password field is required"};
         error_object.should.have.property('isValid').equal(false);
-				console.log(error_object);
+				//console.log(error_object);
         error_object.should.have.property('errors').deep.equal(expected_err);
     });
 
