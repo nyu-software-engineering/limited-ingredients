@@ -1,6 +1,5 @@
 # Limited Ingredients
-![build status]
-(https://travis-ci.com/nyu-software-engineering/limited-ingredients.svg?branch=master)
+[![Build Status](https://travis-ci.com/nyu-software-engineering/limited-ingredients.svg?branch=master)](https://travis-ci.com/nyu-software-engineering/limited-ingredients)
 
 **Limited Ingredients** is a web-app that allow users to input the ingredients they have and recieve recipes based on these ingredients. These recipes are displayed with how closesly they match your ingredient specification. 
 
