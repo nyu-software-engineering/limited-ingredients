@@ -1,4 +1,7 @@
 # Limited Ingredients
+![build status]
+(https://travis-ci.com/nyu-software-engineering/limited-ingredients.svg?branch=master)
+
 **Limited Ingredients** is a web-app that allow users to input the ingredients they have and recieve recipes based on these ingredients. These recipes are displayed with how closesly they match your ingredient specification. 
 
 **Limited Ingredients** was first founded when a group of young an bright NYU Students all signed up for it during a DevOps course taught by Amos Bloomberg. We genuinly belived that by helping users solve the greatest problem at home (cooking with limited ingredients) we can help change the world one ingredient at a time. 
