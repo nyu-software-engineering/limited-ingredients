@@ -79,7 +79,7 @@ describe ('User',  () => {
                         logger.log("err: ", err);
                     }
                     else{
-                        logger.log("res name: ", res.body.name);
+                        //logger.log("res name: ", res.body.name);
                         res.should.have.status(200);
                         res.body.should.be.object;
                         res.body.should.have.property('_id');
