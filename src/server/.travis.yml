@@ -14,5 +14,4 @@ before_script:
   - mongo mydb_test --eval 'db.createUser({user:"travis",pwd:"test",roles:["readWrite"]});'
   - cd src/server
 script:
-  - 
   - npm run test
