@@ -18,7 +18,7 @@ cd src/server
 npm install .
 ```
 
-```
+
 Install modules (in the client directory)
 ```js
 cd src/client
@@ -31,7 +31,7 @@ cd src/server
 npm run dev
 ```
 Test project (backend)
-```
+```js
 cd src/server
 npm test 
 or
