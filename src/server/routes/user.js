@@ -26,4 +26,5 @@ module.exports = (router) => {
       .route('/findUser/:id')
       .get(userController.findUser);
 
+	
 };
