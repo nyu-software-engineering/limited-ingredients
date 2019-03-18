@@ -1,8 +1,8 @@
 import java.io.IOException;
 import java.util.ArrayList;
-
-import org.json.JSONException;
+import org.json.JSONArray;
 import org.json.JSONObject;
+import org.json.JSONException;
 import org.json.JSONTokener;
 import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
@@ -33,7 +33,7 @@ public final class Utilities {
 				return null;
 			}
 			//get list of recipe page elements
-			Elements recipePages = homeDoc.select("section.listicle-page-group-container p span.listicle-page__cta-button a");
+			Elements recipePages = homeDoc.select("li.single-recipe a");
 			for(Element page: recipePages) {
 				//initialize Recipe object
 				Recipe recipe = new Recipe();
@@ -93,5 +93,57 @@ public final class Utilities {
 		}
 		//return list of recipes
 		return recipeList;
+	}
+	public static JSONArray ConvertRecipeToJSON(ArrayList<Recipe> recipeList) {
+		//create array of JSON
+		JSONArray jsonArray = new JSONArray();
+		for (int i = 0; i < recipeList.size(); i++) {
+			//create JSON object
+			JSONObject jsonObj = new JSONObject();
+			jsonObj.put("name", recipeList.get(i).getName());
+			jsonObj.put("imageURL", recipeList.get(i).getImageURL());
+			jsonObj.put("URL", recipeList.get(i).getURL());
+			jsonObj.put("directions", recipeList.get(i).getDirections());
+			jsonObj.put("ingredients", recipeList.get(i).getIngredients());
+			jsonObj.put("prepTime", recipeList.get(i).getPrepTime());
+			jsonObj.put("cookTime", recipeList.get(i).getCookTime());
+			jsonObj.put("totalTime", recipeList.get(i).getTotalTime());
+			jsonObj.put("nutrition", recipeList.get(i).getNutrition());
+			jsonArray.put(jsonObj);
+		}
+		return jsonArray;
+	}
+	public static ArrayList<String> BuildURL(String URL) {
+		ArrayList<String> URLList = new ArrayList<String>();
+		try {
+			//attempt to connect to URL
+			Document homeDoc = null;
+			try {
+				homeDoc = Jsoup.connect(URL).get();
+			} catch(HttpStatusException e) {
+				return null;
+			} catch(NullPointerException e) {
+				return null;
+			}
+			Elements pageNum = homeDoc.select("a.page-numbers");
+			if (pageNum != null) {
+				int lastPage = Integer.parseInt(pageNum.get(pageNum.size()-2).text().replace(",", ""));
+				for (int i = 1; i <= lastPage; i++) {
+					URLList.add("https://www.tasteofhome.com/recipes/page/" + i + "/");
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return URLList;
+	}
+	public static JSONArray ConcatJSONArray(JSONArray... JSONArrays) {
+		JSONArray result = new JSONArray();
+		for (JSONArray array : JSONArrays) {
+			for (int i = 0; i < array.length(); i++) {
+				result.put(array.get(i));
+			}
+		}
+		return result;
 	}
 }
