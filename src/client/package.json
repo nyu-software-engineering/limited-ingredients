@@ -8,6 +8,7 @@
     "classnames": "^2.2.6",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
+    "is-empty": "^1.2.0",
     "jwt-decode": "^2.2.0",
     "mocha": "^6.0.2",
     "react": "^16.8.3",
