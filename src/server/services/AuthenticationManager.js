@@ -4,7 +4,6 @@ const User = require('./../models/User');
 const bcrypt = require("bcrypt-nodejs");
 const jwt = require("jsonwebtoken");
 
-
 /*
 	Validate Form Data For Login/Registration
 */
@@ -88,7 +87,7 @@ function registerUser(req, res) {
 */
 function loginUser(req, res) {
   const data = req.body;
-
+  console.log("RECIEVED")
   // Form validation
   const {errors, isValid} = validateRegisterInput(data);
   // Check validation
@@ -104,7 +103,7 @@ function loginUser(req, res) {
     if (!user) {
       return res.status(404).json({ emailnotfound: "Email not found" });
     }
-    // console.log ("found user!");
+    console.log ("found user!");
 
     // Check password
     bcrypt.compare(password, user.password, function (err, result) {
@@ -127,6 +126,7 @@ function loginUser(req, res) {
               }
             });
       } else {
+        console.log("password incorrect")
         return res.status(400).json({ passwordincorrect: "Password incorrect" });
       }
     });
