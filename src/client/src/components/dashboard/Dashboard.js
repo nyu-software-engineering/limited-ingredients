@@ -1,9 +1,11 @@
 
 /*This component is for logged in users: they should ideally see their saved recipes here */
 import React, { Component } from "react";
+import {Route}from 'react-router-dom';
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
+import RecipeForm from "../forms/RecipeForm";
 class Dashboard extends Component {
   onLogoutClick = e => {
     e.preventDefault();
@@ -21,6 +23,9 @@ return (
                 You are logged into a full-stack{" "}
                 <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
               </p>
+             
+              <Navbar/> <Route exact path="/recipeForm" component={RecipeForm} />
+          
             </h4>
             <button
               style={{
