@@ -17,16 +17,19 @@ git clone https://github.com/nyu-software-engineering/limited-ingredients.git
 Install modules (in the server directory)
 ```js
 cd src/server
-npm install .
+npm install 
 ```
 
 
 Install modules (in the client directory)
 ```js
 cd src/client
-npm install .
+npm install 
 ```
-
+Run MongoDB in Terminal
+```js
+mongod
+```
 Start project
 ```js
 cd src/server
