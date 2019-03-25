@@ -1,8 +1,9 @@
-## Compile
+## Compiling the scraper
 ```java
-javac -cp .:./../lib/json-20180813.jar:./../lib/jsoup-1.11.3.jar Main.java
+javac -cp ".:./../lib/json-20180813.jar:./../lib/jsoup-1.11.3.jar" Main.java Recipe.java Utilities.java
+
 ```
-## Run
+## Running the scraper
 ```java
-java -cp .:./../lib/json-20180813.jar:./../lib/jsoup-1.11.3.jar Main > data.json
+java -cp ".:./../lib/json-20180813.jar:./../lib/jsoup-1.11.3.jar" Main
 ```
