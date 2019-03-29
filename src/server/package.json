@@ -29,6 +29,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
+    "eslint": "^5.15.3",
     "mocha": "^2.5.3",
     "mocha-logger": "^1.0.6",
     "nyc": "^13.3.0"
