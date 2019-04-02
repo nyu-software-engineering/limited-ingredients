@@ -35,6 +35,14 @@ function searchRecipes (req, res){
                 console.log("ingredients not defined");
             }  
         });
+        //TODO: rank results in order of best match to least match
+        let bestResults = [];
+
+
+
+        //reorder results
+        //toBeReturned = bestResults;
+
     })
     setTimeout(() =>{
         console.log("toBeReturned length: ", toBeReturned.length)
