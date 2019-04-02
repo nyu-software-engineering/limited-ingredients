@@ -5,6 +5,6 @@ import errorReducer from "./errorReducers";
 import recipeReducers from "./recipeReducers";
 export default combineReducers({
   auth: authReducer,
-  recipes: recipeReducers,
+  recipe: recipeReducers,
   errors: errorReducer
 });
