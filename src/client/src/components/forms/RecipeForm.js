@@ -4,8 +4,12 @@ import { search } from "../../actions/search";
 import axios from "axios";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-//import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
+/* other method of creating components
+const RecipeForm = (props) => {
+    return
+}
+*/
 class RecipeForm extends Component {
     constructor(props) {
         super(props);

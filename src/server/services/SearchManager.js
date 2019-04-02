@@ -38,6 +38,10 @@ function searchRecipes (req, res){
         let bestResults = [];
 
 
+
+        //reorder results
+        toBeReturned = bestResults;
+
     })
     setTimeout(() =>{
         console.log("toBeReturned length: ", toBeReturned.length)
