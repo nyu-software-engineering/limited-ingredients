@@ -4,14 +4,20 @@ import axios from "axios";
 import {
   GET_ERRORS,
   SET_CURRENT_USER,
-  USER_LOADING
+  USER_LOADING,
+  UPDATE_RECIPE
 } from "./types";
 // search recipes
 export const search = (query) => dispatch => {
   axios
     .post("api/search", query)
-    .then(res => {console.log("res: ", res)}) // re-direct to login on successful register
+    .then(res => {
+      console.log("res: ", res);
+      //return res.json();
+      dispatch(setResults(res));
+    }) 
     .catch(err => {
+      console.log('catch err');
       console.log(err);
       dispatch({
         type: GET_ERRORS,
@@ -19,3 +25,11 @@ export const search = (query) => dispatch => {
       });
     });
 };
+
+export const setResults = (recipes) =>{
+  return {
+    type: UPDATE_RECIPE,
+    payload: recipes
+  };
+};
+

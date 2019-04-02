@@ -5,8 +5,7 @@ const Recipes = mongoose.model('Recipe');
 
 function searchRecipes (req, res){
     const data = req.body.query.split(" ");
-    
-    let toBeReturned = ""
+    let toBeReturned = []
     console.log("query: ", data);
     Recipes.find().then(success=>{
         console.log("success length, ", success.length);
@@ -18,31 +17,23 @@ function searchRecipes (req, res){
             if (ingredients[0]){
                 ingredients[0].forEach((ingredient) => {
                     //console.log("ingredient: ", ingredient)
-                    
                     data.forEach(search => {
                         if (ingredient.includes(search)){
-                            toBeReturned += recipe + "\n"
+                            toBeReturned.push(recipe)
                             //console.log(recipe.name, " has the ingredient ", search);
                         }
-                    })
-                    
-                    
+                    });         
                 });
             }
             else{
                 console.log("ingredients not defined");
-            }
-            
+            }  
         });
-        
     })
     setTimeout(() =>{
-        console.log("toBeReturned: ", toBeReturned)
+        console.log("toBeReturned length: ", toBeReturned.length)
         return res.send(toBeReturned);
-
     }, 3000)
-    // console.log("data in SearchManager: ", data);
-    // return res.json({recipe: "dummy recipe"});
 }
 
 
