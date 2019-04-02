@@ -61,8 +61,7 @@ function registerUser(req, res) {
     const newUser = new User({
       name: data.name,
       email: data.email,
-      password: data.password,
-      recipes: []
+      password: data.password
     });
     // Hash password before saving in database
     bcrypt.genSalt(10, (err, salt) => {

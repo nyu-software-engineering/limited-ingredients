@@ -17,6 +17,7 @@ function searchRecipes (req, res){
             if (ingredients[0]){
                 ingredients[0].forEach((ingredient) => {
                     //console.log("ingredient: ", ingredient)
+                    //MAKE SURE RECIPES DO NOT REPEAT
                     data.forEach(search => {
                         if (ingredient.includes(search)){
                             if (toBeReturned.includes(recipe)){
@@ -32,7 +33,7 @@ function searchRecipes (req, res){
             }
             else{
                 console.log("ingredients not defined");
-            }
+            }  
         });
         //TODO: rank results in order of best match to least match
         let bestResults = [];

@@ -3,14 +3,15 @@ import {
   } from "../actions/types";
 
 const ingredientState = {
-    received: false,
-    recipes: []
-}
+    received: false
+  }
 
 export default function (state = ingredientState, action) {
     switch (action.type) {
         case UPDATE_RECIPE:
-            return action.payload;
+            return {
+                received: true
+            }
         default:
             return state;
     }
