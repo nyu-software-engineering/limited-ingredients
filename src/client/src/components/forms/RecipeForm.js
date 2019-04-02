@@ -4,11 +4,15 @@ import { search } from "../../actions/search";
 import axios from "axios";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-//import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
+/* other method of creating components
+const RecipeForm = (props) => {
+    return
+}
+*/
 class RecipeForm extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             query: "",
             results: []
@@ -25,8 +29,9 @@ class RecipeForm extends Component {
         };
         console.log(newQuery);
         //submit form using redux way
-        //this.props.search(newQuery);
-        
+        this.props.search(newQuery);
+        /*
+        //using react way to make requests
         axios
         .post("api/search", newQuery)
         .then(res => {
@@ -37,13 +42,14 @@ class RecipeForm extends Component {
             console.log('catch err');
             console.log(err);
         });
+        */
     };
     //render the recipes
     createRecipes () {
-        const recipes = this.state.results;
-        return recipes.map( x => {
+        const recipes = this.props.recipes.recipes;
+        return recipes.map( (x, i) => {
             //let recipe_ingredients = x.ingredients
-            return <div style = {{border: "1 px solid black"}}>
+            return <div key={i} style = {{border: "1 px solid black"}}>
                         <h2>{x.name}</h2>
                         <h3>Directions</h3>
                         <p>{x.directions}</p>
@@ -54,13 +60,13 @@ class RecipeForm extends Component {
         });
     }
     
+
     render() {
         const center = {
             margin: "20%"
         }
         // redux debugging
-        const received = this.props.received;
-        
+        console.log('rendered');
         return (
             <div style={center} >
                 <form noValidate onSubmit={this.onSubmit}>
@@ -87,9 +93,9 @@ class RecipeForm extends Component {
                         </button>
                     </div>
                 </form>
-                <div>
+                <div className="recipes">
                     {this.createRecipes()}
-                    {this.props.received}
+                    {/* {this.renderRecipe()} */}
                 </div>
             </div>
         );
@@ -98,16 +104,21 @@ class RecipeForm extends Component {
 
 RecipeForm.propTypes = {
     search: PropTypes.func.isRequired
-  };
-  const mapStateToProps = state => ({
-    auth: state.auth,
-    errors: state.errors,
-    received: state.received
-  });
+};
+const mapStateToProps = state => {
+    console.log(state);
+    return {
+        auth: state.auth,
+        errors: state.errors,
+        recipes: state.recipes
+    }
+}
 /*
 export default connect (
     mapStateToProps,
     {findRecipes}
 )(RecipeForm)
 */
-export default connect(mapStateToProps,{search})(withRouter(RecipeForm));
+
+
+export default connect(mapStateToProps, { search })(withRouter(RecipeForm));

@@ -14,7 +14,8 @@ let RecipeSchema = new mongoose.Schema(
         prepTime: {type: String, required: true}
     }
 );
-
-mongoose.model('Recipe', RecipeSchema);
+//why is this here?
 const url = "mongodb://localhost:27017/limitedIngredients";
 mongoose.connect(url);
+
+module.exports = mongoose.model('Recipe', RecipeSchema);
