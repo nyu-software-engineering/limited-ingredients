@@ -13,7 +13,6 @@ export const search = (query) => dispatch => {
     .post("api/search", query)
     .then(res => {
       console.log("res: ", res);
-      //return res.json();
       dispatch(setResults(res));
     }) 
     .catch(err => {
