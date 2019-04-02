@@ -40,7 +40,7 @@ function searchRecipes (req, res){
 
 
         //reorder results
-        toBeReturned = bestResults;
+        //toBeReturned = bestResults;
 
     })
     setTimeout(() =>{
