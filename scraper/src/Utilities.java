@@ -51,14 +51,26 @@ public final class Utilities {
 				//get data attributes
 				Elements nameElem = recipeDoc.select("h1.recipe-title");
 				Elements imageElem = recipeDoc.select("div.recipe-image-and-meta-sidebar__featured-container img");
+				Elements ingredientElem = recipeDoc.select("ul.recipe-ingredients__list li");
 				Elements directionsElem = recipeDoc.select("li.recipe-directions__item");
 				Elements JSONElem = recipeDoc.getElementsByTag("script");
 				//check if elements are null. if not, set Recipe objects' data fields
 				if (nameElem != null) {
 					recipe.setName(nameElem.text());
+				} else {
+					recipe.setName("INVALID");
 				}
 				if (imageElem != null) {
 					recipe.setImageURL(imageElem.attr("src"));
+				} else {
+					recipe.setName("INVALID");
+				}
+				if (ingredientElem != null) {
+					ArrayList<String> ingredientList = new ArrayList<>(ingredientElem.size());
+					for (int i = 0; i < ingredientElem.size(); i++) {
+						ingredientList.add(ingredientElem.get(i).text());
+					}
+					recipe.setIngredients(ingredientList);
 				}
 				recipe.setURL(recipeURL);
 				if (directionsElem != null) {
@@ -74,13 +86,16 @@ public final class Utilities {
 						if (node.getWholeData().contains("@type")) {
 							JSONObject obj = (JSONObject) new JSONTokener(node.getWholeData()).nextValue();
 							try {
-								recipe.setIngredients(obj.get("recipeIngredient").toString());
 								recipe.setPrepTime(obj.getString("prepTime"));
 								recipe.setCookTime(obj.getString("cookTime"));
 								recipe.setTotalTime(obj.getString("totalTime"));
 								recipe.setNutrition(obj.get("nutrition").toString());
 							} catch(JSONException e) {
 								e.printStackTrace();
+								recipe.setPrepTime("INVALID");
+								recipe.setCookTime("INVALID");
+								recipe.setTotalTime("INVALID");
+								recipe.setNutrition("INVALID");
 							}
 						}
 					}
@@ -94,6 +109,12 @@ public final class Utilities {
 		//return list of recipes
 		return recipeList;
 	}
+	/**
+	 * The ConvertRecipeToJson method takes an ArrayList of recipes and converts each recipe into a 
+	 * JSON object that is returned in a JSONArray
+	 * @param recipeList	ArrayList of recipe objects
+	 * @return JSONArray	JSONArray of JSON objects
+	 */
 	public static JSONArray ConvertRecipeToJSON(ArrayList<Recipe> recipeList) {
 		//create array of JSON
 		JSONArray jsonArray = new JSONArray();
@@ -113,6 +134,11 @@ public final class Utilities {
 		}
 		return jsonArray;
 	}
+	/**
+	 * The BuildURL method takes a url and returns an ArrayList of recipe sites
+	 * @param URL			URL of recipe site
+	 * @return ArrayList 	ArrayList of all recipe sites
+	 */
 	public static ArrayList<String> BuildURL(String URL) {
 		ArrayList<String> URLList = new ArrayList<String>();
 		try {
@@ -137,12 +163,15 @@ public final class Utilities {
 		}
 		return URLList;
 	}
-	public static JSONArray ConcatJSONArray(JSONArray... JSONArrays) {
-		JSONArray result = new JSONArray();
-		for (JSONArray array : JSONArrays) {
-			for (int i = 0; i < array.length(); i++) {
-				result.put(array.get(i));
-			}
+	/**
+	 * The ConcatJSONArray takes 2 jsonArrays and concatenates their JSON objects together
+	 * @param JSONArrays
+	 * @return	JSONArray	JSONArray of concatenated JSON objects
+	 */
+	public static JSONArray ConcatJSONArray(JSONArray jsonArr1, JSONArray jsonArr2) {
+		JSONArray result = jsonArr1;
+		for (int i = 0; i < jsonArr2.length(); i++) {
+			result.put(jsonArr2.get(i));
 		}
 		return result;
 	}
