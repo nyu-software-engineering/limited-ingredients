@@ -55,7 +55,7 @@ class RecipeForm extends Component {
         this.setState({selectedRecipeId: recId})
     }
     renderSubMenu = rec =>{
-        if(this.state.selectedRecipeId === rec.id){
+        if(this.state.selectedRecipeId === rec._id){
             return <div className='sub-menu'>
                         <p className='sub-heading'>Directions</p>
                         <p>{rec.directions}</p>
@@ -65,11 +65,11 @@ class RecipeForm extends Component {
         }
     }
     renderMoreButton = rec => {
-        if(this.state.selectedRecipeId !== rec.id){
+        if(this.state.selectedRecipeId !== rec._id){
             const moreButton ={
                 color: 'cornflowerblue',
             }
-            return <a style={moreButton} className='more-button' onClick={(e)=>this.onRecipeClick(e,rec.id)}>More +</a>
+            return <a style={moreButton} className='more-button' onClick={(e)=>this.onRecipeClick(e,rec._id)}>More +</a>
         }
     } 
     //render the recipes
@@ -79,7 +79,7 @@ class RecipeForm extends Component {
             
             return <div className='recipe-container'>
                         <div className='recipe-left'>
-                            <img src={rec.img} />
+                            <img src={rec.imageURL} />
                         </div>
                         <div className='recipe-middle'>
                             <h3>{rec.name}</h3>
@@ -96,7 +96,7 @@ class RecipeForm extends Component {
     }
     
     renderLikeButton = (rec) =>{
-        // if(rec.id in user.savedRecipes){
+        // if(rec._id in user.savedRecipes){
             // return <img src={selectedRecipeImg}/>
         // }else{
             return <img src={unselectedRecipeImg}/>
