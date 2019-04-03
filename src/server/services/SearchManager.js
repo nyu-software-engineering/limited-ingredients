@@ -17,9 +17,15 @@ function searchRecipes (req, res){
             if (ingredients[0]){
                 ingredients[0].forEach((ingredient) => {
                     //console.log("ingredient: ", ingredient)
+                    //MAKE SURE RECIPES DO NOT REPEAT
                     data.forEach(search => {
                         if (ingredient.includes(search)){
-                            toBeReturned.push(recipe)
+                            if (toBeReturned.includes(recipe)){
+                                console.log("already contains recipe: ", recipe.name);
+                            }
+                            else {
+                                toBeReturned.push(recipe)
+                            }
                             //console.log(recipe.name, " has the ingredient ", search);
                         }
                     });         
@@ -29,6 +35,14 @@ function searchRecipes (req, res){
                 console.log("ingredients not defined");
             }  
         });
+        //TODO: rank results in order of best match to least match
+        let bestResults = [];
+
+
+
+        //reorder results
+        //toBeReturned = bestResults;
+
     })
     setTimeout(() =>{
         console.log("toBeReturned length: ", toBeReturned.length)
