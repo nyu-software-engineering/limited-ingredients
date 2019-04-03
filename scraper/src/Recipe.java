@@ -4,7 +4,7 @@ public class Recipe {
 	private String name;
 	private String imageURL;
 	private String URL;
-	private String ingredients;
+	private ArrayList<String> ingredients;
 	private ArrayList<String> directions;
 	private String prepTime;
 	private String cookTime;
@@ -14,7 +14,7 @@ public class Recipe {
 		this.name = "";
 		this.imageURL = "";
 		this.URL = "";
-		this.ingredients = "";
+		this.ingredients = new ArrayList<String>();
 		this.directions = new ArrayList<String>();
 		this.prepTime = "";
 		this.cookTime = "";
@@ -30,7 +30,7 @@ public class Recipe {
 	public void setURL(String url) {
 		this.URL = url;
 	}
-	public void setIngredients(String ingredients) {
+	public void setIngredients(ArrayList<String> ingredients) {
 		this.ingredients = ingredients;
 	}
 	public void setDirections(ArrayList<String> directions) {
@@ -57,7 +57,7 @@ public class Recipe {
 	public String getURL() {
 		return this.URL;
 	}
-	public String getIngredients() {
+	public ArrayList<String> getIngredients() {
 		return this.ingredients;
 	}
 	public ArrayList<String> getDirections() {
