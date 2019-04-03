@@ -39,8 +39,7 @@ class RecipeForm extends Component {
         .then(res => {
             //end loading state
             console.log(res.data);
-            // this.setState({ results: res.data});
-            this.setState({ results: [{id: 7777, name:'Salad',directions:'do some things',ingredients:'you need this1'},{id: 9999, name:'another recipe',directions:'do some things',ingredients:'you need this2'}]});
+            this.setState({ results: res.data});
 
         }) 
         .catch(err => {
@@ -84,6 +83,7 @@ class RecipeForm extends Component {
                         </div>
                         <div className='recipe-middle'>
                             <h3>{rec.name}</h3>
+                            <p>Prep Time: {rec.prepTime} Cook Time: {rec.cookTime} Total Time: {rec.totalTime}</p>
                             {this.renderMoreButton(rec)}
                             {this.renderSubMenu(rec)}
                         </div>
