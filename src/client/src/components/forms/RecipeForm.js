@@ -11,13 +11,15 @@ class RecipeForm extends Component {
         super();
         this.state = {
             query: "",
-            results: []
+            results: [],
+            selectedRecipeId: -1,
         }
     }
     onChange = e => {
         this.setState({ [e.target.id]: e.target.value });
       };
     onSubmit = e => {
+        //set loading state
         e.preventDefault();
         const newQuery = {
             query: this.state.query
@@ -30,33 +32,68 @@ class RecipeForm extends Component {
         axios
         .post("api/search", newQuery)
         .then(res => {
+            //end loading state
             console.log(res.data);
-            this.setState({ results: res.data});
+            // this.setState({ results: res.data});
+            this.setState({ results: [{id: 7777, name:'Salad',directions:'do some things','ingredientes':'you need this'},{id: 9999, name:'another recipe',directions:'do some things','ingredientes':'you need this'}]});
+
         }) 
         .catch(err => {
+            //end loading state
             console.log('catch err');
             console.log(err);
         });
     };
+    onRecipeClick = (e,recId) => {
+        //open more display
+        // e.target.style['display'] = 'none';
+        //set state of clickedRecipe = recipe id
+        this.setState({selectedRecipeId: recId})
+    }
+    renderSubMenu = rec =>{
+        if(this.state.selectedRecipeId === rec.id){
+            const subHeading = {
+                fontSize: '16px',
+            }
+            return <div>
+                        <p style={subHeading}>Directions</p>
+                        <p>{rec.directions}</p>
+                        <p style={subHeading}>Ingredients</p>
+                        <p>{rec.ingredients}</p>
+                    </div>
+        }
+    }
+    renderMoreButton = rec => {
+        if(this.state.selectedRecipeId !== rec.id){
+            const moreButton ={
+                color: 'cornflowerblue',
+            }
+            return <a style={moreButton} onClick={(e)=>this.onRecipeClick(e,rec.id)}>More +</a>
+        }
+    } 
     //render the recipes
     createRecipes () {
+        const recipe = {
+            marginTop: '48px',
+            borderTop: "1px solid lightgray",
+        }
+        
         const recipes = this.state.results;
-        return recipes.map( x => {
-            //let recipe_ingredients = x.ingredients
-            return <div style = {{border: "1 px solid black"}}>
-                        <h2>{x.name}</h2>
-                        <h3>Directions</h3>
-                        <p>{x.directions}</p>
-                        <h3>Ingredients</h3>
-                        <p>{x.ingredients}</p>
+        return recipes.map( rec => {
+
+            return <div style={recipe}>
+                        <h3>{rec.name}</h3>
+                        {this.renderMoreButton(rec)}
+                        {this.renderSubMenu(rec)}
                     </div>
 
         });
     }
     
+
     render() {
         const center = {
-            margin: "20%"
+            margin: "20px 20% 20% 20%",
         }
         // redux debugging
         const received = this.props.received;
@@ -102,7 +139,7 @@ RecipeForm.propTypes = {
   const mapStateToProps = state => ({
     auth: state.auth,
     errors: state.errors,
-    received: state.received
+    received: state.received,
   });
 /*
 export default connect (
