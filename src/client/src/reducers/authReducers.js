@@ -1,7 +1,7 @@
 /* This file imports actions, defines initial state, and determines how state should change based on actions*/
 import {
     SET_CURRENT_USER,
-    USER_LOADING
+    USER_LOADING,
   } from "../actions/types";
   const isEmpty = require("is-empty");
   const initialState = {

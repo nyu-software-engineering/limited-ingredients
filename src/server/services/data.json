@@ -1,0 +1,929 @@
+[
+    {
+        "nutrition": "{\"proteinContent\":\"22g protein. \",\"fiberContent\":\"2g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"22g fat (10g saturated fat)\",\"cholesterolContent\":\"192mg cholesterol\",\"calories\":\" 370 calories\",\"carbohydrateContent\":\"21g carbohydrate (6g sugars\",\"sodiumContent\":\"946mg sodium\"}",
+        "directions": [
+            "Place 4 cups bread cubes in a single layer in a greased 13x9-in. baking dish. Sprinkle with 1 cup cheese and spinach. Layer with chorizo and onion; top with remaining bread and cheese.",
+            "In a large bowl, whisk eggs, milk, garlic salt and mustard. Pour over bread. Refrigerate, covered, several hours or overnight.",
+            "Preheat oven to 350°. Remove strata from refrigerator while oven heats. Bake, uncovered, until golden brown and a knife inserted near the center comes out clean, 40-45 minutes. Let stand 5-10 minutes before serving."
+        ],
+        "totalTime": "PT60M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Cheddar-and-Chorizo-Strata_EXPS_SDAM19_199596_B12_06_2b-696x696.jpg",
+        "name": "Cheddar and Chorizo Strata",
+        "cookTime": "PT40M",
+        "ingredients": "[\"7 cups day-old French bread cut into 1-inch cubes\",\"2 cups shredded cheddar cheese, divided \",\"1 package (10 ounces) frozen chopped spinach, thawed and squeezed dry\",\"6 ounces fresh chorizo, crumbled\",\"1/3 cup chopped onion\",\"6 large eggs\",\"2-1/4 cups 2% milk\",\"1 teaspoon garlic salt\",\"1 teaspoon prepared mustard\"]",
+        "URL": "https://www.tasteofhome.com/recipes/cheddar-and-chorizo-strata/",
+        "prepTime": "PT20M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"32g protein. \",\"fiberContent\":\"2g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"17g fat (6g saturated fat)\",\"cholesterolContent\":\"98mg cholesterol\",\"calories\":\" 339 calories\",\"carbohydrateContent\":\"14g carbohydrate (7g sugars\",\"sodiumContent\":\"621mg sodium\"}",
+        "directions": [
+            "Preheat oven to 325°. Sprinkle roast with salt and pepper.",
+            "In a Dutch oven, heat oil and butter over medium-high heat; brown roast on all sides. Remove from pan. Add onions to the same pan; cook and stir over medium heat until tender, 8-10 minutes. Add tomato paste, garlic, thyme and celery seed; cook and stir 1 minute longer.",
+            "Add wine, stirring to loosen browned bits from pan; stir in broth. Return roast to pan. Arrange carrots and mushrooms around roast; bring to a boil. Bake, covered, until meat is fork-tender, 2-1/2 to 3 hours. If desired, skim fat and thicken cooking juices for gravy."
+        ],
+        "totalTime": "PT03H40M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Saturday-Afternoon-Oven-Pot-Roast_EXPS_SDAM19_229034_B12_05_7b-696x696.jpg",
+        "name": "Saturday Afternoon Oven Pot Roast",
+        "cookTime": "PT03H00M",
+        "ingredients": "[\"1 boneless beef chuck roast (2-1/2 pounds) \",\"1 teaspoon salt\",\"1/2 teaspoon pepper\",\"1 tablespoon olive oil\",\"1 tablespoon butter\",\"4 cups sliced sweet onion\",\"1 can (6 ounces) tomato paste\",\"4 garlic cloves, minced\",\"1 teaspoon dried thyme\",\"1/2 teaspoon celery seed\",\"1/2 cup dry red wine\",\"1 carton (32 ounces) reduced-sodium beef broth\",\"6 medium carrots, cut into 1-1/2 inch pieces\",\"1/2 pound medium fresh mushrooms, quartered\"]",
+        "URL": "https://www.tasteofhome.com/recipes/saturday-afternoon-oven-pot-roast/",
+        "prepTime": "PT40M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"28g protein. \",\"fiberContent\":\"0 fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"26g fat (9g saturated fat)\",\"cholesterolContent\":\"222mg cholesterol\",\"calories\":\" 434 calories\",\"carbohydrateContent\":\"23g carbohydrate (6g sugars\",\"sodiumContent\":\"1216mg sodium\"}",
+        "directions": [
+            "Preheat oven to 350°. Unroll crescent dough into one long rectangle; press perforations to seal. Press onto bottom of a greased 13x9-in. baking pan. Top with ham and potatoes.",
+            "In a large bowl, whisk eggs, milk, pepper and salt until blended; pour over potatoes. Sprinkle with cheese. Bake until set and cheese is melted, 25-30 minutes."
+        ],
+        "totalTime": "PT40M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Breakfast-In-A-Pan_EXPS_SDAM19_232888_B12_06_4b-696x696.jpg",
+        "name": "Breakfast In A Pan",
+        "cookTime": "PT25M",
+        "ingredients": "[\"1 tube (8 ounces) refrigerated crescent rolls\",\"2 cups cubed fully cooked ham\",\"2 cups frozen shredded hash brown potatoes, thawed\",\"5 large Eggland's Best eggs\",\"1/2 cup 2% milk\",\"1/2 teaspoon pepper\",\"1/8 teaspoon salt\",\"2 cups shredded cheddar cheese\"]",
+        "URL": "https://www.tasteofhome.com/recipes/breakfast-in-a-pan/",
+        "prepTime": "PT15M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"\",\"fiberContent\":\"\",\"@type\":\"NutritionInformation\",\"fatContent\":\"\",\"cholesterolContent\":\"\",\"calories\":\"\",\"carbohydrateContent\":\"\",\"sodiumContent\":\"\"}",
+        "directions": [
+            "Arrange multicolored snacks\u2013including raw vegetables, cheese cubes and crackers\u2013in a rainbow pattern on a serving tray. Put a dish of honey-mustard salad dressing or hummus at the end of the rainbow for dipping."
+        ],
+        "totalTime": "PT0M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Rainbow-Snack-Platter_EXPS233584_SD143203C10_25_9b_RMS-696x696.jpg",
+        "name": "Rainbow Snack Platter",
+        "cookTime": "PT0M",
+        "ingredients": "",
+        "URL": "https://www.tasteofhome.com/recipes/rainbow-snack-platter/",
+        "prepTime": "PT0M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"6g protein. \",\"fiberContent\":\"2g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"36g fat (21g saturated fat)\",\"cholesterolContent\":\"137mg cholesterol\",\"calories\":\" 446 calories\",\"carbohydrateContent\":\"34g carbohydrate (28g sugars\",\"sodiumContent\":\"71mg sodium\"}",
+        "directions": [
+            "In a small heavy saucepan, heat milk and agave nectar until bubbles form around sides of pan. In a small bowl, whisk the eggs, paprika and salt. Stir in chocolate. Whisk in a small amount of hot milk mixture. Return all to the pan, whisking constantly.",
+            "Cook and stir over low heat until mixture is thickened and coats the back of a spoon. Quickly transfer to a bowl; place in ice water and stir for 2 minutes. Stir in cream and vanilla. Press waxed paper onto surface of custard. Refrigerate for several hours or overnight.",
+            "Fill cylinder of ice cream freezer two-thirds full; freeze according to the manufacturer\u2019s directions. When ice cream is frozen, transfer to a freezer container; freeze for 2-4 hours before serving."
+        ],
+        "totalTime": "PT50M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Dark-Chocolate-Ice-Cream-with-Paprika-Agave_EXPS_DAI18_134795_E08_29_3b-696x696.jpg",
+        "name": "Dark Chocolate Ice Cream with Paprika & Agave",
+        "cookTime": "PT20M",
+        "ingredients": "[\"1 cup whole milk\",\"1/2 cup agave nectar\",\"2 eggs\",\"1 teaspoon Hungarian paprika\",\"Dash salt\",\"8 ounces bittersweet chocolate, melted and cooled\",\"2 cups heavy whipping cream\",\"1-1/2 teaspoons vanilla extract\"]",
+        "URL": "https://www.tasteofhome.com/recipes/dark-chocolate-ice-cream-with-paprika-agave/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"6g protein. \",\"fiberContent\":\"0 fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"20g fat (11g saturated fat)\",\"cholesterolContent\":\"204mg cholesterol\",\"calories\":\" 270 calories\",\"carbohydrateContent\":\"19g carbohydrate (17g sugars\",\"sodiumContent\":\"167mg sodium\"}",
+        "directions": [
+            "In a small heavy saucepan, heat milk and sugar until bubbles form around sides of pan. Whisk a small amount of hot mixture into the egg yolks. Return all to the pan, whisking constantly.",
+            "Cook and stir over low heat until mixture is thickened and coats the back of a spoon. Remove from the heat. Whisk in cheese until smooth. Transfer to a bowl; place in ice water and stir for 2 minutes. Press waxed paper onto surface of custard. Refrigerate for several hours or overnight.",
+            "Fold in whipped cream. Fill cylinder of ice cream freezer two-thirds full; freeze according to the manufacturer\u2019s directions. In a large container, layer a third of the ice cream and 1 teaspoon molasses. Repeat. Top with remaining ice cream. Swirl mixture; freeze until firm."
+        ],
+        "totalTime": "PT50M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Blue-Cheese-Ice-Cream-with-Pomegranate-Ripple_EXPS_DAI18_134797_E08_29_4b-696x696.jpg",
+        "name": "Blue Cheese Ice Cream with Pomegranate Ripple",
+        "cookTime": "PT20M",
+        "ingredients": "[\"1 cup whole milk\",\"1/2 cup sugar\",\"5 egg yolks, beaten\",\"1/2 cup crumbled blue cheese\",\"1 cup heavy whipping cream, whipped\",\"2 teaspoons pomegranate molasses\"]",
+        "URL": "https://www.tasteofhome.com/recipes/blue-cheese-ice-cream-with-pomegranate-ripple/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"2g protein. \",\"fiberContent\":\"0 fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"27g fat (18g saturated fat)\",\"cholesterolContent\":\"64mg cholesterol\",\"calories\":\" 381 calories\",\"carbohydrateContent\":\"35g carbohydrate (34g sugars\",\"sodiumContent\":\"58mg sodium\"}",
+        "directions": [
+            "In a small saucepan, combine the milk, pandan and curry powder. Bring to a boil. Remove from the heat. Cover and steep for 30 minutes.",
+            "Remove and discard pandan leaves. In a blender, combine the cream of coconut, whipping cream, food coloring if desired and milk mixture. Cover and process until blended.",
+            "Fill cylinder of ice cream freezer two-thirds full; freeze according to the manufacturer\u2019s directions. When ice cream is frozen, transfer to a freezer container; freeze for 2-4 hours before serving."
+        ],
+        "totalTime": "PT50M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Red-Curry-Pandan-Ice-Cream_EXPS_DAI18_134798_E08_29_2b-696x696.jpg",
+        "name": "Red Curry-Pandan Ice Cream",
+        "cookTime": "PT20M",
+        "ingredients": "[\"1 cup whole milk\",\"3 pandan leaves\",\"1/2 teaspoon McCormick red curry powder\",\"1 can (15 ounces) cream of coconut\",\"1-1/2 cups heavy whipping cream\",\"1 drop green food coloring, optional\"]",
+        "URL": "https://www.tasteofhome.com/recipes/red-curry-pandan-ice-cream/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"4g protein. \",\"fiberContent\":\"0 fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"17g fat (10g saturated fat)\",\"cholesterolContent\":\"198mg cholesterol\",\"calories\":\" 257 calories\",\"carbohydrateContent\":\"19g carbohydrate (17g sugars\",\"sodiumContent\":\"61mg sodium\"}",
+        "directions": [
+            "In a small heavy saucepan, heat the milk, sugar, peppercorns and salt until bubbles form around sides of pan. Whisk a small amount of hot mixture into the egg yolks. Return all to the pan, whisking constantly.",
+            "Cook and stir over low heat until mixture is thickened and coats the back of a spoon. Quickly transfer to a bowl; place in ice water and stir for 2 minutes. Stir in cream and sake. Press waxed paper onto surface of custard. Refrigerate for several hours or overnight.",
+            "Fill cylinder of ice cream freezer two-thirds full; freeze according to the manufacturer\u2019s directions. When ice cream is frozen, transfer to a freezer container; freeze for 2-4 hours before serving."
+        ],
+        "totalTime": "PT50M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Pink-Peppercorn-and-Sake-Ice-Cream_EXPS_DAI18_134799_E08_29_1b-696x696.jpg",
+        "name": "Pink Peppercorn and Sake Ice Cream",
+        "cookTime": "PT20M",
+        "ingredients": "[\"1-1/2 cups whole milk\",\"1/2 cup sugar\",\"2 teaspoons whole pink peppercorns, crushed\",\"Dash salt\",\"5 egg yolks, beaten\",\"1 cup heavy whipping cream\",\"1/2 cup sake\"]",
+        "URL": "https://www.tasteofhome.com/recipes/pink-peppercorn-and-sake-ice-cream/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"\",\"fiberContent\":\"\",\"@type\":\"NutritionInformation\",\"fatContent\":\"\",\"cholesterolContent\":\"\",\"calories\":\"\",\"carbohydrateContent\":\"\",\"sodiumContent\":\"\"}",
+        "directions": [
+            "In a large heavy saucepan, heat half-and-half cream and sugar until bubbles form around sides of pan. Whisk a small amount of hot mixture into the egg. Return all to the pan, whisking constantly.",
+            "Cook and stir over low heat until mixture is thickened and coats the back of a spoon. Quickly transfer to a bowl; place in ice water and stir for 2 minutes. Stir in heavy cream, persimmon, pudding mix and spices. Press plastic wrap onto surface of custard. Refrigerate for several hours or overnight.",
+            "Fill cylinder of ice cream freezer two-thirds full; freeze according to the manufacturer\u2019s directions. Refrigerate remaining mixture until ready to freeze. Transfer ice cream to freezer containers, allowing headspace for expansion. Freeze 2-4 hours or until firm. Repeat with remaining ice cream mixture."
+        ],
+        "totalTime": "PT35M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Spiced-Persimmon-Ice-Cream_EXPS_DAI18_138023_E08_29_5b-696x696.jpg",
+        "name": "Spiced Persimmon Ice Cream",
+        "cookTime": "PT15M",
+        "ingredients": "[\"1 cup half-and-half cream\",\"1 cup sugar\",\"1 egg, lightly beaten\",\"3-1/2 cups heavy whipping cream\",\"2 cups mashed ripe persimmon pulp\",\"1 package (3.4 ounces) instant cheesecake pudding mix\",\"2 teaspoons ground cinnamon\",\"1/4 teaspoon ground cloves\",\"1/4 teaspoon ground nutmeg\"]",
+        "URL": "https://www.tasteofhome.com/recipes/spiced-persimmon-ice-cream/",
+        "prepTime": "PT20M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"\",\"fiberContent\":\"\",\"@type\":\"NutritionInformation\",\"fatContent\":\"\",\"cholesterolContent\":\"\",\"calories\":\"\",\"carbohydrateContent\":\"\",\"sodiumContent\":\"\"}",
+        "directions": [
+            "Mix first five ingredients until well blended. Fill cylinder of ice cream maker no more than two-thirds full. Freeze according to manufacturer\u2019s directions, slowly adding melted chocolate during the last 2 minutes of processing. Serve immediately, or transfer to freezer containers, allowing headspace for expansion. Freeze until firm, 2-4 hours."
+        ],
+        "totalTime": "PT01H10M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Almond-Butter-Swirl-Ice-Cream_EXPS_DAI18_198636_E08_29_6b-696x696.jpg",
+        "name": "Almond Butter Swirl Ice Cream",
+        "cookTime": "PT60M",
+        "ingredients": "[\"2 cups coconut milk\",\"1 cup unsweetened almond milk\",\"1/2 cup sugar\",\"1/2 cup almond butter (or other nut butter)\",\"1/2 teaspoon sea salt\",\"1/2 cup semisweet chocolate chips, melted\"]",
+        "URL": "https://www.tasteofhome.com/recipes/almond-butter-swirl-ice-cream/",
+        "prepTime": "PT10M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"9g protein. <B>Diabetic Exchanges: <\\/B> 2 starch\",\"fiberContent\":\"4g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"7g fat (3g saturated fat)\",\"cholesterolContent\":\"23mg cholesterol\",\"calories\":\" 214 calories\",\"carbohydrateContent\":\"32g carbohydrate (9g sugars\",\"sodiumContent\":\"569mg sodium\"}",
+        "directions": [
+            "In a large skillet, heat oil over medium-high heat. Add onion and carrot; cook and stir until crisp-tender, 5-6 minutes. Add garlic; cook 1 minute longer. Transfer to a 6- or 7-qt. slow cooker. Add the tomatoes, broth, sugar, basil and bay leaf. Cook, covered, on low until vegetables are tender, 6-7 hours.",
+            "Stir in tortellini. Cook, covered, on high 15 minutes. Reduce heat to low; stir in cream until heated through. Discard bay leaf. Serve with Parmesan cheese and basil. Freeze option: Before stirring in half & half, cool soup and freeze in freezer containers. To use, partially thaw in refrigerator overnight. Heat through in a saucepan, stirring occasionally, adding half & half as directed."
+        ],
+        "totalTime": "PT06H40M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Tomato-Basil-Tortellini-Soup_EXPS_SDJF19_194369_B10_17_3b-696x696.jpg",
+        "name": "Tomato Basil Tortellini Soup",
+        "cookTime": "PT06H15M",
+        "ingredients": "[\"2 tablespoons olive oil\",\"1 medium onion, chopped\",\"3 medium carrots, chopped\",\"5 garlic cloves, minced\",\"3 cans (28 ounces each) crushed tomatoes, undrained\",\"1 carton (32 ounces) vegetable broth\",\"1 tablespoon sugar\",\"1 teaspoon dried basil\",\"1 bay leaf\",\"3 packages (9 ounces each) refrigerated cheese tortellini\",\"3/4 cup half-and-half cream\",\" Shredded Parmesan cheese and minced fresh basil\"]",
+        "URL": "https://www.tasteofhome.com/recipes/tomato-basil-tortellini-soup/",
+        "prepTime": "PT25M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"2g protein. <B>Diabetic Exchanges: <\\/B> 1 starch\",\"fiberContent\":\"1g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"3g fat (1g saturated fat)\",\"cholesterolContent\":\"6mg cholesterol\",\"calories\":\" 89 calories\",\"carbohydrateContent\":\"14g carbohydrate (4g sugars\",\"sodiumContent\":\"88mg sodium\"}",
+        "directions": [
+            "Brush bread slices with butter; place on an ungreased baking sheet. Bake at 375° for 8-10 minutes or until lightly browned.",
+            "Meanwhile, in a small bowl, combine the strawberries, mint and honey; set aside. In another bowl, combine the ricotta, jam and lemon zest. Spread ricotta mixture over toast; top with strawberry mixture."
+        ],
+        "totalTime": "PT25M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Strawberry-Ricotta-Bruschetta_EXPS_THAM19_80247_B11_15_8b-696x696.jpg",
+        "name": "Strawberry Ricotta Bruschetta",
+        "cookTime": "PT10M",
+        "ingredients": "[\"24 slices French bread baguette (1/2 inch thick)\",\"3 tablespoons butter, melted\",\"3 cups fresh strawberries, chopped\",\"3 tablespoons minced fresh mint\",\"3 tablespoons honey\",\"1/2 cup ricotta cheese\",\"2 tablespoons seedless strawberry jam\",\"1-1/2 teaspoons grated lemon zest\"]",
+        "URL": "https://www.tasteofhome.com/recipes/strawberry-ricotta-bruschetta/",
+        "prepTime": "PT15M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"11g protein. \",\"fiberContent\":\"6g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"17g fat (6g saturated fat)\",\"cholesterolContent\":\"71mg cholesterol\",\"calories\":\" 429 calories\",\"carbohydrateContent\":\"59g carbohydrate (19g sugars\",\"sodiumContent\":\"651mg sodium\"}",
+        "directions": [
+            "Whisk together flours, sugar, baking powder, cinnamon and salt. Combine egg, milk and canola oil and vanilla; stir into dry ingredients just until moistened.",
+            "Preheat griddle over medium heat. Lightly grease griddle. Pour batter by 1/2 cupfuls onto griddle; cook until bubbles on top begin to pop and bottoms are golden brown. Turn; cook until second side is golden brown.",
+            "Meanwhile, beat together cream cheese and yogurt. Spread over pancakes; top with banana and raspberries. Fold edges over filling."
+        ],
+        "totalTime": "PT30M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Raspberry-Banana-Breakfast-Tacos_EXPS_THAM19_89209_E11_08_7b-696x696.jpg",
+        "name": "Raspberry-Banana Breakfast Tacos",
+        "cookTime": "PT5M",
+        "ingredients": "[\"3/4 cup all-purpose flour\",\"3/4 cup whole wheat flour\",\"3 tablespoons sugar\",\"2 teaspoons baking powder\",\"3/4 teaspoon ground cinnamon\",\"1/2 teaspoon salt\",\"1 large egg, room temperature\",\"1 cup 2% milk\",\"2 tablespoons canola oil\",\"1 teaspoon vanilla extract\",\"1/3 cup cream cheese, softened\",\"3 tablespoons vanilla yogurt\",\"1 small banana, sliced\",\"1 cup fresh raspberries\"]",
+        "URL": "https://www.tasteofhome.com/recipes/raspberry-banana-breakfast-tacos/",
+        "prepTime": "PT25M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"5g protein. \",\"fiberContent\":\"4g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"3g fat (0 saturated fat)\",\"cholesterolContent\":\"3mg cholesterol\",\"calories\":\" 172 calories\",\"carbohydrateContent\":\"35g carbohydrate (28g sugars\",\"sodiumContent\":\"47mg sodium\"}",
+        "directions": [
+            "In a blender, combine first eight ingredients; cover and process for 30 seconds or until smooth. Pour into chilled bowls; top as desired. Serve immediately."
+        ],
+        "totalTime": "PT10M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Power-Berry-Smoothie-Bowl_EXPS_THAM19_100484_C11_14_2b_-696x696.jpg",
+        "name": "Power Berry Smoothie Bowl",
+        "cookTime": "PT0M",
+        "ingredients": "[\"1/2 cup orange juice\",\"1/2 cup pomegranate juice\",\"1 container (6 ounces) mixed berry yogurt\",\"1 cup frozen unsweetened strawberries\",\"1 cup fresh baby spinach\",\"1/2 medium ripe frozen banana, sliced\",\"1/2 cup frozen unsweetened blueberries\",\"2 tablespoons ground flaxseed\",\"Sliced fresh strawberries, fresh blueberries, flax seeds and granola, optional \"]",
+        "URL": "https://www.tasteofhome.com/recipes/power-berry-smoothie-bowl/",
+        "prepTime": "PT10M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"12 g protein. \",\"fiberContent\":\"2 g fiber\",\"@type\":\"NutritionInformation\",\"fatContent\":\"12 g fat (8 g saturated fat)\",\"cholesterolContent\":\"78 mg cholesterol\",\"calories\":false,\"carbohydrateContent\":\"22 g carbohydrate\",\"sodiumContent\":\"546 mg sodium\"}",
+        "directions": [
+            "In a large saucepan, saute onion and celery in butter. Stir in the flour, seafood seasoning, salt, pepper and nutmeg until blended; gradually add water and bouillon. Bring to a boil; cook and stir for 2 minutes or until thickened. Stir in potatoes. Reduce heat; simmer, uncovered, for 10 minutes.",
+            "Add asparagus; cook 8-12 minutes longer or until vegetables are tender. Stir in the cream, crab and parsley; heat through. If desired, top with chopped parsley and coarse cracked pepper."
+        ],
+        "totalTime": "PT01H05M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Crab-and-Asparagus-Soup_EXPS_THAM19_120267_E11_09_8b-696x696.jpg",
+        "name": "Crab and Asparagus Soup",
+        "cookTime": "PT40M",
+        "ingredients": "[\"1-1/4 cups chopped sweet onion\",\"1 celery rib, chopped\",\"2 tablespoons butter\",\"2 tablespoons all-purpose flour\",\"1/2 teaspoon seafood seasoning\",\"1/4 teaspoon salt\",\"1/4 teaspoon pepper\",\"1/8 teaspoon ground nutmeg\",\"1 cup water\",\"1-1/2 teaspoons chicken bouillon granules\",\"2 medium red potatoes, cubed\",\"8 ounces fresh asparagus, cut into 3/4-inch pieces\",\"2 cups half-and-half cream\",\"1 can (6-1/2 ounces) lump crabmeat, drained\",\"2 teaspoons minced fresh parsley\"]",
+        "URL": "https://www.tasteofhome.com/recipes/crab-and-asparagus-soup/",
+        "prepTime": "PT25M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"24g protein. \",\"fiberContent\":\"12g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"17g fat (5g saturated fat)\",\"cholesterolContent\":\"66mg cholesterol\",\"calories\":\" 513 calories\",\"carbohydrateContent\":\"67g carbohydrate (12g sugars\",\"sodiumContent\":\"1619mg sodium\"}",
+        "directions": [
+            "Preheat oven to 425°. In a 10-in. ovenproof skillet, heat oil over medium-high heat. Add carrots, celery and onion; cook and stir 6-8 minutes or until tender. Add ham. Stir in flour until blended; gradually stir in broth. Bring to a boil, stirring constantly; cook and stir 1-2 minutes or until thickened.",
+            "Add beans, salt and pepper; return to a boil. In a small bowl, combine muffin mix, milk, egg, green onions, parsley and melted butter; stir just until blended. Spoon evenly over bean mixture (dish will be full).",
+            "Bake 20-25 minutes or until topping is golden brown. Let stand 15 minutes."
+        ],
+        "totalTime": "PT50M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Senate-Bean-Potpie_EXPS_THAM19_147526_C11_09_3b-696x696.jpg",
+        "name": "Senate Bean Potpie",
+        "cookTime": "PT20M",
+        "ingredients": "[\"2 tablespoons canola oil\",\"2 medium carrots, chopped\",\"2 celery ribs, chopped\",\"1 medium onion, chopped\",\"1-1/2 cups cubed fully cooked ham\",\"3 tablespoons all-purpose flour\",\"1 can (14-1/2 ounces) chicken broth\",\"2 cans (15-1/2 ounces each) navy or other white beans, rinsed and drained\",\"1/4 teaspoon salt\",\"1/4 teaspoon pepper\",\"1 package (8-1/2 ounces) cornbread/muffin mix\",\"1/2 cup 2% milk\",\"1 large egg, lightly beaten\",\"2 green onions, finely chopped\",\"1/4 cup minced fresh parsley\",\"2 tablespoons butter, melted\"]",
+        "URL": "https://www.tasteofhome.com/recipes/senate-bean-potpie/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"1g protein. \",\"fiberContent\":\"3g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"0 fat (0 saturated fat)\",\"cholesterolContent\":\"0 cholesterol\",\"calories\":\" 270 calories\",\"carbohydrateContent\":\"25g carbohydrate (18g sugars\",\"sodiumContent\":\"13mg sodium\"}",
+        "directions": [
+            "Place raspberries in a blender; cover and process until pureed. Press through a fine-mesh strainer into a bowl; discard seeds. Stir in lemon juice and vanilla.",
+            "Fill each champagne flute with 2 tablespoons raspberry mixture; top with prosecco. If desired, garnish with mint and fresh raspberries."
+        ],
+        "totalTime": "PT10M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Raspberry-Bellini_EXPS_THAM19_164716_B11_13_8b-696x696.jpg",
+        "name": "Raspberry Bellini",
+        "cookTime": "PT0M",
+        "ingredients": "[\"1 package (10 ounces) frozen sweetened raspberries, thawed\",\"1 tablespoon lemon juice\",\"1 teaspoon vanilla extract\",\"4 cups chilled prosecco\",\"Mint leaves and fresh raspberries, optional\"]",
+        "URL": "https://www.tasteofhome.com/recipes/raspberry-bellini/",
+        "prepTime": "PT10M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"36g protein. \",\"fiberContent\":\"4g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"23g fat (9g saturated fat)\",\"cholesterolContent\":\"63mg cholesterol\",\"calories\":\" 524 calories\",\"carbohydrateContent\":\"41g carbohydrate (6g sugars\",\"sodiumContent\":\"1576mg sodium\"}",
+        "directions": [
+            "Brush onions with oil; sprinkle with 1/4 teaspoon salt. Sprinkle steak with remaining salt. Grill onions and steak, covered, over medium heat until meat reaches desired doneness (for medium-rare, a thermometer should read 135°; medium, 140°; medium-well, 145°), and onions are tender, 4-6 minutes per side. Let steak and onions stand 5 minutes.",
+            "Meanwhile, in a large bowl, combine soy sauce, Worcestershire, brown sugar, vinegar, garlic and pepper. Halve onion slices; cut steak thinly across grain. Add onions and steak to soy mixture; toss to coat. Serve in tortillas with blue cheese."
+        ],
+        "totalTime": "PT35M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Grilled-Beef-and-Blue-Cheese-Tacos_EXPS_THAM19_174176_C11_08_3b-696x696.jpg",
+        "name": "Grilled Beef and Blue Cheese Tacos",
+        "cookTime": "PT10M",
+        "ingredients": "[\"2 medium red onions, cut into 1/4-inch slices\",\"2 tablespoons canola oil\",\"1/2 teaspoon salt, divided \",\"1 beef top sirloin steak (1-1/2 pounds) \",\"1/4 cup soy sauce\",\"2 tablespoons Worcestershire sauce\",\"1 tablespoon brown sugar\",\"1 tablespoon balsamic vinegar\",\"1 garlic clove, minced\",\"1/4 teaspoon pepper\",\"12 flour tortillas (6 inches), warmed\",\"1 cup crumbled blue cheese\"]",
+        "URL": "https://www.tasteofhome.com/recipes/grilled-beef-and-blue-cheese-tacos/",
+        "prepTime": "PT25M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"1g protein. \",\"fiberContent\":\"1g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"3g fat (3g saturated fat)\",\"cholesterolContent\":\"0 cholesterol\",\"calories\":\" 51 calories\",\"carbohydrateContent\":\"7g carbohydrate (5g sugars\",\"sodiumContent\":\"5mg sodium\"}",
+        "directions": [
+            "Place coconut milk, 1-1/2 cups strawberries, banana and syrup in a blender; cover and process until smooth. Divide remaining strawberries among 12 molds or paper cups. Pour pureed mixture into molds, filling 3/4 full. Top molds with holders. If using cups, top with foil and insert sticks through foil. Freeze until firm, at least 4 hours."
+        ],
+        "totalTime": "PT10M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Coconut-Milk-Strawberry-Banana-Pops_EXPS_THAM19_233137_E11_09_4b-696x696.jpg",
+        "name": "Coconut Milk Strawberry-Banana Pops",
+        "cookTime": "PT0M",
+        "ingredients": "[\"1 can (13.66 ounces) coconut milk\",\"1 pint fresh strawberries, chopped, divided\",\"1 medium banana, sliced\",\"2 tablespoons pure maple syrup\",\"12 freezer pop molds or 12 paper cups (3 ounces each) and wooden pop sticks\"]",
+        "URL": "https://www.tasteofhome.com/recipes/coconut-milk-strawberry-banana-pops/",
+        "prepTime": "PT10M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"40g protein. \",\"fiberContent\":\"0 fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"36g fat (15g saturated fat)\",\"cholesterolContent\":\"134mg cholesterol\",\"calories\":\" 494 calories\",\"carbohydrateContent\":\"0 carbohydrate (0 sugars\",\"sodiumContent\":\"2983mg sodium\"}",
+        "directions": [
+            "Remove steak from refrigerator and sprinkle with 2 teaspoons salt; let stand 45-60 minutes.",
+            "Preheat a cast-iron skillet over high heat until extremely hot, 4-5 minutes. Sprinkle remaining 1 teaspoon salt in bottom of skillet; pat beef dry with paper towels. Place steak into skillet and cook until steak is easily moved, 1-2 minutes; flip, placing steak in a different section of the skillet. Cook 30 seconds and then begin moving steak, occasionally pressing slightly to ensure even contact with skillet.",
+            "Continue turning and flipping until cooked to desired degree of doneness (for medium-rare, a thermometer should read 135°; medium, 140°; medium-well, 145°), 1-2 minutes."
+        ],
+        "totalTime": "PT10M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/2019/02/Cast-Iron-Skillet-Steak_EXPS_CIMZ19_235746_B01_15_10b-696x696.jpg",
+        "name": "Cast-Iron Skillet Steak",
+        "cookTime": "PT5M",
+        "ingredients": "[\"1 tablespoon kosher salt, divided \",\"1 beef NY strip or ribeye steak (1 pound), 1-inch thick\"]",
+        "URL": "https://www.tasteofhome.com/recipes/cast-iron-skillet-steak/",
+        "prepTime": "PT5M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"6g protein. \",\"fiberContent\":\"0 fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"4g fat (1g saturated fat)\",\"cholesterolContent\":\"14mg cholesterol\",\"calories\":\" 68 calories\",\"carbohydrateContent\":\"3g carbohydrate (2g sugars\",\"sodiumContent\":\"452mg sodium\"}",
+        "directions": [
+            "Using a sharp knife, cut through the two wing joints; discard wing tips. Place remaining wing pieces in a 4 or 5-qt. slow cooker. Stir in barbecue sauce, soy sauce and 4 green onions. Cook, covered, on high until tender, 3-4 hours. Sprinkle with sesame seeds and remaining green onions."
+        ],
+        "totalTime": "PT03H10M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/no-photo-recipe-300x300-106.jpg",
+        "name": "So-Easy Sticky Chicken Wings",
+        "cookTime": "PT03H00M",
+        "ingredients": "[\"4 pounds chicken wings\",\"1 cup barbecue sauce\",\"1 cup soy sauce\",\"6 green onions, divided \",\"1 tablespoon sesame seeds\"]",
+        "URL": "https://www.tasteofhome.com/recipes/so-easy-sticky-chicken-wings/",
+        "prepTime": "PT10M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"41g protein. \",\"fiberContent\":\"3g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"30g fat (11g saturated fat)\",\"cholesterolContent\":\"109mg cholesterol\",\"calories\":\" 697 calories\",\"carbohydrateContent\":\"62g carbohydrate (28g sugars\",\"sodiumContent\":\"1770mg sodium\"}",
+        "directions": [
+            "In a small saucepan, combine the first 9 ingredients. Bring to a boil. Reduce heat; simmer, covered, until thickened, 5-8 minutes. Reserve 1/4 cup sauce for wraps.",
+            "Moisten a paper towel with cooking oil; using long-handled tongs, rub on grill rack to coat lightly. Sprinkle chicken with salt and pepper; place on grill rack. Grill, covered, over medium heat 7-8 minutes. Turn; grill until a thermometer reads 165°, 7-8 minutes longer, brushing occasionally with sauce. Top with cheese; grill, covered, until cheese is melted, 1-2 minutes longer. Let stand 5 minutes before slicing into strips.",
+            "Spread dressing over tortillas. Top with chicken; drizzle with reserved sauce. Top with bacon and if desired, lettuce. Fold bottom of tortilla over filling; fold both sides to close."
+        ],
+        "totalTime": "PT55M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Cinnamon-Whiskey-BBQ-Chicken-Wraps_EXPS_THAM19_229674_B11_08_7b-696x696.jpg",
+        "name": "Cinnamon Whiskey BBQ Chicken Wraps",
+        "cookTime": "PT15M",
+        "ingredients": "[\"1/3 cup packed brown sugar\",\"1/3 cup ketchup\",\"2 tablespoons cider vinegar\",\"2 tablespoons cinnamon whiskey \",\"3/4 teaspoon Worcestershire sauce\",\"3/4 teaspoon molasses\",\"1 small garlic clove, minced\",\"1/4 teaspoon pepper\",\"1/8 teaspoon cayenne pepper\",\"WRAP:\",\"1 pound boneless skinless chicken breast halves\",\"1/2 teaspoon salt\",\"1/4 teaspoon pepper\",\"1 cup shredded cheddar cheese\",\"1/4 cup prepared ranch salad dressing\",\"4 flour tortillas (10 inches)\",\"8 bacon strips, cooked and crumbled\",\"Shredded lettuce, optional \"]",
+        "URL": "https://www.tasteofhome.com/recipes/cinnamon-whiskey-bbq-chicken-wraps/",
+        "prepTime": "PT40M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"16g protein. \",\"fiberContent\":\"2g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"23g fat (5g saturated fat)\",\"cholesterolContent\":\"194mg cholesterol\",\"calories\":\" 408 calories\",\"carbohydrateContent\":\"33g carbohydrate (3g sugars\",\"sodiumContent\":\"1188mg sodium\"}",
+        "directions": [
+            "For aioli, in a small bowl, combine the mayonnaise, olive oil, garlic, salt and pepper; set aside.",
+            "Sprinkle Parmesan into large nonstick skillet; heat over medium heat. Cook just until melted, about 2 minutes. Break eggs, 1 at a time, into a custard cup or saucer, then gently slide into pan over Parmesan. Immediately reduce heat to low. To prepare eggs sunny-side up, cover pan and cook until yolks thicken but are not hard, 4-5 minutes.",
+            "Spread aioli over toasted bread. Top with giardiniera, tomato and egg. Sprinkle with parsley."
+        ],
+        "totalTime": "PT30M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Open-Faced-Frico-Egg-Sandwich_EXPS_THAM19_230027_B11_09_5b-696x696.jpg",
+        "name": "Open-Faced Frico Egg Sandwich",
+        "cookTime": "PT10M",
+        "ingredients": "[\"1/4 cup mayonnaise\",\"1 tablespoon olive oil\",\"1 garlic clove, minced\",\"1/8 teaspoon salt\",\"Dash pepper\",\"1/2 cup shredded Parmesan cheese\",\"4 large eggs\",\"4 slices Italian bread (1 inch thick), lightly toasted\",\"1/2 cup sandwich giardiniera, drained and finely chopped\",\"4 thin slices tomato\",\"Minced fresh parsley\"]",
+        "URL": "https://www.tasteofhome.com/recipes/open-faced-frico-egg-sandwich/",
+        "prepTime": "PT20M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"16g protein. \",\"fiberContent\":\"2g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"20g fat (3g saturated fat)\",\"cholesterolContent\":\"32mg cholesterol\",\"calories\":\" 390 calories\",\"carbohydrateContent\":\"37g carbohydrate (5g sugars\",\"sodiumContent\":\"898mg sodium\"}",
+        "directions": [
+            "Place flour and salt in a large bowl; stir in boiling water until dough forms a ball. Turn onto a floured surface; knead until smooth and elastic, 4-6 minutes. Place in a large bowl; cover and let rest for 30 minutes.",
+            "Divide dough into 8 portions; roll each portion into an 8-in. circle. Sprinkle each with 1 tablespoon green onion. Roll up jelly-roll style; holding 1 end of the rope, wrap dough around, forming a coil, pinching to seal. Flatten slightly. Roll each coil to 1/8-in. thickness.",
+            "In a large skillet, heat 1 tablespoon canola oil. Cook pancakes, 1 at a time, over medium-high heat until golden brown, 2-3 minutes on each side, adding additional oil as needed; keep warm.",
+            "In the same skillet, heat sesame oil over medium-high heat. Add onion, garlic and ginger; cook and stir until tender, 5-6 minutes. Add the remaining ingredients; cook until heated through, 3-4 minutes longer. Spoon about 1/4 cup beef mixture down center of each pancake. If desired, sprinkle with sliced green onions. Roll up tightly and serve."
+        ],
+        "totalTime": "PT01H25M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Chinese-Scallion-Pancake-Beef-Rolls_EXPS_THAM19_231452_B11_08_6b-696x696.jpg",
+        "name": "Chinese Scallion Pancake Beef Rolls",
+        "cookTime": "PT40M",
+        "ingredients": "[\"2-1/2 cups all-purpose flour\",\"1 teaspoon salt\",\"1 cup boiling water\",\"1 bunch green onions, finely chopped\",\"1/2 cup canola oil\",\"1 tablespoon sesame oil\",\"1 small onion, thinly sliced\",\"2 garlic cloves, minced\",\"1 teaspoon minced fresh gingerroot\",\"1 package (15 ounces) refrigerated beef roast au jus, drained and chopped or 2 cups chopped cooked roast beef\",\"3 tablespoons soy sauce\",\"2 tablespoons hoisin sauce\",\"1 tablespoon honey\"]",
+        "URL": "https://www.tasteofhome.com/recipes/chinese-scallion-pancake-beef-rolls/",
+        "prepTime": "PT45M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"14g protein. \",\"fiberContent\":\"1g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"12g fat (5g saturated fat)\",\"cholesterolContent\":\"43mg cholesterol\",\"calories\":\" 228 calories\",\"carbohydrateContent\":\"16g carbohydrate (3g sugars\",\"sodiumContent\":\"531mg sodium\"}",
+        "directions": [
+            "Line a strainer or colander with 4 layers of cheesecloth or 1 coffee filter; place over a bowl. Place yogurt in prepared strainer; cover yogurt with sides of cheesecloth. Refrigerate 2-4 hours. Meanwhile, place cucumber in a colander over a plate; sprinkle with 1/4 teaspoon salt and toss. Let stand 30 minutes.",
+            "For burgers, in a large bowl, combine lamb, lemon zest, 2 garlic cloves, oregano, 3/4 teaspoon salt and 1/4 teaspoon pepper, mixing lightly but thoroughly. Shape into ten 1/2-in.-thick patties. Refrigerate 30 minutes.",
+            "For sauce, remove yogurt from cheesecloth to a bowl; discard strained liquid. Squeeze cucumber and blot dry with paper towels. Add cucumber, lemon juice, dill, remaining 2 garlic cloves, remaining 1/4 teaspoon salt and remaining 1/8 teaspoon pepper to yogurt, stirring until combined.",
+            "Grill burgers, covered, over medium heat until a thermometer reads 160°, 3-4 minutes on each side. Grill buns over medium heat, cut sides down, for 30-60 seconds or until toasted. Serve burgers on buns with lettuce, red onion, feta and sauce."
+        ],
+        "totalTime": "PT40M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Santorini-Lamb-Sliders_EXPS_THAM19_232685_B11_09_3b-696x696.jpg",
+        "name": "Santorini Lamb Sliders",
+        "cookTime": "PT10M",
+        "ingredients": "[\"1 cup plain Greek yogurt\",\"1/2 cup shredded peeled cucumber\",\"1-1/4 teaspoons salt, divided\",\"1 pound ground lamb\",\"1 tablespoon grated lemon zest\",\"4 garlic cloves, minced and divided \",\"2 teaspoons dried oregano\",\"1/4 teaspoon plus 1/8 teaspoon pepper, divided \",\"1 teaspoon lemon juice\",\"1 teaspoon dill weed\",\"10 mini buns or mini ciabatta buns\",\"10 Bibb lettuce leaves or Boston lettuce leaves\",\"1 medium red onion, thinly sliced\",\"1 cup crumbled feta cheese\"]",
+        "URL": "https://www.tasteofhome.com/recipes/santorini-lamb-sliders/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"39g protein. \",\"fiberContent\":\"1g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"46g fat (16g saturated fat)\",\"cholesterolContent\":\"124mg cholesterol\",\"calories\":\" 708 calories\",\"carbohydrateContent\":\"33g carbohydrate (10g sugars\",\"sodiumContent\":\"1277mg sodium\"}",
+        "directions": [
+            "In a large bowl, combine Worcestershire sauce, garlic, seasoned salt and pepper. Add beef; mix lightly but thoroughly. Shape into four 1/2-in.-thick patties.",
+            "Grill burgers, covered, over medium heat until a thermometer reads 160°, 5-7 minutes on each side. Top with cheese; grill, covered, until cheese is melted, 1-2 minutes longer.",
+            "Meanwhile, in a small bowl, combine mayonnaise, ketchup, vinegar and honey; spread over cut sides of buns. Top bun bottoms with bacon, burgers, french-fried onions and, if desired, lettuce and tomato. Replace tops."
+        ],
+        "totalTime": "PT35M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Bacon-Cheeseburgers-with-Fry-Sauce_EXPS_THAM19_232817_B11_08_3b-696x696.jpg",
+        "name": "Bacon Cheeseburgers with Fry Sauce",
+        "cookTime": "PT10M",
+        "ingredients": "[\"1 teaspoon Worcestershire sauce\",\"1 garlic clove, minced\",\"1/2 teaspoon seasoned salt\",\"1/4 teaspoon pepper\",\"1 pound ground beef\",\"4 slices sharp cheddar cheese\",\"1/4 cup mayonnaise\",\"2 tablespoons ketchup\",\"1 tablespoon cider vinegar\",\"1 tablespoon honey\",\"4 hamburger buns, split and toasted\",\"8 cooked bacon strips\",\"1/2 cup french-fried onions\",\"Lettuce leaves and sliced tomato, optional \"]",
+        "URL": "https://www.tasteofhome.com/recipes/bacon-cheeseburgers-with-fry-sauce/",
+        "prepTime": "PT25M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"25g protein. \",\"fiberContent\":\"2g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"20g fat (4g saturated fat)\",\"cholesterolContent\":\"40mg cholesterol\",\"calories\":\" 430 calories\",\"carbohydrateContent\":\"37g carbohydrate (9g sugars\",\"sodiumContent\":\"888mg sodium\"}",
+        "directions": [
+            "In a large bowl, whisk white vinegar and sugar until sugar is dissolved. Add carrots and radish. Refrigerate at least 2 hours. Meanwhile, in a shallow dish, combine brown sugar, rice vinegar and soy sauce. Add beef and turn to coat. Refrigerate 1 hour, turning once. Drain beef, discarding marinade.",
+            "In a large skillet, heat oil over medium-high heat. Cook steak until meat reaches desired doneness (for medium-rare, a thermometer should read 135°; medium, 140°; medium-well, 145°), 7-10 minutes on each side. Let rest 10 minutes before slicing.",
+            "Meanwhile, place baguette on an ungreased baking sheet, cut sides up. Broil 3-4 in. from heat until golden brown, 3-4 minutes. Drain carrots and radish, reserving 1-1/2 teaspoons vinegar marinade. In a small bowl, combine the mayonnaise, chili sauce and reserved vinegar marinade; spread half over cut sides of baguette. Top with steak, cucumber, pickled vegetables and cilantro; replace top. Cut crosswise into 6 slices. Serve with remaining mayonnaise mixture."
+        ],
+        "totalTime": "PT45M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Steak-Sandwiches-with-Quick-Pickled-Vegetables_EXPS_THAM19_233107_B11_09_7b-696x696.jpg",
+        "name": "Steak Sandwiches with Quick-Pickled Vegetables",
+        "cookTime": "PT15M",
+        "ingredients": "[\"1 cup white vinegar\",\"1 tablespoon sugar\",\"1-1/2 cups thinly sliced fresh carrots\",\"1 small daikon radish, thinly sliced\",\"1/4 cup packed brown sugar\",\"1/4 cup rice vinegar\",\"1/4 cup soy sauce\",\"1 beef top sirloin steak (1-1/4 pounds) \",\"1 tablespoon olive oil\",\"1 French bread baguette (10-1/2 ounces), halved lengthwise\",\"1/2 cup mayonnaise\",\"2 tablespoons Sriracha chili sauce\",\"1/2 cup thinly sliced English cucumber\",\"Fresh cilantro leaves\"]",
+        "URL": "https://www.tasteofhome.com/recipes/steak-sandwiches-with-quick-pickled-vegetables/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"20g protein. \",\"fiberContent\":\"4g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"35g fat (8g saturated fat)\",\"cholesterolContent\":\"68mg cholesterol\",\"calories\":\" 515 calories\",\"carbohydrateContent\":\"31g carbohydrate (3g sugars\",\"sodiumContent\":\"738mg sodium\"}",
+        "directions": [
+            "Place tomatoes and orange juice in a small saucepan. Bring to a boil; reduce heat. Simmer, uncovered, until thickened, about 15 minutes. Cool completely. Transfer to a small bowl; stir in mayonnaise. Refrigerate until serving.",
+            "Meanwhile, in a large bowl, combine the feta, saltines, egg, red onion and dill. Place salmon in a food processor; pulse until coarsely chopped and add to feta mixture. Mix lightly but thoroughly. Shape into eight 1-in.-thick patties.",
+            "In a large skillet, heat oil over medium-high heat. Add patties in batches; cook until golden brown, 3-4 minutes on each side. Serve on buns with mayonnaise mixture and pickles."
+        ],
+        "totalTime": "PT40M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Salmon-Sliders-with-Sun-Dried-Tomato-Spread_EXPS_THAM19_233120_B11_09_8b-696x696.jpg",
+        "name": "Salmon Sliders with Sun-Dried Tomato Spread",
+        "cookTime": "PT10M",
+        "ingredients": "[\"1 jar (7 ounces) julienned oil-packed sun-dried tomatoes, drained and chopped\",\"1/4 cup orange juice\",\"3/4 cup mayonnaise\",\"8 ounces crumbled feta cheese\",\"1/3 cup crushed saltines\",\"1 large Eggland's Best egg, lightly beaten\",\"3 tablespoons finely chopped red onion\",\"2 tablespoons snipped fresh dill\",\"1 pound salmon fillet, skin removed, cut into 1-inch cubes\",\"2 tablespoons olive oil\",\"8 mini pretzel buns, toasted\",\"16 hamburger dill pickle slices\"]",
+        "URL": "https://www.tasteofhome.com/recipes/salmon-sliders-with-sun-dried-tomato-spread/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"11g protein. \",\"fiberContent\":\"1g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"10g fat (1g saturated fat)\",\"cholesterolContent\":\"63mg cholesterol\",\"calories\":\" 210 calories\",\"carbohydrateContent\":\"20g carbohydrate (3g sugars\",\"sodiumContent\":\"321mg sodium\"}",
+        "directions": [
+            "Place shrimp in a food processor; pulse until chopped. In a large bowl, combine the egg, red pepper, 4 green onions, ginger and salt. Add shrimp and bread crumbs; mix gently. Shape into 12 1/2-in.-thick patties. Refrigerate 20 minutes.",
+            "Meanwhile, in a large bowl, combine mayonnaise, chili sauce and sweet chili sauce; stir in cabbage and remaining green onions. Place buns on a baking sheet, cut sides up. Broil 3-4 in. from heat until golden brown, 2-3 minutes.",
+            "In a large skillet, heat oil over medium heat. Add shrimp cakes in batches; cook until golden brown, 4-5 minutes on each side. Serve on toasted buns with slaw; secure with toothpicks. If desired, serve with additional chili sauce."
+        ],
+        "totalTime": "PT40M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Bang-Bang-Shrimp-Cake-Sliders_EXPS_THAM19_233452_B11_08_7b-696x696.jpg",
+        "name": "Bang Bang Shrimp Cake Sliders",
+        "cookTime": "PT10M",
+        "ingredients": "[\"1 pound uncooked shrimp (41-50 per pound), peeled and deveined\",\"1 large egg, lightly beaten\",\"1/2 cup finely chopped sweet red pepper\",\"6 green onions, chopped and divided \",\"1 tablespoon minced fresh gingerroot\",\"1/4 teaspoon salt\",\"1 cup panko (Japanese) bread crumbs\",\"1/4 cup mayonnaise\",\"1 tablespoon Sriracha chili sauce\",\"1 tablespoon sweet chili sauce\",\"5 cups shredded Chinese or napa cabbage\",\"12 mini buns or dinner rolls\",\"3 tablespoons canola oil\",\"Additional Sriracha chili sauce, optional \"]",
+        "URL": "https://www.tasteofhome.com/recipes/bang-bang-shrimp-cake-sliders/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"26g protein. \",\"fiberContent\":\"5g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"31g fat (18g saturated fat)\",\"cholesterolContent\":\"108mg cholesterol\",\"calories\":\" 572 calories\",\"carbohydrateContent\":\"52g carbohydrate (25g sugars\",\"sodiumContent\":\"1144mg sodium\"}",
+        "directions": [
+            "In a large skillet, heat 2 tablespoons butter over medium heat. Add onions, sugar and salt; cook and stir until softened, about 15 minutes. Reduce heat to medium-low; cook until deep golden brown, 30-40 minutes, stirring occasionally.",
+            "Meanwhile, place figs, water and honey in a small saucepan. Bring to a boil; reduce heat. Simmer, uncovered, until liquid is almost evaporated, about 20 minutes.",
+            "Preheat panini maker or indoor electric grill. Layer 6 slices of bread with Asiago cheese, prosciutto, goat cheese, caramelized onions and figs; top with remaining bread. Spread outsides of sandwiches with remaining butter.",
+            "Cook sandwiches, covered, until bread is browned and cheese is melted, 4-5 minutes. If desired, drizzle with balsamic glaze."
+        ],
+        "totalTime": "PT01H05M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Fig-Caramelized-Onion-and-Goat-Cheese-Panini_EXPS_THAM19_233361_B11_08_5b-696x696.jpg",
+        "name": "Fig, Caramelized Onion and Goat Cheese Panini",
+        "cookTime": "PT5M",
+        "ingredients": "[\"6 tablespoons butter, divided \",\"3 large onions, halved and thinly sliced\",\"1 tablespoon sugar\",\"1/4 teaspoon salt\",\"12 dried figs, sliced\",\"1 cup water\",\"3 tablespoons honey\",\"12 slices slices Italian bread (1/2 inch thick)\",\"8 ounces Asiago cheese, sliced\",\"12 thin slices prosciutto\",\"3/4 cup crumbled goat cheese\",\"Balsamic glaze, optional\"]",
+        "URL": "https://www.tasteofhome.com/recipes/fig-caramelized-onion-and-goat-cheese-panini/",
+        "prepTime": "PT60M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"39g protein. \",\"fiberContent\":\"9g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"45g fat (11g saturated fat)\",\"cholesterolContent\":\"118mg cholesterol\",\"calories\":\" 804 calories\",\"carbohydrateContent\":\"67g carbohydrate (34g sugars\",\"sodiumContent\":\"788mg sodium\"}",
+        "directions": [
+            "Place 2 cups spinach, pistachios, lemon juice, garlic, pepper flakes, salt and pepper in a food processor; pulse until chopped. Add goat cheese; process until blended. Continue processing while gradually adding oil in a steady stream to reach a spreadable consistency. Refrigerate until serving.",
+            "Meanwhile, in a large bowl, combine beef and dates, mixing lightly but thoroughly. Shape into six 1/2-in.-thick patties. Place burgers on an oiled grill rack or in a greased 15x10x1-in. pan. Grill, covered, over medium heat or broil 4-5 in. from heat until a thermometer reads 160°, 4-5 minutes per side. Grill buns, cut sides down, over medium heat until toasted.",
+            "Top bun bottoms with remaining spinach, burgers, red onion and bacon. Spread 4 teaspoons goat cheese mixture over cut side of each bun top; place on burger. Cover and refrigerate remaining goat cheese mixture; save for another use."
+        ],
+        "totalTime": "PT40M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Bacon-and-Date-Goat-Cheese-Burgers_EXPS_THAM19_233458_B11_08_2b-696x696.jpg",
+        "name": "Bacon and Date Goat Cheese Burgers",
+        "cookTime": "PT10M",
+        "ingredients": "[\"2-3/4 cups fresh baby spinach, divided\",\"1 package (8 ounces) pistachios, shelled\",\"2 tablespoons lemon juice\",\"2 garlic cloves, halved\",\"1/2 to 1-1/2 teaspoons crushed red pepper flakes\",\"1/4 teaspoon salt\",\"1/4 teaspoon pepper\",\"1 package (5.3 ounces) fresh goat cheese, crumbled\",\"1/4 cup olive oil\",\"1-1/2 pounds ground beef\",\"1 package (8 ounces) pitted dates, chopped\",\"6 brioche hamburger buns, split\",\"1/2 pound maple-flavored bacon strips, cooked\",\"1 medium red onion, sliced\"]",
+        "URL": "https://www.tasteofhome.com/recipes/bacon-and-date-goat-cheese-burgers/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"58g protein. \",\"fiberContent\":\"4g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"58g fat (26g saturated fat)\",\"cholesterolContent\":\"285mg cholesterol\",\"calories\":\" 878 calories\",\"carbohydrateContent\":\"32g carbohydrate (5g sugars\",\"sodiumContent\":\"2774mg sodium\"}",
+        "directions": [
+            "Spread butter over 1 side of each bread slice. Place 1 slice cheese on each unbuttered side of bread. Toast bread, butter side down, in a large skillet or electric griddle over medium-low heat until golden brown, 4-5 minutes.",
+            "Layer 1 toast with lettuce, tomato, turkey and avocado. Top with another toast and spread with blue cheese spread. Top with chicken, ham, bacon and egg. Top with remaining toast, cheese side down. Cut sandwich in half, secure with toothpicks and serve."
+        ],
+        "totalTime": "PT25M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Cobb-Salad-Club-Sandwich_EXPS_THAM19_233459_B11_09_2b-696x696.jpg",
+        "name": "Cobb Salad Club Sandwich",
+        "cookTime": "PT5M",
+        "ingredients": "[\"3 tablespoons butter, softened\",\"3 slices rustic Italian bread\",\"3 slices cheddar or provolone cheese\",\"2 pieces leaf lettuce\",\"3 slices tomato\",\"7 thin slices deli smoked peppered turkey breast\",\"1/2 medium ripe avocado, peeled and sliced\",\"3 tablespoons blue cheese spread\",\"7 thin slices deli oven-roasted chicken\",\"7 thin slices deli ham\",\"5 crisp cooked bacon strips\",\"1 large hard-boiled egg, sliced\"]",
+        "URL": "https://www.tasteofhome.com/recipes/cobb-salad-club-sandwich/",
+        "prepTime": "PT20M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"6g protein. \",\"fiberContent\":\"0 fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"4g fat (1g saturated fat)\",\"cholesterolContent\":\"14mg cholesterol\",\"calories\":\" 68 calories\",\"carbohydrateContent\":\"3g carbohydrate (2g sugars\",\"sodiumContent\":\"452mg sodium\"}",
+        "directions": [
+            "Using a sharp knife, cut through the two wing joints; discard wing tips. Place remaining wing pieces in a 4 or 5-qt. slow cooker. Stir in barbecue sauce, soy sauce and 4 green onions. Cook, covered, on high until tender, 3-4 hours. Sprinkle with sesame seeds and remaining green onions."
+        ],
+        "totalTime": "PT03H10M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/no-photo-recipe-300x300-106.jpg",
+        "name": "So-Easy Sticky Chicken Wings",
+        "cookTime": "PT03H00M",
+        "ingredients": "[\"4 pounds chicken wings\",\"1 cup barbecue sauce\",\"1 cup soy sauce\",\"6 green onions, divided \",\"1 tablespoon sesame seeds\"]",
+        "URL": "https://www.tasteofhome.com/recipes/so-easy-sticky-chicken-wings/",
+        "prepTime": "PT10M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"41g protein. \",\"fiberContent\":\"3g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"30g fat (11g saturated fat)\",\"cholesterolContent\":\"109mg cholesterol\",\"calories\":\" 697 calories\",\"carbohydrateContent\":\"62g carbohydrate (28g sugars\",\"sodiumContent\":\"1770mg sodium\"}",
+        "directions": [
+            "In a small saucepan, combine the first 9 ingredients. Bring to a boil. Reduce heat; simmer, covered, until thickened, 5-8 minutes. Reserve 1/4 cup sauce for wraps.",
+            "Moisten a paper towel with cooking oil; using long-handled tongs, rub on grill rack to coat lightly. Sprinkle chicken with salt and pepper; place on grill rack. Grill, covered, over medium heat 7-8 minutes. Turn; grill until a thermometer reads 165°, 7-8 minutes longer, brushing occasionally with sauce. Top with cheese; grill, covered, until cheese is melted, 1-2 minutes longer. Let stand 5 minutes before slicing into strips.",
+            "Spread dressing over tortillas. Top with chicken; drizzle with reserved sauce. Top with bacon and if desired, lettuce. Fold bottom of tortilla over filling; fold both sides to close."
+        ],
+        "totalTime": "PT55M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Cinnamon-Whiskey-BBQ-Chicken-Wraps_EXPS_THAM19_229674_B11_08_7b-696x696.jpg",
+        "name": "Cinnamon Whiskey BBQ Chicken Wraps",
+        "cookTime": "PT15M",
+        "ingredients": "[\"1/3 cup packed brown sugar\",\"1/3 cup ketchup\",\"2 tablespoons cider vinegar\",\"2 tablespoons cinnamon whiskey \",\"3/4 teaspoon Worcestershire sauce\",\"3/4 teaspoon molasses\",\"1 small garlic clove, minced\",\"1/4 teaspoon pepper\",\"1/8 teaspoon cayenne pepper\",\"WRAP:\",\"1 pound boneless skinless chicken breast halves\",\"1/2 teaspoon salt\",\"1/4 teaspoon pepper\",\"1 cup shredded cheddar cheese\",\"1/4 cup prepared ranch salad dressing\",\"4 flour tortillas (10 inches)\",\"8 bacon strips, cooked and crumbled\",\"Shredded lettuce, optional \"]",
+        "URL": "https://www.tasteofhome.com/recipes/cinnamon-whiskey-bbq-chicken-wraps/",
+        "prepTime": "PT40M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"16g protein. \",\"fiberContent\":\"2g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"23g fat (5g saturated fat)\",\"cholesterolContent\":\"194mg cholesterol\",\"calories\":\" 408 calories\",\"carbohydrateContent\":\"33g carbohydrate (3g sugars\",\"sodiumContent\":\"1188mg sodium\"}",
+        "directions": [
+            "For aioli, in a small bowl, combine the mayonnaise, olive oil, garlic, salt and pepper; set aside.",
+            "Sprinkle Parmesan into large nonstick skillet; heat over medium heat. Cook just until melted, about 2 minutes. Break eggs, 1 at a time, into a custard cup or saucer, then gently slide into pan over Parmesan. Immediately reduce heat to low. To prepare eggs sunny-side up, cover pan and cook until yolks thicken but are not hard, 4-5 minutes.",
+            "Spread aioli over toasted bread. Top with giardiniera, tomato and egg. Sprinkle with parsley."
+        ],
+        "totalTime": "PT30M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Open-Faced-Frico-Egg-Sandwich_EXPS_THAM19_230027_B11_09_5b-696x696.jpg",
+        "name": "Open-Faced Frico Egg Sandwich",
+        "cookTime": "PT10M",
+        "ingredients": "[\"1/4 cup mayonnaise\",\"1 tablespoon olive oil\",\"1 garlic clove, minced\",\"1/8 teaspoon salt\",\"Dash pepper\",\"1/2 cup shredded Parmesan cheese\",\"4 large eggs\",\"4 slices Italian bread (1 inch thick), lightly toasted\",\"1/2 cup sandwich giardiniera, drained and finely chopped\",\"4 thin slices tomato\",\"Minced fresh parsley\"]",
+        "URL": "https://www.tasteofhome.com/recipes/open-faced-frico-egg-sandwich/",
+        "prepTime": "PT20M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"16g protein. \",\"fiberContent\":\"2g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"20g fat (3g saturated fat)\",\"cholesterolContent\":\"32mg cholesterol\",\"calories\":\" 390 calories\",\"carbohydrateContent\":\"37g carbohydrate (5g sugars\",\"sodiumContent\":\"898mg sodium\"}",
+        "directions": [
+            "Place flour and salt in a large bowl; stir in boiling water until dough forms a ball. Turn onto a floured surface; knead until smooth and elastic, 4-6 minutes. Place in a large bowl; cover and let rest for 30 minutes.",
+            "Divide dough into 8 portions; roll each portion into an 8-in. circle. Sprinkle each with 1 tablespoon green onion. Roll up jelly-roll style; holding 1 end of the rope, wrap dough around, forming a coil, pinching to seal. Flatten slightly. Roll each coil to 1/8-in. thickness.",
+            "In a large skillet, heat 1 tablespoon canola oil. Cook pancakes, 1 at a time, over medium-high heat until golden brown, 2-3 minutes on each side, adding additional oil as needed; keep warm.",
+            "In the same skillet, heat sesame oil over medium-high heat. Add onion, garlic and ginger; cook and stir until tender, 5-6 minutes. Add the remaining ingredients; cook until heated through, 3-4 minutes longer. Spoon about 1/4 cup beef mixture down center of each pancake. If desired, sprinkle with sliced green onions. Roll up tightly and serve."
+        ],
+        "totalTime": "PT01H25M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Chinese-Scallion-Pancake-Beef-Rolls_EXPS_THAM19_231452_B11_08_6b-696x696.jpg",
+        "name": "Chinese Scallion Pancake Beef Rolls",
+        "cookTime": "PT40M",
+        "ingredients": "[\"2-1/2 cups all-purpose flour\",\"1 teaspoon salt\",\"1 cup boiling water\",\"1 bunch green onions, finely chopped\",\"1/2 cup canola oil\",\"1 tablespoon sesame oil\",\"1 small onion, thinly sliced\",\"2 garlic cloves, minced\",\"1 teaspoon minced fresh gingerroot\",\"1 package (15 ounces) refrigerated beef roast au jus, drained and chopped or 2 cups chopped cooked roast beef\",\"3 tablespoons soy sauce\",\"2 tablespoons hoisin sauce\",\"1 tablespoon honey\"]",
+        "URL": "https://www.tasteofhome.com/recipes/chinese-scallion-pancake-beef-rolls/",
+        "prepTime": "PT45M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"14g protein. \",\"fiberContent\":\"1g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"12g fat (5g saturated fat)\",\"cholesterolContent\":\"43mg cholesterol\",\"calories\":\" 228 calories\",\"carbohydrateContent\":\"16g carbohydrate (3g sugars\",\"sodiumContent\":\"531mg sodium\"}",
+        "directions": [
+            "Line a strainer or colander with 4 layers of cheesecloth or 1 coffee filter; place over a bowl. Place yogurt in prepared strainer; cover yogurt with sides of cheesecloth. Refrigerate 2-4 hours. Meanwhile, place cucumber in a colander over a plate; sprinkle with 1/4 teaspoon salt and toss. Let stand 30 minutes.",
+            "For burgers, in a large bowl, combine lamb, lemon zest, 2 garlic cloves, oregano, 3/4 teaspoon salt and 1/4 teaspoon pepper, mixing lightly but thoroughly. Shape into ten 1/2-in.-thick patties. Refrigerate 30 minutes.",
+            "For sauce, remove yogurt from cheesecloth to a bowl; discard strained liquid. Squeeze cucumber and blot dry with paper towels. Add cucumber, lemon juice, dill, remaining 2 garlic cloves, remaining 1/4 teaspoon salt and remaining 1/8 teaspoon pepper to yogurt, stirring until combined.",
+            "Grill burgers, covered, over medium heat until a thermometer reads 160°, 3-4 minutes on each side. Grill buns over medium heat, cut sides down, for 30-60 seconds or until toasted. Serve burgers on buns with lettuce, red onion, feta and sauce."
+        ],
+        "totalTime": "PT40M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Santorini-Lamb-Sliders_EXPS_THAM19_232685_B11_09_3b-696x696.jpg",
+        "name": "Santorini Lamb Sliders",
+        "cookTime": "PT10M",
+        "ingredients": "[\"1 cup plain Greek yogurt\",\"1/2 cup shredded peeled cucumber\",\"1-1/4 teaspoons salt, divided\",\"1 pound ground lamb\",\"1 tablespoon grated lemon zest\",\"4 garlic cloves, minced and divided \",\"2 teaspoons dried oregano\",\"1/4 teaspoon plus 1/8 teaspoon pepper, divided \",\"1 teaspoon lemon juice\",\"1 teaspoon dill weed\",\"10 mini buns or mini ciabatta buns\",\"10 Bibb lettuce leaves or Boston lettuce leaves\",\"1 medium red onion, thinly sliced\",\"1 cup crumbled feta cheese\"]",
+        "URL": "https://www.tasteofhome.com/recipes/santorini-lamb-sliders/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"39g protein. \",\"fiberContent\":\"1g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"46g fat (16g saturated fat)\",\"cholesterolContent\":\"124mg cholesterol\",\"calories\":\" 708 calories\",\"carbohydrateContent\":\"33g carbohydrate (10g sugars\",\"sodiumContent\":\"1277mg sodium\"}",
+        "directions": [
+            "In a large bowl, combine Worcestershire sauce, garlic, seasoned salt and pepper. Add beef; mix lightly but thoroughly. Shape into four 1/2-in.-thick patties.",
+            "Grill burgers, covered, over medium heat until a thermometer reads 160°, 5-7 minutes on each side. Top with cheese; grill, covered, until cheese is melted, 1-2 minutes longer.",
+            "Meanwhile, in a small bowl, combine mayonnaise, ketchup, vinegar and honey; spread over cut sides of buns. Top bun bottoms with bacon, burgers, french-fried onions and, if desired, lettuce and tomato. Replace tops."
+        ],
+        "totalTime": "PT35M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Bacon-Cheeseburgers-with-Fry-Sauce_EXPS_THAM19_232817_B11_08_3b-696x696.jpg",
+        "name": "Bacon Cheeseburgers with Fry Sauce",
+        "cookTime": "PT10M",
+        "ingredients": "[\"1 teaspoon Worcestershire sauce\",\"1 garlic clove, minced\",\"1/2 teaspoon seasoned salt\",\"1/4 teaspoon pepper\",\"1 pound ground beef\",\"4 slices sharp cheddar cheese\",\"1/4 cup mayonnaise\",\"2 tablespoons ketchup\",\"1 tablespoon cider vinegar\",\"1 tablespoon honey\",\"4 hamburger buns, split and toasted\",\"8 cooked bacon strips\",\"1/2 cup french-fried onions\",\"Lettuce leaves and sliced tomato, optional \"]",
+        "URL": "https://www.tasteofhome.com/recipes/bacon-cheeseburgers-with-fry-sauce/",
+        "prepTime": "PT25M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"25g protein. \",\"fiberContent\":\"2g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"20g fat (4g saturated fat)\",\"cholesterolContent\":\"40mg cholesterol\",\"calories\":\" 430 calories\",\"carbohydrateContent\":\"37g carbohydrate (9g sugars\",\"sodiumContent\":\"888mg sodium\"}",
+        "directions": [
+            "In a large bowl, whisk white vinegar and sugar until sugar is dissolved. Add carrots and radish. Refrigerate at least 2 hours. Meanwhile, in a shallow dish, combine brown sugar, rice vinegar and soy sauce. Add beef and turn to coat. Refrigerate 1 hour, turning once. Drain beef, discarding marinade.",
+            "In a large skillet, heat oil over medium-high heat. Cook steak until meat reaches desired doneness (for medium-rare, a thermometer should read 135°; medium, 140°; medium-well, 145°), 7-10 minutes on each side. Let rest 10 minutes before slicing.",
+            "Meanwhile, place baguette on an ungreased baking sheet, cut sides up. Broil 3-4 in. from heat until golden brown, 3-4 minutes. Drain carrots and radish, reserving 1-1/2 teaspoons vinegar marinade. In a small bowl, combine the mayonnaise, chili sauce and reserved vinegar marinade; spread half over cut sides of baguette. Top with steak, cucumber, pickled vegetables and cilantro; replace top. Cut crosswise into 6 slices. Serve with remaining mayonnaise mixture."
+        ],
+        "totalTime": "PT45M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Steak-Sandwiches-with-Quick-Pickled-Vegetables_EXPS_THAM19_233107_B11_09_7b-696x696.jpg",
+        "name": "Steak Sandwiches with Quick-Pickled Vegetables",
+        "cookTime": "PT15M",
+        "ingredients": "[\"1 cup white vinegar\",\"1 tablespoon sugar\",\"1-1/2 cups thinly sliced fresh carrots\",\"1 small daikon radish, thinly sliced\",\"1/4 cup packed brown sugar\",\"1/4 cup rice vinegar\",\"1/4 cup soy sauce\",\"1 beef top sirloin steak (1-1/4 pounds) \",\"1 tablespoon olive oil\",\"1 French bread baguette (10-1/2 ounces), halved lengthwise\",\"1/2 cup mayonnaise\",\"2 tablespoons Sriracha chili sauce\",\"1/2 cup thinly sliced English cucumber\",\"Fresh cilantro leaves\"]",
+        "URL": "https://www.tasteofhome.com/recipes/steak-sandwiches-with-quick-pickled-vegetables/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"20g protein. \",\"fiberContent\":\"4g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"35g fat (8g saturated fat)\",\"cholesterolContent\":\"68mg cholesterol\",\"calories\":\" 515 calories\",\"carbohydrateContent\":\"31g carbohydrate (3g sugars\",\"sodiumContent\":\"738mg sodium\"}",
+        "directions": [
+            "Place tomatoes and orange juice in a small saucepan. Bring to a boil; reduce heat. Simmer, uncovered, until thickened, about 15 minutes. Cool completely. Transfer to a small bowl; stir in mayonnaise. Refrigerate until serving.",
+            "Meanwhile, in a large bowl, combine the feta, saltines, egg, red onion and dill. Place salmon in a food processor; pulse until coarsely chopped and add to feta mixture. Mix lightly but thoroughly. Shape into eight 1-in.-thick patties.",
+            "In a large skillet, heat oil over medium-high heat. Add patties in batches; cook until golden brown, 3-4 minutes on each side. Serve on buns with mayonnaise mixture and pickles."
+        ],
+        "totalTime": "PT40M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Salmon-Sliders-with-Sun-Dried-Tomato-Spread_EXPS_THAM19_233120_B11_09_8b-696x696.jpg",
+        "name": "Salmon Sliders with Sun-Dried Tomato Spread",
+        "cookTime": "PT10M",
+        "ingredients": "[\"1 jar (7 ounces) julienned oil-packed sun-dried tomatoes, drained and chopped\",\"1/4 cup orange juice\",\"3/4 cup mayonnaise\",\"8 ounces crumbled feta cheese\",\"1/3 cup crushed saltines\",\"1 large Eggland's Best egg, lightly beaten\",\"3 tablespoons finely chopped red onion\",\"2 tablespoons snipped fresh dill\",\"1 pound salmon fillet, skin removed, cut into 1-inch cubes\",\"2 tablespoons olive oil\",\"8 mini pretzel buns, toasted\",\"16 hamburger dill pickle slices\"]",
+        "URL": "https://www.tasteofhome.com/recipes/salmon-sliders-with-sun-dried-tomato-spread/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"11g protein. \",\"fiberContent\":\"1g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"10g fat (1g saturated fat)\",\"cholesterolContent\":\"63mg cholesterol\",\"calories\":\" 210 calories\",\"carbohydrateContent\":\"20g carbohydrate (3g sugars\",\"sodiumContent\":\"321mg sodium\"}",
+        "directions": [
+            "Place shrimp in a food processor; pulse until chopped. In a large bowl, combine the egg, red pepper, 4 green onions, ginger and salt. Add shrimp and bread crumbs; mix gently. Shape into 12 1/2-in.-thick patties. Refrigerate 20 minutes.",
+            "Meanwhile, in a large bowl, combine mayonnaise, chili sauce and sweet chili sauce; stir in cabbage and remaining green onions. Place buns on a baking sheet, cut sides up. Broil 3-4 in. from heat until golden brown, 2-3 minutes.",
+            "In a large skillet, heat oil over medium heat. Add shrimp cakes in batches; cook until golden brown, 4-5 minutes on each side. Serve on toasted buns with slaw; secure with toothpicks. If desired, serve with additional chili sauce."
+        ],
+        "totalTime": "PT40M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Bang-Bang-Shrimp-Cake-Sliders_EXPS_THAM19_233452_B11_08_7b-696x696.jpg",
+        "name": "Bang Bang Shrimp Cake Sliders",
+        "cookTime": "PT10M",
+        "ingredients": "[\"1 pound uncooked shrimp (41-50 per pound), peeled and deveined\",\"1 large egg, lightly beaten\",\"1/2 cup finely chopped sweet red pepper\",\"6 green onions, chopped and divided \",\"1 tablespoon minced fresh gingerroot\",\"1/4 teaspoon salt\",\"1 cup panko (Japanese) bread crumbs\",\"1/4 cup mayonnaise\",\"1 tablespoon Sriracha chili sauce\",\"1 tablespoon sweet chili sauce\",\"5 cups shredded Chinese or napa cabbage\",\"12 mini buns or dinner rolls\",\"3 tablespoons canola oil\",\"Additional Sriracha chili sauce, optional \"]",
+        "URL": "https://www.tasteofhome.com/recipes/bang-bang-shrimp-cake-sliders/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"26g protein. \",\"fiberContent\":\"5g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"31g fat (18g saturated fat)\",\"cholesterolContent\":\"108mg cholesterol\",\"calories\":\" 572 calories\",\"carbohydrateContent\":\"52g carbohydrate (25g sugars\",\"sodiumContent\":\"1144mg sodium\"}",
+        "directions": [
+            "In a large skillet, heat 2 tablespoons butter over medium heat. Add onions, sugar and salt; cook and stir until softened, about 15 minutes. Reduce heat to medium-low; cook until deep golden brown, 30-40 minutes, stirring occasionally.",
+            "Meanwhile, place figs, water and honey in a small saucepan. Bring to a boil; reduce heat. Simmer, uncovered, until liquid is almost evaporated, about 20 minutes.",
+            "Preheat panini maker or indoor electric grill. Layer 6 slices of bread with Asiago cheese, prosciutto, goat cheese, caramelized onions and figs; top with remaining bread. Spread outsides of sandwiches with remaining butter.",
+            "Cook sandwiches, covered, until bread is browned and cheese is melted, 4-5 minutes. If desired, drizzle with balsamic glaze."
+        ],
+        "totalTime": "PT01H05M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Fig-Caramelized-Onion-and-Goat-Cheese-Panini_EXPS_THAM19_233361_B11_08_5b-696x696.jpg",
+        "name": "Fig, Caramelized Onion and Goat Cheese Panini",
+        "cookTime": "PT5M",
+        "ingredients": "[\"6 tablespoons butter, divided \",\"3 large onions, halved and thinly sliced\",\"1 tablespoon sugar\",\"1/4 teaspoon salt\",\"12 dried figs, sliced\",\"1 cup water\",\"3 tablespoons honey\",\"12 slices slices Italian bread (1/2 inch thick)\",\"8 ounces Asiago cheese, sliced\",\"12 thin slices prosciutto\",\"3/4 cup crumbled goat cheese\",\"Balsamic glaze, optional\"]",
+        "URL": "https://www.tasteofhome.com/recipes/fig-caramelized-onion-and-goat-cheese-panini/",
+        "prepTime": "PT60M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"39g protein. \",\"fiberContent\":\"9g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"45g fat (11g saturated fat)\",\"cholesterolContent\":\"118mg cholesterol\",\"calories\":\" 804 calories\",\"carbohydrateContent\":\"67g carbohydrate (34g sugars\",\"sodiumContent\":\"788mg sodium\"}",
+        "directions": [
+            "Place 2 cups spinach, pistachios, lemon juice, garlic, pepper flakes, salt and pepper in a food processor; pulse until chopped. Add goat cheese; process until blended. Continue processing while gradually adding oil in a steady stream to reach a spreadable consistency. Refrigerate until serving.",
+            "Meanwhile, in a large bowl, combine beef and dates, mixing lightly but thoroughly. Shape into six 1/2-in.-thick patties. Place burgers on an oiled grill rack or in a greased 15x10x1-in. pan. Grill, covered, over medium heat or broil 4-5 in. from heat until a thermometer reads 160°, 4-5 minutes per side. Grill buns, cut sides down, over medium heat until toasted.",
+            "Top bun bottoms with remaining spinach, burgers, red onion and bacon. Spread 4 teaspoons goat cheese mixture over cut side of each bun top; place on burger. Cover and refrigerate remaining goat cheese mixture; save for another use."
+        ],
+        "totalTime": "PT40M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Bacon-and-Date-Goat-Cheese-Burgers_EXPS_THAM19_233458_B11_08_2b-696x696.jpg",
+        "name": "Bacon and Date Goat Cheese Burgers",
+        "cookTime": "PT10M",
+        "ingredients": "[\"2-3/4 cups fresh baby spinach, divided\",\"1 package (8 ounces) pistachios, shelled\",\"2 tablespoons lemon juice\",\"2 garlic cloves, halved\",\"1/2 to 1-1/2 teaspoons crushed red pepper flakes\",\"1/4 teaspoon salt\",\"1/4 teaspoon pepper\",\"1 package (5.3 ounces) fresh goat cheese, crumbled\",\"1/4 cup olive oil\",\"1-1/2 pounds ground beef\",\"1 package (8 ounces) pitted dates, chopped\",\"6 brioche hamburger buns, split\",\"1/2 pound maple-flavored bacon strips, cooked\",\"1 medium red onion, sliced\"]",
+        "URL": "https://www.tasteofhome.com/recipes/bacon-and-date-goat-cheese-burgers/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"58g protein. \",\"fiberContent\":\"4g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"58g fat (26g saturated fat)\",\"cholesterolContent\":\"285mg cholesterol\",\"calories\":\" 878 calories\",\"carbohydrateContent\":\"32g carbohydrate (5g sugars\",\"sodiumContent\":\"2774mg sodium\"}",
+        "directions": [
+            "Spread butter over 1 side of each bread slice. Place 1 slice cheese on each unbuttered side of bread. Toast bread, butter side down, in a large skillet or electric griddle over medium-low heat until golden brown, 4-5 minutes.",
+            "Layer 1 toast with lettuce, tomato, turkey and avocado. Top with another toast and spread with blue cheese spread. Top with chicken, ham, bacon and egg. Top with remaining toast, cheese side down. Cut sandwich in half, secure with toothpicks and serve."
+        ],
+        "totalTime": "PT25M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Cobb-Salad-Club-Sandwich_EXPS_THAM19_233459_B11_09_2b-696x696.jpg",
+        "name": "Cobb Salad Club Sandwich",
+        "cookTime": "PT5M",
+        "ingredients": "[\"3 tablespoons butter, softened\",\"3 slices rustic Italian bread\",\"3 slices cheddar or provolone cheese\",\"2 pieces leaf lettuce\",\"3 slices tomato\",\"7 thin slices deli smoked peppered turkey breast\",\"1/2 medium ripe avocado, peeled and sliced\",\"3 tablespoons blue cheese spread\",\"7 thin slices deli oven-roasted chicken\",\"7 thin slices deli ham\",\"5 crisp cooked bacon strips\",\"1 large hard-boiled egg, sliced\"]",
+        "URL": "https://www.tasteofhome.com/recipes/cobb-salad-club-sandwich/",
+        "prepTime": "PT20M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"21g protein. \",\"fiberContent\":\"6g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"26g fat (6g saturated fat)\",\"cholesterolContent\":\"23mg cholesterol\",\"calories\":\" 461 calories\",\"carbohydrateContent\":\"43g carbohydrate (15g sugars\",\"sodiumContent\":\"664mg sodium\"}",
+        "directions": [
+            "Spread peanut butter on 2 bread slices; sprinkle with cayenne. Top with bacon and drizzle with honey. Top with remaining bread."
+        ],
+        "totalTime": "PT10M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Sweet-and-Spicy-Peanut-Butter-Bacon-Sandwiches_EXPS_THAM19_233492_B11_09_1b-696x696.jpg",
+        "name": "Sweet and Spicy Peanut Butter-Bacon Sandwiches",
+        "cookTime": "PT0M",
+        "ingredients": "[\"1/4 cup peanut butter\",\"4 slices cinnamon-raisin bread\",\"1/8 teaspoon cayenne pepper \",\"4 crisp cooked bacon strips\",\"2 teaspoons honey \"]",
+        "URL": "https://www.tasteofhome.com/recipes/sweet-and-spicy-peanut-butter-bacon-sandwiches/",
+        "prepTime": "PT10M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"16g protein. \",\"fiberContent\":\"3g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"14g fat (6g saturated fat)\",\"cholesterolContent\":\"30mg cholesterol\",\"calories\":\" 325 calories\",\"carbohydrateContent\":\"33g carbohydrate (4g sugars\",\"sodiumContent\":\"830mg sodium\"}",
+        "directions": [
+            "On a lightly floured surface, roll dough into a 14-in. x 10-in. rectangle. Transfer to a greased 13-in. x 9-in. baking dish. Build up edges slightly.",
+            "Spread sauce over dough. Layer with remaining ingredients.",
+            "Bake at 400° for 25-30 minutes or until crust is golden brown and cheese is melted."
+        ],
+        "totalTime": "PT45M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/2019/01/Deluxe-Deep-Dish-Pizza_EXPS_SDJJ19_46931_E02_12_4b-696x696.jpg",
+        "name": "Deluxe Deep-Dish Pizza",
+        "cookTime": "PT25M",
+        "ingredients": "[\"1 loaf (1 pound) frozen bread dough, thawed\",\"3/4 cup pizza sauce\",\"1 package (3-1/2 ounces) sliced pepperoni\",\"1 cup sliced fresh mushrooms\",\"1/2 cup chopped green pepper\",\"1/4 cup chopped sweet onion\",\"1/4 cup mild pickled pepper rings\",\"2 cups (8 ounces) shredded part-skim mozzarella cheese\",\"1 tablespoon dried oregano\"]",
+        "URL": "https://www.tasteofhome.com/recipes/deluxe-deep-dish-pizza/",
+        "prepTime": "PT20M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"33g protein. \",\"fiberContent\":\"2g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"25g fat (13g saturated fat)\",\"cholesterolContent\":\"125mg cholesterol\",\"calories\":\" 511 calories\",\"carbohydrateContent\":\"38g carbohydrate (15g sugars\",\"sodiumContent\":\"805mg sodium\"}",
+        "directions": [
+            "Rub roast with salt and pepper. Place in a 5- or 6-qt. slow cooker. Cook, covered, on low 8-10 hours or until meat is tender.",
+            "Remove roast; cool slightly. Skim fat from cooking juices. Slice beef; return beef and cooking juices to slow cooker. Add barbecue sauce; heat through. Place croissant bottoms on a baking sheet; top with cheese. Broil 4-6 in. from heat until cheese is melted, 1-2 minutes. Top with beef; if desired, serve with optional toppings. Replace croissant tops."
+        ],
+        "totalTime": "PT08H15M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/2019/01/Gourmet-Barbecue-Beef-Sandwiches_EXPS_SDJJ19_74198_E02_07_4b-696x696.jpg",
+        "name": "Gourmet Barbecue Beef Sandwiches",
+        "cookTime": "PT08H05M",
+        "ingredients": "[\"1 beef rump roast or bottom round roast (3 to 4 pounds) \",\"1/2 teaspoon salt\",\"1/4 teaspoon pepper\",\"1 cup barbecue sauce\",\"12 croissants, split\",\"12 slices provolone cheese\",\"Optional ingredients: Tomato slices, lettuce leaves and red onion slices\"]",
+        "URL": "https://www.tasteofhome.com/recipes/gourmet-barbecue-beef-sandwiches/",
+        "prepTime": "PT10M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"0 protein. \",\"fiberContent\":\"1g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"0 fat (0 saturated fat)\",\"cholesterolContent\":\"0 cholesterol\",\"calories\":\" 40 calories\",\"carbohydrateContent\":\"10g carbohydrate (9g sugars\",\"sodiumContent\":\"258mg sodium\"}",
+        "directions": [
+            "In a large saucepan, combine the tomatoes, onion, green pepper, sugar, tomato paste and salt; bring to a boil. Reduce heat; simmer, uncovered, until slightly thickened, about 1-1/2 hours.",
+            "Stir in vinegar; heat through. Cool to room temperature; store up to 2 weeks in the refrigerator."
+        ],
+        "totalTime": "PT01H50M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/2019/01/Chunky-Ketchup_EXPS_THJJ19_15803_B02_15_17b-696x696.jpg",
+        "name": "Chunky Ketchup",
+        "cookTime": "PT01H30M",
+        "ingredients": "[\"4 cups chopped seeded peeled tomatoes\",\"1 medium onion, chopped\",\"1 medium green pepper, chopped\",\"1 cup sugar\",\"1 can (6 ounces) tomato paste\",\"1 tablespoon salt\",\"1/4 cup white vinegar\"]",
+        "URL": "https://www.tasteofhome.com/recipes/chunky-ketchup/",
+        "prepTime": "PT20M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"8g protein. \",\"fiberContent\":\"2g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"29g fat (10g saturated fat)\",\"cholesterolContent\":\"36mg cholesterol\",\"calories\":\" 359 calories\",\"carbohydrateContent\":\"19g carbohydrate (2g sugars\",\"sodiumContent\":\"526mg sodium\"}",
+        "directions": [
+            "Place a 6-in. cake pan or small ovenproof saucepan in the center of a 10-in. cast-iron skillet. Cut each roll into thirds; roll each piece into a ball. Place along outer edge of skillet. Gently stack remaining balls on top of bottom layer, leaving some space between them. Cover and let rise until almost doubled, about 30 minutes.",
+            "Preheat oven to 400°. Microwave butter, garlic powder and red pepper flakes, covered, until butter is melted. Brush half of butter mixture over dough. Reserve remaining butter mixture.",
+            "Bake until dough balls are set and beginning to brown, 15-18 minutes. Remove cake pan from skillet. Meanwhile, in a small skillet, heat butter over medium-high heat. Add mushrooms; cook and stir until tender, 5-7 minutes. Add garlic; cook 1 minute longer.",
+            "In a large bowl, combine the mayonnaise, cream cheese, 3/4 cup mozzarella cheese and 1/2 cup Parmesan cheese. Add the mushroom mixture, artichokes and spinach.",
+            "Spoon dip into center of skillet; sprinkle with red pepper and remaining 1/4 cup mozzarella. Brush rolls with remaining butter mixture; sprinkle with remaining 2 tablespoons Parmesan. Bake until dip is heated through and rolls are golden brown, 10-15 minutes. If desired, sprinkle with additional red pepper flakes."
+        ],
+        "totalTime": "PT55M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Three-Cheese-Artichoke-Spinach-Dip_EXPS_CHMZ19_235507_B11_27_3b-696x696.jpg",
+        "name": "Three Cheese Artichoke & Spinach Dip",
+        "cookTime": "PT25M",
+        "ingredients": "[\"1 package (16 ounces) frozen bread dough dinner rolls, thawed\",\"6 tablespoons butter\",\"1/2 teaspoon garlic powder\",\"1/4 teaspoon crushed red pepper flakes\",\"DIP:\",\"1 tablespoon butter\",\"1 cup chopped fresh mushrooms\",\"2 garlic cloves, minced\",\"1-1/2 cups mayonnaise\",\"1 package (8 ounces) cream cheese, softened\",\"1 cup shredded part-skim mozzarella cheese, divided \",\"1/2 cup plus 2 tablespoons grated Parmesan cheese, divided \",\"1 can (14 ounces) water-packed artichoke hearts, rinsed, drained and chopped\",\"1 package (10 ounces) frozen chopped spinach, thawed and squeezed dry\",\"1/4 cup chopped sweet red pepper\"]",
+        "URL": "https://www.tasteofhome.com/recipes/three-cheese-artichoke-spinach-dip/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"6g protein. \",\"fiberContent\":\"3g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"26g fat (12g saturated fat)\",\"cholesterolContent\":\"58mg cholesterol\",\"calories\":\" 540 calories\",\"carbohydrateContent\":\"72g carbohydrate (35g sugars\",\"sodiumContent\":\"150mg sodium\"}",
+        "directions": [
+            "In a deep bowl, work the butter and shortening into the flour and salt with your hands until you see marble-sized lumps form. Think mixed nuts, but no bigger than almonds. Add ice water a little at a time, sort of \u201cfluffing\u201d the flour. Keep your movements light, as if you are tossing dressing into a salad with your hands. When the dough feels moistened enough, do a \u201csqueeze test\u201d and when it holds together you\u2019re done. Do not overwork the dough! It takes very little time and you\u2019ll be tempted to keep touching it, but don\u2019t! Now divide the dough in two, form each half into a disk shape and roll flat and thin to fit your pie dish. Sprinkle flour under and on top of your dough, and keep rolling surface and pin free from gunk to keep dough from sticking. Trim excess dough to about 1 inch from the dish edge with a scissors.",
+            "Slice half of the apples directly into the pie, arranging to remove extra space between slices. Cover with half of your other ingredients (sugar, flour, cinnamon, salt), then slice the remaining apples and cover with second half of ingredients. Add dollop of butter on top, cover with top crust, seal and crimp edges, then brush with beaten egg (this gives the pie a nice golden brown shine; be careful not to let egg pool in crevices.) Use a knife to poke vent holes in the top (get creative here with a pattern), then bake at 425 degrees for 15 to 20 minutes. Turn oven down to 375 degrees and bake for another 30 to 40 minutes until juice bubbles. Keep an eye on it as it bakes. If it gets too brown turn down the temperature. To be sure it\u2019s done, poke with a knife to make sure apples have softened. Do not over bake or apples will turn mushy."
+        ],
+        "totalTime": "PT01H30M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/2019/01/Beth-Howard-s-Apple-Pie_EXPS172400_CW132792D07_09_11b_RMS-696x696.jpg",
+        "name": "Beth Howard\u2019s Apple Pie",
+        "cookTime": "PT60M",
+        "ingredients": "[\"BASIC PIE CRUST:\",\"2-1/2 cups flour (white all-purpose)\",\"Dash of salt\",\"1/2 cup butter, chilled\",\"1/2 cup shortening\",\"Ice water (fill one cup but use only enough to moisten dough)\",\"APPLE FILLING:\",\"7 to 8 large Granny Smith apples, peeled (depending on size of apple & size of pie dish, have about 3 lbs. available)\",\"3/4 cup sugar\",\"4 tablespoons flour\",\"Dash of salt\",\"1 to 2 teaspoons cinnamon (depending on how much you like)\",\"1 tablespoon butter (put dollop on top before covering with top crust)\",\"1 beaten egg (you won't use all of it, just enough to brush on pie before baking)\"]",
+        "URL": "https://www.tasteofhome.com/recipes/beth-howard-s-apple-pie/",
+        "prepTime": "PT30M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"20g protein. \",\"fiberContent\":\"8g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"14g fat (7g saturated fat)\",\"cholesterolContent\":\"85mg cholesterol\",\"calories\":\" 318 calories\",\"carbohydrateContent\":\"29g carbohydrate (12g sugars\",\"sodiumContent\":\"1552mg sodium\"}",
+        "directions": [
+            "Place all ingredients in a 6-qt. electric pressure cooker. Lock lid; close pressure-release valve. Adjust to pressure cook on high for 6 minutes. Quick release pressure."
+        ],
+        "totalTime": "PT35M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/2018/12/Pressure-Cooker-Kielbasa-and-Cabbage_EXPS_THcom19_233749_C01_18_1b-696x696.jpg",
+        "name": "Pressure Cooker Kielbasa and Cabbage",
+        "cookTime": "PT10M",
+        "ingredients": "[\"1 package (14 ounces) smoked turkey kielbasa, sliced\",\"1 small head cabbage, cut into 1-inch pieces\",\"4 medium carrots, sliced\",\"4 small red potatoes, peeled and halved\",\"1 cup vegetable broth\",\"1 small onion, chopped\",\"1/2 cup sauerkraut, rinsed and well drained\",\"3 tablespoons butter, cubed\",\"1/2 teaspoon garlic powder\",\"1/4 teaspoon salt\"]",
+        "URL": "https://www.tasteofhome.com/recipes/pressure-cooker-kielbasa-and-cabbage/",
+        "prepTime": "PT25M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"8g protein. \",\"fiberContent\":\"3g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"11g fat (6g saturated fat)\",\"cholesterolContent\":\"31mg cholesterol\",\"calories\":\" 287 calories\",\"carbohydrateContent\":\"41g carbohydrate (7g sugars\",\"sodiumContent\":\"583mg sodium\"}",
+        "directions": [
+            "Cook gnocchi according to package directions. Meanwhile, in a large skillet, saute mushrooms and onion in butter until tender.",
+            "Drain gnocchi. Add the gnocchi, salt, Italian seasoning and pepper flakes to the skillet; heat through. Sprinkle with cheese."
+        ],
+        "totalTime": "PT20M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/2018/12/Gnocchi-with-Mushrooms-and-Onion_EXPS_SDFM19_138983_C10_10_12b-696x696.jpg",
+        "name": "Gnocchi with Mushrooms and Onion",
+        "cookTime": "PT10M",
+        "ingredients": "[\"1 package (16 ounces) potato gnocchi\",\"1/2 pound sliced fresh mushrooms\",\"3/4 cup chopped sweet onion\",\"1/4 cup butter, cubed\",\"1/4 teaspoon salt\",\"1/4 teaspoon Italian seasoning\",\"1/4 teaspoon crushed red pepper flakes\",\"Grated Parmesan cheese\"]",
+        "URL": "https://www.tasteofhome.com/recipes/gnocchi-with-mushrooms-and-onion/",
+        "prepTime": "PT10M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"10g protein. \",\"fiberContent\":\"3g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"12g fat (4g saturated fat)\",\"cholesterolContent\":\"20mg cholesterol\",\"calories\":\" 245 calories\",\"carbohydrateContent\":\"22g carbohydrate (0 sugars\",\"sodiumContent\":\"568mg sodium\"}",
+        "directions": [
+            "Mix first six ingredients. With one corner of an egg roll wrapper facing you, place about 1/3 cup filling just below center of wrapper. (Cover remaining wrappers with a damp paper towel until ready to use.) Fold bottom corner over filling; moisten remaining wrapper edges with water. Fold side corners toward center over filling. Roll up tightly, pressing at tip to seal. Repeat.",
+            "In an electric skillet or deep-fat fryer, heat oil to 375°. Fry spring rolls, a few at a time, until golden brown, 3-4 minutes, turning occasionally. Drain on paper towels.",
+            "Freeze option: Freeze uncooked spring rolls in freezer containers, spacing them so they don't touch and separating the layers with waxed paper. To use, fry frozen spring rolls as directed, increasing time as necessary."
+        ],
+        "totalTime": "PT20M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/2018/12/Spanakopita-Spring-Rolls_EXPS_SDJF19_143918_B10_17_9b-696x696.jpg",
+        "name": "Spanakopita Spring Rolls",
+        "cookTime": "PT5M",
+        "ingredients": "[\"2 packages (10 ounces each) frozen chopped spinach, thawed and squeezed dry\",\"2 cups (8 ounces) crumbled feta cheese\",\"4 garlic cloves, minced\",\"2 teaspoons dill weed\",\"1/4 teaspoon salt\",\"1/4 teaspoon pepper\",\"14 refrigerated egg roll wrappers\",\"Oil for deep-fat frying\"]",
+        "URL": "https://www.tasteofhome.com/recipes/spanakopita-spring-rolls/",
+        "prepTime": "PT15M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"11g protein. <B>Diabetic Exchanges: <\\/B> 2-1/2 starch\",\"fiberContent\":\"9g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"1g fat (0 saturated fat)\",\"cholesterolContent\":\"0 cholesterol\",\"calories\":\" 197 calories\",\"carbohydrateContent\":\"39g carbohydrate (7g sugars\",\"sodiumContent\":\"678mg sodium\"}",
+        "directions": [
+            "Place first eight ingredients in a 5- or 6-qt. slow cooker. Add cabbage. Cook, covered, on low until lentils are tender, 6-8 hours.",
+            "Stir in mushrooms and salt. Cook, covered, on low until mushrooms are tender, 15-20 minutes. Freeze option: Freeze cooled soup in freezer containers. To use, partially thaw in refrigerator overnight. Heat through in a saucepan, stirring occasionally and adding a little water if necessary."
+        ],
+        "totalTime": "PT06H30M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/2018/12/Cabbage-Barley-Soup_EXPS_SDFM19_77918_B10_16_5b-696x696.jpg",
+        "name": "Cabbage Barley Soup",
+        "cookTime": "PT06H15M",
+        "ingredients": "[\"1 cup dried brown lentils, rinsed\",\"1/2 cup medium pearl barley\",\"3 medium carrots, chopped\",\"2 celery ribs, chopped\",\"1/2 teaspoon poultry seasoning\",\"1/4 teaspoon pepper\",\"1 bottle (46 ounces) V8 juice\",\"4 cups water\",\"8 cups shredded cabbage (about 16 ounces)\",\"1/2 pound sliced fresh mushrooms\",\"3/4 teaspoon salt\"]",
+        "URL": "https://www.tasteofhome.com/recipes/cabbage-barley-soup/",
+        "prepTime": "PT15M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"38g protein. \",\"fiberContent\":\"2g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"44g fat (16g saturated fat)\",\"cholesterolContent\":\"148mg cholesterol\",\"calories\":\" 661 calories\",\"carbohydrateContent\":\"25g carbohydrate (3g sugars\",\"sodiumContent\":\"863mg sodium\"}",
+        "directions": [
+            "Preheat oven to 400°. Carefully hollow out each roll, leaving a 1/2-in. shell (save removed bread for another use). Spread inside of rolls with butter. In a large bowl, combine the crab, cheese, celery mayonnaise, parsley, seafood seasoning, if desired, and paprika; divide between rolls. Wrap each in foil and place on a baking sheet. Bake until cheese is melted, 15-20 minutes."
+        ],
+        "totalTime": "PT35M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Crabmeat-Boats_EXPS_SDFM19_41215_C10_17_1b-696x696.jpg",
+        "name": "Crabmeat Boats",
+        "cookTime": "PT15M",
+        "ingredients": "[\"2 kaiser rolls, split\",\"2 teaspoons butter, softened\",\"1 can (6 ounces) lump crabmeat, drained\",\"4 ounces Swiss cheese, cubed\",\"1 celery rib, chopped\",\"1/4 cup mayonnaise\",\"1 teaspoon minced fresh parsley\",\"1/4 teaspoon seafood seasoning, optional\",\"1/4 teaspoon paprika\"]",
+        "URL": "https://www.tasteofhome.com/recipes/crabmeat-boats/",
+        "prepTime": "PT20M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"4g protein. <B>Diabetic Exchanges: <\\/B> 2 vegetable\",\"fiberContent\":\"4g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"0 fat (0 saturated fat)\",\"cholesterolContent\":\"0 cholesterol\",\"calories\":\" 117 calories\",\"carbohydrateContent\":\"25g carbohydrate (7g sugars\",\"sodiumContent\":\"419mg sodium\"}",
+        "directions": [
+            "Combine all ingredients in a 6- or 7-qt. slow cooker. Cover and cook on high until rice and vegetables are tender, 5-6 hours. Discard bay leaves and thyme sprigs before serving. If desired, remove leaves from remaining thyme sprigs and sprinkle over soup when serving."
+        ],
+        "totalTime": "PT05H25M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Slow-Cooked-Vegetable-Wild-Rice-Soup_EXPS_SDFM19_133461_B10_16_6b-696x696.jpg",
+        "name": "Slow-Cooked Vegetable Wild Rice Soup",
+        "cookTime": "PT05H00M",
+        "ingredients": "[\"6 cups reduced-sodium vegetable broth\",\"2 cans (14-1/2 ounces each) fire-roasted diced tomatoes\",\"2 celery ribs, sliced\",\"2 medium carrots, chopped\",\"1-3/4 cups sliced baby portobello mushrooms\",\"1 medium onion, chopped\",\"1 medium parsnip, peeled and chopped\",\"1 medium sweet potato, peeled and cubed\",\"1 medium green pepper, chopped\",\"1 cup uncooked wild rice\",\"2 garlic cloves, minced\",\"3/4 teaspoon salt\",\"1/4 teaspoon pepper\",\"2 bay leaves\",\"2 fresh thyme sprigs, plus more for topping\"]",
+        "URL": "https://www.tasteofhome.com/recipes/slow-cooked-vegetable-wild-rice-soup/",
+        "prepTime": "PT25M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"28g protein. \",\"fiberContent\":\"5g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"15g fat (5g saturated fat)\",\"cholesterolContent\":\"70mg cholesterol\",\"calories\":\" 431 calories\",\"carbohydrateContent\":\"47g carbohydrate (10g sugars\",\"sodiumContent\":\"843mg sodium\"}",
+        "directions": [
+            "In a Dutch oven, cook beef, green pepper, onion and garlic over medium heat until beef is no longer pink and vegetables are tender, 8-10 minutes, breaking up beef into crumbles; drain.",
+            "Add water, tomatoes, tomato sauce, chili powder, jelly and salt. Bring to a boil. Stir in spaghetti. Reduce heat; simmer, covered, until spaghetti is tender, 6-8 minutes."
+        ],
+        "totalTime": "PT30M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Ground-Beef-Spaghetti-Skillet_EXPS_SDFM19_177728_C10_18_1b-696x696.jpg",
+        "name": "Ground Beef Spaghetti Skillet",
+        "cookTime": "PT20M",
+        "ingredients": "[\"1 pound ground beef\",\"1 medium green pepper, chopped\",\"1 small onion, chopped\",\"2 garlic cloves, minced\",\"1-1/2 cups water\",\"1 can (14-1/2 ounces) diced tomatoes, undrained\",\"1 can (8 ounces) tomato sauce\",\"1 tablespoon chili powder\",\"1 tablespoon grape jelly\",\"1/2 teaspoon salt\",\"6 ounces uncooked thin spaghetti, halved\"]",
+        "URL": "https://www.tasteofhome.com/recipes/ground-beef-spaghetti-skillet/",
+        "prepTime": "PT10M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"33g protein. \",\"fiberContent\":\"4g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"19g fat (8g saturated fat)\",\"cholesterolContent\":\"96mg cholesterol\",\"calories\":\" 482 calories\",\"carbohydrateContent\":\"41g carbohydrate (5g sugars\",\"sodiumContent\":\"962mg sodium\"}",
+        "directions": [
+            "In a large skillet, cook beef, onion, green pepper and jalapeno over medium heat until meat is no longer pink and vegetables are tender, breaking up beef into crumbles, 8-10 minutes; drain.",
+            "Add rice, tomatoes, broth and seasonings. Bring to a boil, then reduce heat. Simmer, covered, until liquid is absorbed, about 5 minutes. Fluff with a fork. Remove from heat; sprinkle with cheese. Let stand, covered, until cheese is melted."
+        ],
+        "totalTime": "PT30M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Southwestern-Beef-and-Rice-Skillet_EXPS_SDFM19_182602_C10_19_4b-696x696.jpg",
+        "name": "Southwestern Beef and Rice Skillet",
+        "cookTime": "PT20M",
+        "ingredients": "[\"1 pound lean ground beef (90% lean)\",\"1 medium onion, chopped\",\"1 medium green pepper, chopped\",\"1 jalapeno pepper, seeded and finely chopped\",\"1-1/2 cups uncooked instant rice\",\"1 can (14-1/2 ounces) diced tomatoes with mild green chilies\",\"1-1/2 cups beef broth\",\"1 teaspoon ground cumin\",\"1/4 teaspoon salt\",\"1/4 teaspoon pepper\",\"1 cup shredded Mexican cheese blend\"]",
+        "URL": "https://www.tasteofhome.com/recipes/southwestern-beef-and-rice-skillet/",
+        "prepTime": "PT10M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"6g protein. <B>Diabetic Exchanges: <\\/B> 1-1/2 starch.\",\"fiberContent\":\"5g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"1g fat (0 saturated fat)\",\"cholesterolContent\":\"0 cholesterol\",\"calories\":\" 117 calories\",\"carbohydrateContent\":\"21g carbohydrate (3g sugars\",\"sodiumContent\":\"616mg sodium\"}",
+        "directions": [
+            "In a 3-qt. slow cooker, combine the first six ingredients. Cook, covered, on low until vegetables are softened, 6-8 hours.",
+            "Puree soup using an immersion blender, or cool soup slightly and puree in batches in a blender. Return to slow cooker and heat through.",
+            "In a small skillet, heat oil over medium heat. Add corn; cook and stir, until golden brown, 4-6 minutes. Sprinkle soup with pepper. Garnish with corn and cilantro."
+        ],
+        "totalTime": "PT06H15M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Slow-Cooked-Black-Bean-Soup_EXPS_SDFM19_189463_B10_16_3b-696x696.jpg",
+        "name": "Slow-Cooked Black Bean Soup",
+        "cookTime": "PT06H00M",
+        "ingredients": "[\"2 cans (15 ounces each) black beans, rinsed and drained\",\"1 medium onion, finely chopped\",\"1 medium sweet red pepper, finely chopped\",\"4 garlic cloves, minced\",\"2 teaspoons ground cumin\",\"2 cans (14-1/2 ounces each) vegetable broth\",\"1 teaspoon olive oil\",\"1 cup fresh or frozen corn\",\"Dash pepper\",\"Minced fresh cilantro\"]",
+        "URL": "https://www.tasteofhome.com/recipes/slow-cooked-black-bean-soup/",
+        "prepTime": "PT15M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"2g protein. <B>Diabetic Exchanges: <\\/B> 1 vegetable\",\"fiberContent\":\"3g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"6g fat (1g saturated fat)\",\"cholesterolContent\":\"0 cholesterol\",\"calories\":\" 126 calories\",\"carbohydrateContent\":\"19g carbohydrate (11g sugars\",\"sodiumContent\":\"144mg sodium\"}",
+        "directions": [
+            "Toss together all ingredients. Refrigerate, covered, to allow flavors to blend, about 3 hours."
+        ],
+        "totalTime": "PT10M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/2018/12/Cabbage-and-Rutabaga-Slaw_EXPS_SDFM19_197398_C10_10_2b-696x696.jpg",
+        "name": "Cabbage and Rutabaga Slaw",
+        "cookTime": "PT0M",
+        "ingredients": "[\"2 cups diced peeled rutabaga\",\"2 cups finely chopped cabbage\",\"1/2 cup finely chopped red onion\",\"1/4 cup minced fresh Italian parsley\",\"1/2 cup reduced-fat apple cider vinaigrette\"]",
+        "URL": "https://www.tasteofhome.com/recipes/cabbage-and-rutabaga-slaw/",
+        "prepTime": "PT10M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"5g protein.  <B>Diabetic Exchanges: <\\/B>1 starch\",\"fiberContent\":\"3g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"12g fat (4g saturated fat)\",\"cholesterolContent\":\"0 cholesterol\",\"calories\":\" 181 calories\",\"carbohydrateContent\":\"16g carbohydrate (5g sugars\",\"sodiumContent\":\"470mg sodium\"}",
+        "directions": [
+            "In a 4- or 5-qt. slow cooker, combine the first 13 ingredients. Cook, covered, on low until squash is tender, 5-6 hours.",
+            "Puree soup using an immersion blender, or cool slightly and puree soup in batches in a blender. Return to slow cooker and heat through. If desired, garnish with cilantro and peanuts."
+        ],
+        "totalTime": "PT05H25M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/2018/12/Slow-Cooker-Thai-Butternut-Squash-Peanut-Soup_EXPS_SDJF19_219944_B10_17_6b-696x696.jpg",
+        "name": "Slow-Cooker Thai Butternut Squash Peanut Soup",
+        "cookTime": "PT05H00M",
+        "ingredients": "[\"3 cups cubed peeled butternut squash\",\"1 can (13.66 ounces) light coconut milk\",\"1 medium sweet red pepper, finely chopped\",\"1 medium onion, finely chopped\",\"1 cup vegetable stock\",\"1/2 cup chunky peanut butter\",\"3 tablespoons lime juice\",\"2 tablespoons red curry paste\",\"4 garlic cloves, minced\",\"1 tablespoon reduced-sodium soy sauce\",\"1 teaspoon minced fresh gingerroot\",\"1/2 teaspoon salt\",\"1/4 teaspoon pepper\",\"Chopped fresh cilantro and chopped salted peanuts, optional \"]",
+        "URL": "https://www.tasteofhome.com/recipes/slow-cooker-thai-butternut-squash-peanut-soup/",
+        "prepTime": "PT25M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"9g protein. <B>Diabetic Exchanges: <\\/B> 1-1/2 starch\",\"fiberContent\":\"4g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"1g fat (0 saturated fat)\",\"cholesterolContent\":\"0 cholesterol\",\"calories\":\" 134 calories\",\"carbohydrateContent\":\"24g carbohydrate (2g sugars\",\"sodiumContent\":\"420mg sodium\"}",
+        "directions": [
+            "Place the water, broth, lentils, carrots, onion, celery and 1/2 teaspoon oregano in a 5- or 6-qt. slow cooker. Cook, covered, on low until lentils are tender, 4-5 hours.",
+            "Stir in the spinach, tomato sauce, olives, vinegar, garlic, salt, pepper and remaining 1/2 teaspoon oregano. Cook, covered on low until spinach is wilted, about 1 hour longer. If desired, serve with red onion, parsley and lemon wedges."
+        ],
+        "totalTime": "PT05H20M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Greek-Style-Lentil-Soup_EXPS_SDFM19_220763_B10_16_4b-696x696.jpg",
+        "name": "Greek-Style Lentil Soup",
+        "cookTime": "PT05H00M",
+        "ingredients": "[\"4 cups water\",\"4 cups vegetable broth\",\"2 cups dried lentils, rinsed\",\"2 medium carrots, chopped\",\"1 small onion, chopped\",\"1 celery rib, chopped\",\"1 teaspoon dried oregano, divided \",\"1 cup chopped fresh spinach\",\"1/2 cup tomato sauce\",\"1 can (2-1/4 ounces) sliced ripe olives, drained\",\"3 tablespoons red wine vinegar\",\"2 garlic cloves, minced\",\"1/2 teaspoon salt\",\"1/4 teaspoon pepper\",\"Chopped red onion, chopped parsley and lemon wedges, optional \"]",
+        "URL": "https://www.tasteofhome.com/recipes/greek-style-lentil-soup/",
+        "prepTime": "PT20M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"7g protein. \",\"fiberContent\":\"3g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"14g fat (6g saturated fat)\",\"cholesterolContent\":\"3mg cholesterol\",\"calories\":\" 349 calories\",\"carbohydrateContent\":\"51g carbohydrate (33g sugars\",\"sodiumContent\":\"373mg sodium\"}",
+        "directions": [
+            "Preheat oven to 350°. Grease a 13x9-in. baking pan. In a large bowl, combine pudding mix and milk until blended. Stir in cake mix (batter will be thick). Fold in peanut butter cups, peanut butter chips and chocolate chips. Spread into prepared pan. Sprinkle with peanuts.",
+            "Bake until a toothpick inserted in center comes out with moist crumbs, 20-25 minutes. Cool completely in pan on a wire rack. Serve with ice cream or whipped cream if desired."
+        ],
+        "totalTime": "PT35M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Chocolate-Peanut-Butter-Dump-Cake-_EXPS_SDFM19_228787_B10_10_8b-696x696.jpg",
+        "name": "Chocolate-Peanut Butter Dump Cake",
+        "cookTime": "PT20M",
+        "ingredients": "[\"1 package (3.9 ounces) instant chocolate pudding mix\",\"1-3/4 cups 2% milk\",\"1 package chocolate cake mix or devil's food cake mix (regular size)\",\"6 packages (1-1/2 ounces each) peanut butter cups, chopped\",\"3/4 cup peanut butter chips\",\"3/4 cup semisweet chocolate chips\",\"1/2 cup chopped unsalted peanuts\",\"Vanilla ice cream or sweetened whipped cream, optional \"]",
+        "URL": "https://www.tasteofhome.com/recipes/chocolate-peanut-butter-dump-cake/",
+        "prepTime": "PT15M"
+    },
+    {
+        "nutrition": "{\"proteinContent\":\"8g protein. \",\"fiberContent\":\"2g fiber)\",\"@type\":\"NutritionInformation\",\"fatContent\":\"9g fat (4g saturated fat)\",\"cholesterolContent\":\"83mg cholesterol\",\"calories\":\" 330 calories\",\"carbohydrateContent\":\"51g carbohydrate (36g sugars\",\"sodiumContent\":\"526mg sodium\"}",
+        "directions": [
+            "In a large bowl, whisk cornbread mix, pudding mix and milk until blended. Add eggs, molasses and spices; whisk until combined. Transfer to a greased 4- or 5-qt. slow cooker. Cover and cook on high for 1 hour.",
+            "Reduce heat to low; stir, making sure to scrape the sides well. Cover and cook 1 hour longer. Stir; cover and cook 1 hour longer. Stir; cover and cook until very thick, 30-60 minutes longer. Serve warm, with ice cream or whipped cream if desired."
+        ],
+        "totalTime": "PT03H45M",
+        "imageURL": "https://www.tasteofhome.com/wp-content/uploads/0001/01/New-England-Indian-Pudding_EXPS_SDFM19_229263_B10_10_6b-696x696.jpg",
+        "name": "New England Indian Pudding",
+        "cookTime": "PT03H30M",
+        "ingredients": "[\"1 package (8-1/2 ounces) cornbread/muffin mix\",\"1 package (3.40 ounces) instant butterscotch pudding mix\",\"4 cups whole milk\",\"3 large eggs, lightly beaten\",\"1/2 cup molasses\",\"1 teaspoon ground cinnamon\",\"1/4 teaspoon ground cloves\",\"1/4 teaspoon ground ginger\",\"Vanilla ice cream or sweetened whipped cream, optional \"]",
+        "URL": "https://www.tasteofhome.com/recipes/new-england-indian-pudding/",
+        "prepTime": "PT15M"
+    }
+]
