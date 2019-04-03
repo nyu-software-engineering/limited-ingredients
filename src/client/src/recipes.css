@@ -1,0 +1,58 @@
+.recipe-container{
+    margin-top: 48px;
+    border-top: 1px solid lightgray;
+}
+
+.recipe-container > .recipe-left{
+    position: relative;
+    width: 25%;
+    height: 180px;
+}
+
+.recipe-container > .recipe-left > img{
+    position: absolute;
+    top: 0;
+    left: calc(50% - 75px);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    top: 20px
+}
+
+.recipe-container > .recipe-middle{
+    /* height: 140px; */
+    margin-top: 16px;
+    width: 60%;
+}
+.recipe-container > .recipe-middle > .more-button:hover{
+    cursor: pointer;
+}
+
+
+.recipe-container > .recipe-left, .recipe-container > .recipe-middle, .recipe-container > .recipe-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.recipe-container > .recipe-middle > .sub-menu > .sub-heading{
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.recipe-container > .recipe-right{
+    /* height: 140px; */
+    width: 10%;
+    height: 180px;
+    position: relative;
+}
+.recipe-container > .recipe-right > img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: calc(50% - 20px);
+    top: 50px;
+}
+.recipe-container > .recipe-right > img:hover{
+    cursor: pointer;
+}

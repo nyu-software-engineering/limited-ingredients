@@ -6,6 +6,11 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 //import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
+import '../../recipes.css';
+import selectedRecipeImg from '../../selected-recipe.png';
+import unselectedRecipeImg from '../../unselected-recipe.png';
+
+import { USER_LOADING } from "../../actions/types";
 class RecipeForm extends Component {
     constructor() {
         super();
@@ -35,7 +40,7 @@ class RecipeForm extends Component {
             //end loading state
             console.log(res.data);
             // this.setState({ results: res.data});
-            this.setState({ results: [{id: 7777, name:'Salad',directions:'do some things','ingredientes':'you need this'},{id: 9999, name:'another recipe',directions:'do some things','ingredientes':'you need this'}]});
+            this.setState({ results: [{id: 7777, name:'Salad',directions:'do some things',ingredients:'you need this1'},{id: 9999, name:'another recipe',directions:'do some things',ingredients:'you need this2'}]});
 
         }) 
         .catch(err => {
@@ -52,13 +57,10 @@ class RecipeForm extends Component {
     }
     renderSubMenu = rec =>{
         if(this.state.selectedRecipeId === rec.id){
-            const subHeading = {
-                fontSize: '16px',
-            }
-            return <div>
-                        <p style={subHeading}>Directions</p>
+            return <div className='sub-menu'>
+                        <p className='sub-heading'>Directions</p>
                         <p>{rec.directions}</p>
-                        <p style={subHeading}>Ingredients</p>
+                        <p className='sub-heading'>Ingredients</p>
                         <p>{rec.ingredients}</p>
                     </div>
         }
@@ -68,28 +70,40 @@ class RecipeForm extends Component {
             const moreButton ={
                 color: 'cornflowerblue',
             }
-            return <a style={moreButton} onClick={(e)=>this.onRecipeClick(e,rec.id)}>More +</a>
+            return <a style={moreButton} className='more-button' onClick={(e)=>this.onRecipeClick(e,rec.id)}>More +</a>
         }
     } 
     //render the recipes
     createRecipes () {
-        const recipe = {
-            marginTop: '48px',
-            borderTop: "1px solid lightgray",
-        }
-        
         const recipes = this.state.results;
         return recipes.map( rec => {
-
-            return <div style={recipe}>
-                        <h3>{rec.name}</h3>
-                        {this.renderMoreButton(rec)}
-                        {this.renderSubMenu(rec)}
+            
+            return <div className='recipe-container'>
+                        <div className='recipe-left'>
+                            <img src={rec.img} />
+                        </div>
+                        <div className='recipe-middle'>
+                            <h3>{rec.name}</h3>
+                            {this.renderMoreButton(rec)}
+                            {this.renderSubMenu(rec)}
+                        </div>
+                        <div className='recipe-right'>
+                            {this.renderLikeButton(rec)}
+                        </div>
                     </div>
 
         });
     }
     
+    renderLikeButton = (rec) =>{
+        // if(rec.id in user.savedRecipes){
+            // return <img src={selectedRecipeImg}/>
+        // }else{
+            return <img src={unselectedRecipeImg}/>
+
+        
+    }
+
 
     render() {
         const center = {
@@ -109,8 +123,6 @@ class RecipeForm extends Component {
                             type="text"
                         />
                         <label htmlFor="query">Enter your ingredients (separate each ingredient with a space)</label>
-                    </div>
-                    <div className="col s12" style={{ paddingLeft: "11.250px" }}>
                         <button
                             style={{
                                 width: "150px",
