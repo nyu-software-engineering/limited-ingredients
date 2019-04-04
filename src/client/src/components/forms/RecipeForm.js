@@ -32,8 +32,8 @@ class RecipeForm extends Component {
         };
         console.log(newQuery);
         //submit form using redux way
-        //this.props.search(newQuery);
-        
+        this.props.search(newQuery);
+        /*
         axios
         .post("api/search", newQuery)
         .then(res => {
@@ -47,6 +47,7 @@ class RecipeForm extends Component {
             console.log('catch err');
             console.log(err);
         });
+        */
     };
     onRecipeClick = (e,recId) => {
         //open more display
@@ -99,8 +100,8 @@ class RecipeForm extends Component {
         // if(rec._id in user.savedRecipes){
             // return <img src={selectedRecipeImg}/>
         // }else{
-            return <img src={unselectedRecipeImg}/>
-
+            return <img  src={unselectedRecipeImg}/>
+        //onclick={saveRecipe(rec)}
         
     }
 
