@@ -18,3 +18,5 @@ let RecipeSchema = new mongoose.Schema(
 mongoose.model('Recipe', RecipeSchema);
 const url = "mongodb://localhost:27017/limitedIngredients";
 mongoose.connect(url);
+
+module.exports = mongoose.model("Recipe", RecipeSchema);
