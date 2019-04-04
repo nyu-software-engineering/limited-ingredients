@@ -6,18 +6,25 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 //import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
+import '../../recipes.css';
+import selectedRecipeImg from '../../selected-recipe.png';
+import unselectedRecipeImg from '../../unselected-recipe.png';
+
+import { USER_LOADING } from "../../actions/types";
 class RecipeForm extends Component {
     constructor() {
         super();
         this.state = {
             query: "",
-            results: []
+            results: [],
+            selectedRecipeId: -1,
         }
     }
     onChange = e => {
         this.setState({ [e.target.id]: e.target.value });
       };
     onSubmit = e => {
+        //set loading state
         e.preventDefault();
         const newQuery = {
             query: this.state.query
@@ -30,33 +37,77 @@ class RecipeForm extends Component {
         axios
         .post("api/search", newQuery)
         .then(res => {
+            //end loading state
             console.log(res.data);
             this.setState({ results: res.data});
+
         }) 
         .catch(err => {
+            //end loading state
             console.log('catch err');
             console.log(err);
         });
     };
+    onRecipeClick = (e,recId) => {
+        //open more display
+        // e.target.style['display'] = 'none';
+        //set state of clickedRecipe = recipe id
+        this.setState({selectedRecipeId: recId})
+    }
+    renderSubMenu = rec =>{
+        if(this.state.selectedRecipeId === rec._id){
+            return <div className='sub-menu'>
+                        <p className='sub-heading'>Directions</p>
+                        <p>{rec.directions}</p>
+                        <p className='sub-heading'>Ingredients</p>
+                        <p>{rec.ingredients}</p>
+                    </div>
+        }
+    }
+    renderMoreButton = rec => {
+        if(this.state.selectedRecipeId !== rec._id){
+            const moreButton ={
+                color: 'cornflowerblue',
+            }
+            return <a style={moreButton} className='more-button' onClick={(e)=>this.onRecipeClick(e,rec._id)}>More +</a>
+        }
+    } 
     //render the recipes
     createRecipes () {
         const recipes = this.state.results;
-        return recipes.map( x => {
-            //let recipe_ingredients = x.ingredients
-            return <div style = {{border: "1 px solid black"}}>
-                        <h2>{x.name}</h2>
-                        <h3>Directions</h3>
-                        <p>{x.directions}</p>
-                        <h3>Ingredients</h3>
-                        <p>{x.ingredients}</p>
+        return recipes.map( rec => {
+            
+            return <div className='recipe-container'>
+                        <div className='recipe-left'>
+                            <img src={rec.imageURL} />
+                        </div>
+                        <div className='recipe-middle'>
+                            <h3>{rec.name}</h3>
+                            <p>Prep Time: {rec.prepTime} Cook Time: {rec.cookTime} Total Time: {rec.totalTime}</p>
+                            {this.renderMoreButton(rec)}
+                            {this.renderSubMenu(rec)}
+                        </div>
+                        <div className='recipe-right'>
+                            {this.renderLikeButton(rec)}
+                        </div>
                     </div>
 
         });
     }
     
+    renderLikeButton = (rec) =>{
+        // if(rec._id in user.savedRecipes){
+            // return <img src={selectedRecipeImg}/>
+        // }else{
+            return <img src={unselectedRecipeImg}/>
+
+        
+    }
+
+
     render() {
         const center = {
-            margin: "20%"
+            margin: "20px 20% 20% 20%",
         }
         // redux debugging
         const received = this.props.received;
@@ -72,8 +123,6 @@ class RecipeForm extends Component {
                             type="text"
                         />
                         <label htmlFor="query">Enter your ingredients (separate each ingredient with a space)</label>
-                    </div>
-                    <div className="col s12" style={{ paddingLeft: "11.250px" }}>
                         <button
                             style={{
                                 width: "150px",
@@ -102,7 +151,7 @@ RecipeForm.propTypes = {
   const mapStateToProps = state => ({
     auth: state.auth,
     errors: state.errors,
-    received: state.received
+    received: state.received,
   });
 /*
 export default connect (
