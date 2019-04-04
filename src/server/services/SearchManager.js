@@ -11,11 +11,6 @@ function searchRecipes (req, res){
     Recipes.find().then(success=>{
         console.log("success length, ", success.length);
         success.forEach (recipe => {
-            //let ingredients = JSON.parse("[" + recipe.ingredients + "]");
-            //let ingredients = JSON.parse(recipe.ingredients)
-            //console.log("ingredients: ", recipe.ingredients);
-            //console.log("type of ingredients[0]: ", typeof(ingredients[0]))
-            //console.log("ingredients[0]", ingredients[0]);
             if (recipe.ingredients){
                 recipe.ingredients.forEach((ingredient) => {
                     //console.log("ingredient: ", ingredient)
