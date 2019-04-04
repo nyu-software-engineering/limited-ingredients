@@ -11,6 +11,7 @@ let RecipeSchema = new mongoose.Schema(
         cookTime: {type: String, required: true},
         ingredients: {type: Array, required: true},
         URL: {type: String, required: true},
+        imageURL: {type: String},
         prepTime: {type: String, required: true}
     }
 );

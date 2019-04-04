@@ -14,6 +14,6 @@ Recipes.insertMany(allRecipes, function (err, success){
         console.log(err);
     }
     else{
-        console.log(success);
+        //console.log(success);
     }
 });
