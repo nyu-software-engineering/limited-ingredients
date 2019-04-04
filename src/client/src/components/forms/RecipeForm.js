@@ -1,19 +1,16 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { search } from "../../actions/search";
-import axios from "axios";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-//import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
 import '../../recipes.css';
 import selectedRecipeImg from '../../selected-recipe.png';
 import unselectedRecipeImg from '../../unselected-recipe.png';
 
-import { USER_LOADING } from "../../actions/types";
 class RecipeForm extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             query: "",
             results: [],
@@ -32,21 +29,7 @@ class RecipeForm extends Component {
         };
         console.log(newQuery);
         //submit form using redux way
-        //this.props.search(newQuery);
-        
-        axios
-        .post("api/search", newQuery)
-        .then(res => {
-            //end loading state
-            console.log(res.data);
-            this.setState({ results: res.data});
-
-        }) 
-        .catch(err => {
-            //end loading state
-            console.log('catch err');
-            console.log(err);
-        });
+        this.props.search(newQuery);
     };
     onRecipeClick = (e,recId) => {
         //open more display
@@ -74,7 +57,11 @@ class RecipeForm extends Component {
     } 
     //render the recipes
     createRecipes () {
-        const recipes = this.state.results;
+        console.log("this.props: ", this.props);
+        
+        const recipes = this.props.recipes.recipes;
+        console.log("recipes in createRecipes: ", recipes);
+        
         return recipes.map( rec => {
             
             return <div className='recipe-container'>
@@ -93,14 +80,15 @@ class RecipeForm extends Component {
                     </div>
 
         });
+        
     }
     
     renderLikeButton = (rec) =>{
         // if(rec._id in user.savedRecipes){
             // return <img src={selectedRecipeImg}/>
         // }else{
-            return <img src={unselectedRecipeImg}/>
-
+            return <img  src={unselectedRecipeImg}/>
+        //onclick={saveRecipe(rec)}
         
     }
 
@@ -136,9 +124,9 @@ class RecipeForm extends Component {
                         </button>
                     </div>
                 </form>
-                <div>
+                <div className="recipes">
                     {this.createRecipes()}
-                    {this.props.received}
+                    {this.props.recieved}
                 </div>
             </div>
         );
@@ -148,11 +136,16 @@ class RecipeForm extends Component {
 RecipeForm.propTypes = {
     search: PropTypes.func.isRequired
   };
-  const mapStateToProps = state => ({
-    auth: state.auth,
-    errors: state.errors,
-    received: state.received,
-  });
+  const mapStateToProps = state => {
+        console.log("state: ", state);
+        return {
+            auth: state.auth,
+            errors: state.errors,
+            recipes: state.recipe
+        }
+      
+  }
+    
 /*
 export default connect (
     mapStateToProps,

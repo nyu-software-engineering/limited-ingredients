@@ -28,7 +28,11 @@ export const search = (query) => dispatch => {
 export const setResults = (recipes) =>{
   return {
     type: UPDATE_RECIPE,
-    payload: recipes
+    payload: {
+      recieved: true,
+      recipes: recipes.data
+    }
+
   };
 };
 
