@@ -62,9 +62,9 @@ class RecipeForm extends Component {
         const recipes = this.props.recipes.recipes;
         console.log("recipes in createRecipes: ", recipes);
         
-        return recipes.map( rec => {
+        return recipes.map( (rec, i) => {
             
-            return <div className='recipe-container'>
+            return <div key = {i} className='recipe-container'>
                         <div className='recipe-left'>
                             <img src={rec.imageURL} />
                         </div>
