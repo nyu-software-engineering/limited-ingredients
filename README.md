@@ -30,6 +30,10 @@ Run MongoDB in Terminal
 ```js
 mongod
 ```
+Import Recipes into MongoDB in Terminal
+```js
+mongoimport --db limitedIngredients --collection recipes --drop --file <path-to-limited-ingredients/scraper/data.json> --jsonArray
+```
 Start project
 ```js
 cd src/server
