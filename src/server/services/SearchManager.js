@@ -30,7 +30,7 @@ function searchRecipes (req, res){
                     data.forEach(search => {
                         if (ingredient.includes(search)){
                             if (toBeReturned.includes(recipe)){
-                                //console.log("already contains recipe: ", recipe.name);
+                                console.log("already contains recipe: ", recipe.name);
                             }
                             else {
                                 toBeReturned.push(recipe)
