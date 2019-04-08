@@ -4,10 +4,23 @@ require('./../models/Recipes');
 const Recipes = mongoose.model('Recipe');
 
 function searchRecipes (req, res){
-    const data = req.body.query.split(" ");
-    let toBeReturned = []
+    const data = req.body.query.split(",");
+    let toBeReturned = [];
     console.log("query: ", data);
-    //Recipes.find().where('').in(['ingredients'])
+    /*
+    Recipes.find({
+        ingredients: {$elemMatch: {$all: data }}
+    }).exec(function (err, result) {
+        if (err){
+            console.log("err: ", err);
+        }else {
+            console.log("result: ", result[0]);
+            toBeReturned.push(result);
+            //return res.send(toBeReturned);
+        }
+    });
+    */
+    
     Recipes.find().then(success=>{
         console.log("success length, ", success.length);
         success.forEach (recipe => {
@@ -35,6 +48,7 @@ function searchRecipes (req, res){
                 console.log("ingredients not defined");
             }  
         });
+        
         //TODO: rank results in order of best match to least match
         let bestResults = [];
 
@@ -44,6 +58,8 @@ function searchRecipes (req, res){
         //toBeReturned = bestResults;
 
     })
+
+   
     setTimeout(() =>{
         console.log("toBeReturned length: ", toBeReturned.length)
         return res.send(toBeReturned);
