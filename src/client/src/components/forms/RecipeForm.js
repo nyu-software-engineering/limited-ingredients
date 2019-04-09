@@ -39,11 +39,19 @@ class RecipeForm extends Component {
     }
     renderSubMenu = rec =>{
         if(this.state.selectedRecipeId === rec._id){
+            const dir = [];
+            for (const [index, value] of rec.directions.entries()) {
+                dir.push(<li className='sub-details'>{value}</li>);
+            }
+            const ingred = [];
+            for (const [index, value] of rec.ingredients.entries()) {
+                ingred.push(<li>{value}</li>);
+            }
             return <div className='sub-menu'>
                         <p className='sub-heading'>Directions</p>
-                        <p>{rec.directions}</p>
+                        {dir}
                         <p className='sub-heading'>Ingredients</p>
-                        <p>{rec.ingredients}</p>
+                        {ingred}
                     </div>
         }
     }
