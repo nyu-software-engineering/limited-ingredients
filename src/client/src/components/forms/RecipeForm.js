@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { search } from "../../actions/search";
+import { saveRecipe } from "../../actions/save";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
+import SaveButton from "./SaveButton";
 import classnames from "classnames";
 import '../../recipes.css';
 import selectedRecipeImg from '../../selected-recipe.png';
@@ -25,7 +27,6 @@ class RecipeForm extends Component {
         e.preventDefault();
         const newQuery = {
             query: this.state.query
-
         };
         console.log(newQuery);
         //submit form using redux way
@@ -83,7 +84,8 @@ class RecipeForm extends Component {
                             {this.renderSubMenu(rec)}
                         </div>
                         <div className='recipe-right'>
-                            {this.renderLikeButton(rec)}
+                            {/*this.renderLikeButton(rec)*/}
+                            <SaveButton recipe={rec._id} userId={this.props.auth.user.id}></SaveButton>
                         </div>
                     </div>
 
@@ -95,9 +97,16 @@ class RecipeForm extends Component {
         // if(rec._id in user.savedRecipes){
             // return <img src={selectedRecipeImg}/>
         // }else{
-            return <img  src={unselectedRecipeImg}/>
-        //onclick={saveRecipe(rec)}
         
+        return <img  src={unselectedRecipeImg} onClick={this.saveRecipe}/>
+        
+    }
+    saveRecipe(recipe){
+       // const recipe = this.state.recipe;
+        console.log("recipe: ", recipe);
+        console.log("user id: ", this.props.auth.user.id);
+        const newQuery = {recipe: recipe, userId: this.props.auth.user.id};
+        //this.props.saveRecipe(newQuery);
     }
 
 
