@@ -4,7 +4,7 @@ require('./../models/Recipes');
 const Recipes = mongoose.model('Recipe');
 
 function searchRecipes (req, res){
-    const data = req.body.query.split(",");
+    const data = req.body.query.split(" ");
     let toBeReturned = [];
     console.log("query: ", data);
     /*
