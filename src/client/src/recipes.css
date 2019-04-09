@@ -40,6 +40,12 @@
     font-weight: bold;
 }
 
+.recipe-container > .recipe-middle > .sub-menu .sub-details{
+    display: list-item;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
 .recipe-container > .recipe-right{
     /* height: 140px; */
     width: 10%;
