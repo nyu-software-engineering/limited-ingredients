@@ -84,7 +84,7 @@ class RecipeForm extends Component {
                         </div>
                         <div className='recipe-right'>
                             {/*this.renderLikeButton(rec)*/}
-                            <SaveButton recipe={rec._id} userId={this.props.auth.user.id} imgSrc={unselectedRecipeImg}></SaveButton>
+                            <SaveButton recipe={rec._id} userId={this.props.auth.user.id}></SaveButton>
                         </div>
                     </div>
 

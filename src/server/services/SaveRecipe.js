@@ -22,7 +22,7 @@ function saveRecipe (req, res){
                 res.status(400).json(error);
             } 
             else{
-                user["recipes"].push(recipe);
+                user["recipes"].push(recipeId);
                 user.save().then (user => {
                     res.json(user);
                     console.log(user);
