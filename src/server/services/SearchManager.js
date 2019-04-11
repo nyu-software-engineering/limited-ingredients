@@ -61,7 +61,7 @@ function searchRecipes (req, res){
 
    
     setTimeout(() =>{
-        //toBeReturned = toBeReturned.slice(0, 1);
+        toBeReturned = toBeReturned.slice(0, 1);
         console.log("toBeReturned length: ", toBeReturned.length)
         return res.send(toBeReturned);
     }, 3000)

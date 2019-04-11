@@ -67,7 +67,6 @@ class RecipeForm extends Component {
     //render the recipes
     createRecipes () {
         console.log("this.props: ", this.props);
-        
         const recipes = this.props.recipes.recipes;
         console.log("recipes in createRecipes: ", recipes);
         
@@ -85,28 +84,27 @@ class RecipeForm extends Component {
                         </div>
                         <div className='recipe-right'>
                             {/*this.renderLikeButton(rec)*/}
-                            <SaveButton recipe={rec._id} userId={this.props.auth.user.id}></SaveButton>
+                            <SaveButton recipe={rec._id} userId={this.props.auth.user.id} imgSrc={unselectedRecipeImg}></SaveButton>
                         </div>
                     </div>
 
         });
         
     }
-    
+    /*
     renderLikeButton = (rec) =>{
         // if(rec._id in user.savedRecipes){
             // return <img src={selectedRecipeImg}/>
         // }else{
-        
-        return <img  src={unselectedRecipeImg} onClick={this.saveRecipe}/>
-        
+        return <img  src={unselectedRecipeImg} onClick={this.saveRecipe}/> 
     }
+    */
     saveRecipe(recipe){
        // const recipe = this.state.recipe;
         console.log("recipe: ", recipe);
         console.log("user id: ", this.props.auth.user.id);
         const newQuery = {recipe: recipe, userId: this.props.auth.user.id};
-        //this.props.saveRecipe(newQuery);
+        this.props.saveRecipe(newQuery);
     }
 
 
@@ -154,7 +152,7 @@ RecipeForm.propTypes = {
     search: PropTypes.func.isRequired
   };
   const mapStateToProps = state => {
-        console.log("state: ", state);
+        //console.log("state: ", state);
         return {
             auth: state.auth,
             errors: state.errors,

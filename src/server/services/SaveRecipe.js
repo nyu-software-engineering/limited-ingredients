@@ -5,17 +5,29 @@ require('./../models/User');
 const User = mongoose.model('User');
 
 function saveRecipe (req, res){
-    const recipe = req.body.recipe;
+    const recipeId = req.body.recipe;
     const userId = req.body.userId;
+    const error = {};
     User.findOne({_id: userId}).then (user => {
         if (user){
-            console.log("user: ", user);
-            //console.log("found user!");
-            user["recipes"].push(recipe);
-            user.save().then (user => {
-                res.json(user);
-                console.log(user);
+            console.log("user recipe item type: ", typeof(user.recipes[0]));
+            const convertToId = mongoose.Types.ObjectId(recipeId);
+            console.log("recipeid: ", convertToId);
+            const alreadySavedRecipe = user.recipes.some(function (recipeId){
+                return recipeId.equals(convertToId);
             });
+            console.log("user contains recipe? : ", alreadySavedRecipe);
+            if (alreadySavedRecipe) {
+                error.duplicate = "User already saved this recipe";
+                res.status(400).json(error);
+            } 
+            else{
+                user["recipes"].push(recipe);
+                user.save().then (user => {
+                    res.json(user);
+                    console.log(user);
+                });
+            }
         }
         else{
             console.log("could not find user");
