@@ -3,72 +3,60 @@ var mongoose = require('mongoose');
 require('./../models/Recipes');
 const Recipes = mongoose.model('Recipe');
 
-function searchRecipes (req, res){
-    const data = req.body.query.split(" ");
-    let toBeReturned = [];
-    console.log("query: ", data);
-    /*
-    Recipes.find({
-        ingredients: {$elemMatch: {$all: data }}
-    }).exec(function (err, result) {
-        if (err){
-            console.log("err: ", err);
-        }else {
-            console.log("result: ", result[0]);
-            toBeReturned.push(result);
-            //return res.send(toBeReturned);
-        }
+function makeQueryRecipeSearchQuery(recipeArray) {
+    recipeArray.forEach(element => {
+        recipeArray.push(element + ",");
     });
-    */
-    
-    Recipes.find().then(success=>{
-        console.log("success length, ", success.length);
-        success.forEach (recipe => {
-            if (recipe.ingredients){
-                recipe.ingredients.forEach((ingredient) => {
-                    //console.log("ingredient: ", ingredient)
-                    data.forEach(search => {
-                        if (ingredient.includes(search)){
-                            if (toBeReturned.includes(recipe)){
-                                console.log("already contains recipe: ", recipe.name);
+    return [{
+        "$project": {
+            "_id": 1,
+            "URL": 1,
+            "nutrition": 1,
+            "directions": 1,
+            "totalTime": 1,
+            "imageURL": 1,
+            "name": 1,
+            "cookTime": 1,
+            "ingredients": 1,
+            "URL": 1,
+            "imageURL": 1,
+            "prepTime": 1,
+            "matchCount": {
+                "$size": {
+                    "$setIntersection": [{
+                        "$split": [{
+                            "$reduce": {
+                                "input": "$ingredients",
+                                "initialValue": '',
+                                "in": { "$concat": ["$$value", "$$this"] }
                             }
-                            else {
-                                toBeReturned.push(recipe)
-                            }
-                            //console.log(recipe.name, " has the ingredient ", search);
-                        }
-                        //else, dont include recipe because it doesn't have this ingredient: exit loop?
-                        else {
-
-                        }
-                    });         
-                });
+                        }, " "]
+                    }, recipeArray]
+                }
             }
-            else{
-                console.log("ingredients not defined");
-            }  
-        });
-        
-        //TODO: rank results in order of best match to least match
-        let bestResults = [];
-
-
-
-        //reorder results
-        //toBeReturned = bestResults;
-
-    })
-
-   
-    setTimeout(() =>{
-        toBeReturned = toBeReturned.slice(0, 1);
-        console.log("toBeReturned length: ", toBeReturned.length)
-        return res.send(toBeReturned);
-    }, 3000)
+        }
+    },{
+        "$sort": {
+            "matchCount": -1
+        }
+    },{
+        "$limit": 5
+    }];
 }
 
 
-
+function searchRecipes(req, res) {
+    const data = req.body.query.split(" ");
+    console.log("query on server: ", data);
+    const query = makeQueryRecipeSearchQuery(data);
+    Recipes.aggregate(query, (err, results) => {
+        if (err) {
+            console.log(err);
+            return res.send(err);
+        }
+        return res.send(results);
+    });
+}
 
 
 module.exports = {

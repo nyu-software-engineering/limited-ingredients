@@ -84,7 +84,7 @@ class RecipeForm extends Component {
                         </div>
                         <div className='recipe-right'>
                             {/*this.renderLikeButton(rec)*/}
-                            <SaveButton recipe={rec._id} userId={this.props.auth.user.id}></SaveButton>
+                            <SaveButton key={i} recipe={rec._id} userId={this.props.auth.user.id}></SaveButton>
                         </div>
                     </div>
 
@@ -114,7 +114,7 @@ class RecipeForm extends Component {
         }
         // redux debugging
         const received = this.props.received;
-        
+        //console.log("Rendering Recipei Form");
         return (
             <div style={center} >
                 <form noValidate onSubmit={this.onSubmit}>
