@@ -1,4 +1,6 @@
-const User = require('./../models/User');
+require('./../models/User');
+var mongoose = require('mongoose');
+const User = mongoose.model('User');
 const authenticationManager = require('./../services/AuthenticationManager');
 
 module.exports = {
@@ -11,14 +13,16 @@ module.exports = {
 		Find user in mongodb database
 	 */
 	findUser: (req, res, next) => {
-		const id = req.params.id;
-		User.findOne({id: id}).then((err,user) => {
-			if(err){
-				res.status(404).json(err);
-			}else{
+		//const id = req.params.id;
+		const userId = req.body.userId;
+		//console.log("id: ", userId);
+		User.findOne({_id: userId}).then((user) => {
+			if(user){
 				res.json(user);
+			}else{
+				console.log("error with finding user");
 			}
-    });
+   		});
 	},
 
 	/*This looks weird because auth is big enough to be its owns service*. Will usually call Mongo stuff from controller - Casey note*/

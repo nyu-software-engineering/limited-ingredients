@@ -21,10 +21,14 @@ module.exports = (router) => {
 
   // @route GET api/findUser/:id
   // @desc Find user by id
-  // @access Public
+	// @access Public
+	/*
   router
       .route('/findUser/:id')
-      .get(userController.findUser);
-
+			.get(userController.findUser);
+	*/
+	router
+			.route('/findUser')
+			.post(userController.findUser);
 	
 };

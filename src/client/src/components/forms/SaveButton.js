@@ -11,14 +11,17 @@ class SaveButton extends Component{
     constructor(props) {
         super(props);
         this.save = this.save.bind(this);
+        this.state = {
+            imgSrc: unselectedRecipeImg,
+        }
         //this.imgSrcList = new Array(this.props.lenofitems);
     }
 
     save() {
         // send the request. this.props.recipe contains only the recipe id
         const newQuery = {recipe: this.props.recipe, userId: this.props.auth.user.id};
-        this.props.saveRecipe(newQuery);
-        /*
+        // this.props.saveRecipe(newQuery);
+        
         axios.post("api/saveRecipe", newQuery)
          .then(res => {
             console.log("SAVE RECIPE RESPONSE:", res);
@@ -31,42 +34,49 @@ class SaveButton extends Component{
             console.log("err in saveRecipe: ", err);
             alert("Already saved this recipe");
          });
-         */
+         
     }
 
     render () {
-        console.log("save button rendering");
-        if (this.props.errors.errors){
-            //alert(this.props.errors.errors);
-            console.log("has error: ", this.props.errors.errors);
+        
+        // if (this.props.errors){
+        //     //console.log("props.errors: ", this.props.errors);
+        //     alert("already saved this recipe");
+        // }
+        if (this.props.recipe){
+            console.log("auth: ", this.props.auth.user);
+            console.log("recipes: ", this.props.recipes);
+            /*
+            if (this.props.recipes.recipes.includes(this.props.recipe)){
+                this.setState({imgSrc: selectedRecipeImg});
+            }
+            */
         }
         return (
-            <img src={this.props.imgSrc} onClick={this.save}/>
+            <img src={this.state.imgSrc} onClick={this.save}/>
         );
     }
 
-    // shouldComponentUpdate(nextProps){
-        
-    // }
 }
 
 SaveButton.propTypes = {
     saveRecipe: PropTypes.func.isRequired
   };
   const mapStateToProps = (state, ownProps) => {
-        console.log("state in saveButton: ", state);
+        // console.log("state in saveButton: ", state);
         //console.log("own props: ", ownProps);
         let currentRecipeSaved = false;
         if (state.saveRecipe["data"]){
             if (state.saveRecipe["data"]["recipes"]){
                 //console.log("response has recipes");
-                let recipe_length = state.saveRecipe.data.recipes.length;
-                if (state.saveRecipe.data.recipes[recipe_length - 1] == ownProps.recipe){
-                    //console.log("current recipe saved");
-                    currentRecipeSaved = true
+                if (state.saveRecipe.data.recipes.includes(ownProps.recipe)){
+                    // console.log("current recipe saved");
+                    currentRecipeSaved = true;
                 }
             }
         }
+        let hasErrors = false;
+        //if ()
         return {
             auth: state.auth,
             errors: state.errors,
