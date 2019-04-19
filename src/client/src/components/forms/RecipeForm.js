@@ -1,12 +1,16 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { search } from "../../actions/search";
+import { saveRecipe } from "../../actions/save";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
+import SaveButton from "./SaveButton";
 import classnames from "classnames";
 import '../../recipes.css';
 import selectedRecipeImg from '../../selected-recipe.png';
 import unselectedRecipeImg from '../../unselected-recipe.png';
+import axios from "axios";
+import { UPDATE_RECIPE } from "../../actions/types";
 
 class RecipeForm extends Component {
     constructor(props) {
@@ -15,6 +19,7 @@ class RecipeForm extends Component {
             query: "",
             results: [],
             selectedRecipeId: -1,
+            recipeSaveImageSrc: [], // this array indicates whether the recipe be displayed as saved or not
         }
     }
     onChange = e => {
@@ -25,7 +30,6 @@ class RecipeForm extends Component {
         e.preventDefault();
         const newQuery = {
             query: this.state.query
-
         };
         console.log(newQuery);
         //submit form using redux way
@@ -63,12 +67,16 @@ class RecipeForm extends Component {
             return <a style={moreButton} className='more-button' onClick={(e)=>this.onRecipeClick(e,rec._id)}>More +</a>
         }
     } 
+
+
     //render the recipes
     createRecipes () {
-        console.log("this.props: ", this.props);
-        
+        //console.log("this.props: ", this.props);
         const recipes = this.props.recipes.recipes;
-        console.log("recipes in createRecipes: ", recipes);
+        //console.log(recipes);
+        //console.log("recipes in createRecipes: ", recipes);
+        //issue: reloading the page does not reflect that a saved recipe was saved
+
         
         return recipes.map( (rec, i) => {
             
@@ -83,23 +91,53 @@ class RecipeForm extends Component {
                             {this.renderSubMenu(rec)}
                         </div>
                         <div className='recipe-right'>
-                            {this.renderLikeButton(rec)}
+                            {/*this.renderLikeButton(rec)*/}
+                            <SaveButton key={i} recipe={rec._id} userId={this.props.auth.user.id}></SaveButton>
                         </div>
                     </div>
 
         });
         
     }
-    
+    /*
     renderLikeButton = (rec) =>{
         // if(rec._id in user.savedRecipes){
             // return <img src={selectedRecipeImg}/>
         // }else{
-            return <img  src={unselectedRecipeImg}/>
-        //onclick={saveRecipe(rec)}
-        
+        return <img  src={unselectedRecipeImg} onClick={this.saveRecipe}/> 
     }
+    */
+   /*
+    saveRecipe(recipe){
+       // const recipe = this.state.recipe;
+        //console.log("recipe: ", recipe);
+        //console.log("user id: ", this.props.auth.user.id);
+        const newQuery = {recipe: recipe, userId: this.props.auth.user.id};
+        this.props.saveRecipe(newQuery);
+    }
+    */
 
+    componentDidMount () {
+        const allRecipes = this.props.recipes.recipes;
+        const query = {userId: this.props.auth.user.id};
+        const localRecipeSaveImageSrc = this.state.recipeSaveImageSrc;
+        console.log("query: ", query);
+        axios.post("api/findUser", query)
+            .then((res) => {
+                allRecipes.forEach((dbrecipe, index) => {
+                    if (res.recipes.includes(dbrecipe)){
+                        //this.setState({recipeSaveImageSrc: update (this.state.recipeSaveImageSrc, {index: {selectedRecipeImg}})});
+                        localRecipeSaveImageSrc[index] = selectedRecipeImg;
+                    } 
+                    else{
+                        localRecipeSaveImageSrc[index] = unselectedRecipeImg;
+                    }
+                });
+                this.setState({recipeSaveImageSrc: localRecipeSaveImageSrc});
+                console.log("recipeimgarray: ", this.state.recipeSaveImageSrc);
+                console.log("local: ", localRecipeSaveImageSrc);
+            });
+    }
 
     render() {
         const center = {
@@ -107,7 +145,7 @@ class RecipeForm extends Component {
         }
         // redux debugging
         const received = this.props.received;
-        
+        //console.log("Rendering Recipei Form");
         return (
             <div style={center} >
                 <form noValidate onSubmit={this.onSubmit}>
@@ -145,7 +183,7 @@ RecipeForm.propTypes = {
     search: PropTypes.func.isRequired
   };
   const mapStateToProps = state => {
-        console.log("state: ", state);
+        //console.log("state: ", state);
         return {
             auth: state.auth,
             errors: state.errors,

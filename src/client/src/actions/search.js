@@ -12,7 +12,7 @@ export const search = (query) => dispatch => {
   axios
     .post("api/search", query)
     .then(res => {
-      console.log("res: ", res);
+      //console.log("res: ", res);
       dispatch(setResults(res));
     }) 
     .catch(err => {
