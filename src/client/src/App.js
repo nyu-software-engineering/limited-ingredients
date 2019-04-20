@@ -14,6 +14,7 @@ import Landing from "./components/layout/Landing";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import RecipeForm from "./components/forms/RecipeForm";
+import Profile from "./components/auth/Profile";
 
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
@@ -50,6 +51,7 @@ class App extends Component {
             <Route exact path="/recipeForm" component={RecipeForm} />
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <Route exact path="/profile" component={Profile} />
             </Switch>
           </div>
         </Router>
