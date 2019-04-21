@@ -93,7 +93,8 @@ class RecipeForm extends Component {
                         <div className='recipe-right'>
                             {/*this.renderLikeButton(rec)*/}
                             <SaveButton key={i} recipe={rec._id} userId={this.props.auth.user.id}></SaveButton>
-                            <DeleteButton recipeId={rec._id} userId={this.props.auth.user.id}></DeleteButton>
+                            {/* The delete button is rendered here for testing, it would ideally be in the user dashboard */}
+                            <DeleteButton recipeId={rec._id} userId={this.props.auth.user.id} clicked={false}></DeleteButton>
                         </div>
                     </div>
 
@@ -117,12 +118,12 @@ class RecipeForm extends Component {
         this.props.saveRecipe(newQuery);
     }
     */
-
+    /*
     componentDidMount () {
         const allRecipes = this.props.recipes.recipes;
         const query = {userId: this.props.auth.user.id};
         const localRecipeSaveImageSrc = this.state.recipeSaveImageSrc;
-        /*
+        
         console.log("query: ", query);
         axios.post("api/findUser", query)
             .then((res) => {
@@ -139,9 +140,9 @@ class RecipeForm extends Component {
                 console.log("recipeimgarray: ", this.state.recipeSaveImageSrc);
                 console.log("local: ", localRecipeSaveImageSrc);
             });
-        */
+        
     }
-
+    */
     render() {
         const center = {
             margin: "20px 20% 20% 20%",

@@ -8,6 +8,14 @@ class DeleteButton extends Component {
     constructor (props){
         super(props);
         this.delete = this.delete.bind(this);
+        /*
+        this.state = {
+            clicked: false,
+            recipeId: this.props.recipeId,
+            userId: this.props.auth.user.id,
+            style: {}
+        }
+        */
     }
     delete(){
         const requestBody = {recipeId: this.props.recipeId,  userId: this.props.auth.user.id};
@@ -16,15 +24,26 @@ class DeleteButton extends Component {
          .then (res => {
             if (res.status == 200){
                 alert("deleted!");
+                //this.setState({clicked:true});
             }
          })
          .catch(err => {
             console.log("err deleting recipe: ", err);
-            //alert("can't delete twice!");
+            //this.setState({clicked:false});
          }) 
     }
 
     render(){
+        /*
+        if (this.props.clicked){
+            //this.style['backgroundColor'] = 'gray';
+            this.setState({style: {backgroundColor: 'gray'}});
+        }
+        else{
+            //this.style['backgroundColor'] = 'beige';
+            this.setState({style: {backgroundColor: 'beige'}});
+        }
+        */
         return(
             <button onClick = {this.delete}>DELETE</button>
         )
