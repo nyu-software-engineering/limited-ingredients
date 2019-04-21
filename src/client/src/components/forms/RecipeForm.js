@@ -5,6 +5,7 @@ import { saveRecipe } from "../../actions/save";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import SaveButton from "./SaveButton";
+import DeleteButton from "../dashboard/DeleteButton";
 import classnames from "classnames";
 import '../../recipes.css';
 import selectedRecipeImg from '../../selected-recipe.png';
@@ -73,7 +74,6 @@ class RecipeForm extends Component {
     createRecipes () {
         //console.log("this.props: ", this.props);
         const recipes = this.props.recipes.recipes;
-        //console.log(recipes);
         //console.log("recipes in createRecipes: ", recipes);
         //issue: reloading the page does not reflect that a saved recipe was saved
 
@@ -93,6 +93,8 @@ class RecipeForm extends Component {
                         <div className='recipe-right'>
                             {/*this.renderLikeButton(rec)*/}
                             <SaveButton key={i} recipe={rec._id} userId={this.props.auth.user.id}></SaveButton>
+                            {/* The delete button is rendered here for testing, it would ideally be in the user dashboard */}
+                            <DeleteButton recipeId={rec._id} userId={this.props.auth.user.id} clicked={false}></DeleteButton>
                         </div>
                     </div>
 
@@ -116,11 +118,12 @@ class RecipeForm extends Component {
         this.props.saveRecipe(newQuery);
     }
     */
-
+    /*
     componentDidMount () {
         const allRecipes = this.props.recipes.recipes;
         const query = {userId: this.props.auth.user.id};
         const localRecipeSaveImageSrc = this.state.recipeSaveImageSrc;
+        
         console.log("query: ", query);
         axios.post("api/findUser", query)
             .then((res) => {
@@ -137,8 +140,9 @@ class RecipeForm extends Component {
                 console.log("recipeimgarray: ", this.state.recipeSaveImageSrc);
                 console.log("local: ", localRecipeSaveImageSrc);
             });
+        
     }
-
+    */
     render() {
         const center = {
             margin: "20px 20% 20% 20%",
