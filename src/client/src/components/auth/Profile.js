@@ -112,6 +112,7 @@ class Profile extends Component{
         //         console.log("local: ", localRecipeSaveImageSrc);
         //     });
     }
+    
     render() {
         const { user } = this.props.auth;
         axios.post("api/findUser", {userId: user.id})
