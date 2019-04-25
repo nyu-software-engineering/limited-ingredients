@@ -28,6 +28,10 @@ module.exports = (router) => {
 			.get(userController.findUser);
 	*/
 	router
+			.route('/getRecipesUser')
+			.get(userController.getSavedRecipesForUser);
+	
+	router
 			.route('/findUser')
 			.post(userController.findUser);
 	

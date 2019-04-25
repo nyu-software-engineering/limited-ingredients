@@ -14,7 +14,7 @@ class Profile extends Component{
             query: "",
             results: [],
             selectedRecipeId: -1,
-            recipeSaveImageSrc: [], // this array indicates whether the recipe be displayed as saved or not
+            savedRecipes: [], // this array indicates whether the recipe be displayed as saved or not
         }
     }
     onLogoutClick = e => {
@@ -63,8 +63,8 @@ class Profile extends Component{
         }
     } 
     createRecipes () {
-        //console.log("this.props: ", this.props);
-        const recipes = this.props.recipes.recipes;
+        console.log("this.props: ", this.props);
+        const recipes = this.state.savedRecipes;
         //console.log(recipes);
         //console.log("recipes in createRecipes: ", recipes);
         //issue: reloading the page does not reflect that a saved recipe was saved
@@ -115,32 +115,44 @@ class Profile extends Component{
     
     render() {
         const { user } = this.props.auth;
-        axios.post("api/findUser", {userId: user.id})
+
+        axios.get("api/getRecipesUser", {
+            params: {
+                userId: user.id
+            }
+        })
         .then((res) => {
-            console.log("hello");
-            console.log(res.recipes);
-            // this.setState({recipeSaveImageSrc: localRecipeSaveImageSrc});
+            this.setState({savedRecipes: res.data});
         });
+    }
+    render() {
+        const space = {
+            margin: "20px 20% 20% 20%",
+        }
+        const { user } = this.props.auth;
+
         return (        
-        <center>
-            <h1>{user.name}</h1>
-            <button
-                style={{
-                    width: "150px",
-                    borderRadius: "3px",
-                    letterSpacing: "1.5px",
-                    marginTop: "1rem"
-                }}
-                onClick={this.onLogoutClick}
-                className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-                >
-              Logout
-            </button>
-            <div className="recipes">
-                    {this.createRecipes()}
-                    {this.props.recieved}
-                </div>
+        <div style={space}>
+            <center>
+                <h1>{user.name}</h1>
+                <button
+                    style={{
+                        width: "150px",
+                        borderRadius: "3px",
+                        letterSpacing: "1.5px",
+                        marginTop: "1rem"
+                    }}
+                    onClick={this.onLogoutClick}
+                    className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                    >
+                Logout
+                </button>
             </center>
+            <div className="recipes">
+                {this.createRecipes()}
+                {this.props.recieved}
+            </div>
+        </div>
         );
 
 
