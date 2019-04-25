@@ -40,7 +40,9 @@ function makeQueryRecipeSearchQuery(recipeArray) {
             "matchCount": -1
         }
     },{
-        "$limit": 5
+        "$limit": 20
+    }, {
+        "$skip": 0
     }];
 }
 

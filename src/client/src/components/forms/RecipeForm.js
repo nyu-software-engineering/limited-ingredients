@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import SaveButton from "./SaveButton";
 import DeleteButton from "../dashboard/DeleteButton";
+import ReduxLazyScroll from "../lazyscroll/ReduxLazyScroll";
 import classnames from "classnames";
 import '../../recipes.css';
 import selectedRecipeImg from '../../selected-recipe.png';
@@ -16,12 +17,36 @@ import { UPDATE_RECIPE } from "../../actions/types";
 class RecipeForm extends Component {
     constructor(props) {
         super(props);
+        //this.search = this.props.search.bind(this);
         this.state = {
             query: "",
             results: [],
             selectedRecipeId: -1,
-            recipeSaveImageSrc: [], // this array indicates whether the recipe be displayed as saved or not
+            error: false,
+            hasMore: true,
+            isLoading: false
         }
+        /*
+        window.onscroll = () => {
+            const {
+                loadRecipes,
+                state: {
+                    error,
+                    isLoading,
+                    hasMore,
+                },
+            } = this;
+            if (error || isLoading || !hasMore) return;
+                // Checks that the page has scrolled to the bottom
+            if (
+                window.innerHeight + document.documentElement.scrollTop
+                === document.documentElement.offsetHeight
+            ) {
+                loadRecipes();
+            }
+        };
+        */
+       this.loadRecipes = this.loadRecipes.bind(this);
     }
     onChange = e => {
         this.setState({ [e.target.id]: e.target.value });
@@ -29,13 +54,25 @@ class RecipeForm extends Component {
     onSubmit = e => {
         //set loading state
         e.preventDefault();
+        //const {skip, limit} = this.props.recipeEntity;
         const newQuery = {
-            query: this.state.query
+            query: this.state.query,
+            limit: this.props.recipeEntity.limit,
+            skip: this.props.recipeEntity.skip + this.props.recipeEntity.limit
         };
+        
         console.log(newQuery);
         //submit form using redux way
         this.props.search(newQuery);
     };
+    loadRecipes() {
+        const newQuery = {
+            query: this.state.query,
+            limit: this.props.recipeEntity.limit,
+            skip: this.props.recipeEntity.skip + this.props.recipeEntity.limit
+        };
+        this.props.search(newQuery);
+    }
     onRecipeClick = (e,recId) => {
         //open more display
         // e.target.style['display'] = 'none';
@@ -74,10 +111,8 @@ class RecipeForm extends Component {
     createRecipes () {
         //console.log("this.props: ", this.props);
         const recipes = this.props.recipes.recipes;
-        //console.log("recipes in createRecipes: ", recipes);
+        console.log("recipes in createRecipes: ", recipes);
         //issue: reloading the page does not reflect that a saved recipe was saved
-
-        
         return recipes.map( (rec, i) => {
             
             return <div key = {i} className='recipe-container'>
@@ -101,55 +136,15 @@ class RecipeForm extends Component {
         });
         
     }
-    /*
-    renderLikeButton = (rec) =>{
-        // if(rec._id in user.savedRecipes){
-            // return <img src={selectedRecipeImg}/>
-        // }else{
-        return <img  src={unselectedRecipeImg} onClick={this.saveRecipe}/> 
-    }
-    */
-   /*
-    saveRecipe(recipe){
-       // const recipe = this.state.recipe;
-        //console.log("recipe: ", recipe);
-        //console.log("user id: ", this.props.auth.user.id);
-        const newQuery = {recipe: recipe, userId: this.props.auth.user.id};
-        this.props.saveRecipe(newQuery);
-    }
-    */
-    /*
-    componentDidMount () {
-        const allRecipes = this.props.recipes.recipes;
-        const query = {userId: this.props.auth.user.id};
-        const localRecipeSaveImageSrc = this.state.recipeSaveImageSrc;
-        
-        console.log("query: ", query);
-        axios.post("api/findUser", query)
-            .then((res) => {
-                allRecipes.forEach((dbrecipe, index) => {
-                    if (res.recipes.includes(dbrecipe)){
-                        //this.setState({recipeSaveImageSrc: update (this.state.recipeSaveImageSrc, {index: {selectedRecipeImg}})});
-                        localRecipeSaveImageSrc[index] = selectedRecipeImg;
-                    } 
-                    else{
-                        localRecipeSaveImageSrc[index] = unselectedRecipeImg;
-                    }
-                });
-                this.setState({recipeSaveImageSrc: localRecipeSaveImageSrc});
-                console.log("recipeimgarray: ", this.state.recipeSaveImageSrc);
-                console.log("local: ", localRecipeSaveImageSrc);
-            });
-        
-    }
-    */
+   
     render() {
         const center = {
             margin: "20px 20% 20% 20%",
         }
         // redux debugging
         const received = this.props.received;
-        //console.log("Rendering Recipei Form");
+        const {recipes, isFetching, errorMessage, hasMore} = this.props.recipeEntity;
+
         return (
             <div style={center} >
                 <form noValidate onSubmit={this.onSubmit}>
@@ -174,25 +169,66 @@ class RecipeForm extends Component {
                         </button>
                     </div>
                 </form>
+                {/*
                 <div className="recipes">
                     {this.createRecipes()}
-                    {this.props.recieved}
-                </div>
+                </div> 
+                */}
+                {
+                <div className="container posts-lazy-scroll">
+                    <ReduxLazyScroll
+                    isFetching={isFetching}
+                    errorMessage={errorMessage}
+                    loadMore={this.loadRecipes}
+                    hasMore={hasMore}
+                    >
+                    {this.createRecipes()}
+                    
+                    </ReduxLazyScroll>
+                    <div className="row posts-lazy-scroll__messages">
+                    {isFetching && <div className="alert alert-info"> Loading more recipes... </div>}
+
+                    {!hasMore && !errorMessage &&
+                        <div className="alert alert-success">All the recipes have been loaded successfully.</div>
+                    }
+
+                    {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
+                    </div>
+                </div> 
+                }
+                
             </div>
         );
     }
 }
 
 RecipeForm.propTypes = {
+    
+    recipeEntity: PropTypes.shape({
+        errorMessage: PropTypes.string,
+        isFetching: PropTypes.bool,
+        limit: PropTypes.number,
+        skip: PropTypes.number,
+        recipes: PropTypes.array,
+        hasMore: PropTypes.bool
+    }),
+    
     search: PropTypes.func.isRequired
   };
   const mapStateToProps = state => {
-        //console.log("state: ", state);
+        console.log("state: ", state);
+        
         return {
             auth: state.auth,
             errors: state.errors,
-            recipes: state.recipe
+            recipes: state.recipe,
+            recipeEntity: state.recipe
+            //payload: state.payload
+
         }
+        
+       
+
       
   }
     

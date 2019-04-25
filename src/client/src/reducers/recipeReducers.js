@@ -4,18 +4,29 @@ import {
 
 const ingredientState = {
     received: false,
-    recipes: []
+    recipes: [],
+    //new stuff
+    isFetching: false,
+    errorMessage: '',
+    skip: 0,
+    limit: 20,
+    hasMore: true,
   }
 
 export default function (state = ingredientState, action) {
     switch (action.type) {
         case UPDATE_RECIPE:
-            /*
-            return {
-                received: true
-            }
-            */
-           return action.payload;
+            console.log("action in recipe reducer: ", action.payload);
+            console.log("state.recipes in reducer: ", state.recipes);
+            
+            return Object.assign({}, state, {
+                isFetching: false,
+                recipes: state.recipes.concat(action.payload.recipes),
+                hasMore: action.hasMore, //action.payload.recipes.length < 100
+                //payload: action.payload
+            })
+            
+           //return action.payload;
         default:
             return state;
     }
