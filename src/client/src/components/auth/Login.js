@@ -73,6 +73,9 @@ return (
                   })}
                 />
                 <label htmlFor="email">Email</label>
+                <span className="red-text">
+                  {errors.emailnotfound}
+                </span>
               </div>
               <div className="input-field col s12">
                 <input
@@ -87,8 +90,7 @@ return (
                 />
                 <label htmlFor="password">Password</label>
                 <span className="red-text">
-                  {errors.email}
-                  {errors.emailnotfound}
+                  {errors.passwordincorrect}
                 </span>
               </div>
               <div className="col s12" style={{ paddingLeft: "11.250px" }}>
