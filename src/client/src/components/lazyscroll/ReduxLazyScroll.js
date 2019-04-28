@@ -76,7 +76,7 @@ class ReduxLazyScroll extends Component {
 
   render() {
     return (
-      <div className="redux-lazy-scroll" style={{height: this.props.parentHeight, overflow: 'scroll'}}>
+      <div className="redux-lazy-scroll" style={{height: this.props.parentHeight, overflow: 'scroll', width: "100%"}}>
         {this.props.children}
       </div>
     );

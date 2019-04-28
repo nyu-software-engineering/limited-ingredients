@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 require('./../models/Recipes');
 const Recipes = mongoose.model('Recipe');
 
-function makeQueryRecipeSearchQuery(recipeArray) {
+function makeQueryRecipeSearchQuery(recipeArray, skip) {
     recipeArray.forEach(element => {
         recipeArray.push(element + ",");
     });
@@ -40,22 +40,24 @@ function makeQueryRecipeSearchQuery(recipeArray) {
             "matchCount": -1
         }
     },{
-        "$limit": 20
+        "$skip": Number(skip)
     }, {
-        "$skip": 0
+       
+        "$limit": 20
     }];
 }
 
 
 function searchRecipes(req, res) {
     const data = req.body.query.split(" ");
-    console.log("query on server: ", data);
-    const query = makeQueryRecipeSearchQuery(data);
+    console.log("query on server: ", req.body);
+    const query = makeQueryRecipeSearchQuery(data, req.body.skip);
     Recipes.aggregate(query, (err, results) => {
         if (err) {
             console.log(err);
             return res.send(err);
         }
+        console.log("first result: ", results[0]._id);
         return res.send(results);
     });
 }

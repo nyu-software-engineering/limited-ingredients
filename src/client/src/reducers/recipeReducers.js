@@ -16,14 +16,14 @@ const ingredientState = {
 export default function (state = ingredientState, action) {
     switch (action.type) {
         case UPDATE_RECIPE:
-            console.log("action in recipe reducer: ", action.payload);
-            console.log("state.recipes in reducer: ", state.recipes);
-            
+            //console.log("action in recipe reducer: ", action.payload);
+            console.log("skip: ", state.skip);
+            console.log("action: ", action);
             return Object.assign({}, state, {
                 isFetching: false,
                 recipes: state.recipes.concat(action.payload.recipes),
-                hasMore: action.hasMore, //action.payload.recipes.length < 100
-                //payload: action.payload
+                hasMore: action.hasMore,
+                skip: state.skip + state.limit
             })
             
            //return action.payload;

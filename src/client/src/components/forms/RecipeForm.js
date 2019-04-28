@@ -61,17 +61,19 @@ class RecipeForm extends Component {
             skip: this.props.recipeEntity.skip + this.props.recipeEntity.limit
         };
         
-        console.log(newQuery);
         //submit form using redux way
         this.props.search(newQuery);
     };
     loadRecipes() {
-        const newQuery = {
-            query: this.state.query,
-            limit: this.props.recipeEntity.limit,
-            skip: this.props.recipeEntity.skip + this.props.recipeEntity.limit
-        };
-        this.props.search(newQuery);
+        if (this.state.query){
+            const newQuery = {
+                query: this.state.query,
+                limit: this.props.recipeEntity.limit,
+                skip: this.props.recipeEntity.skip + this.props.recipeEntity.limit
+            };    
+            this.props.search(newQuery);
+        }
+       
     }
     onRecipeClick = (e,recId) => {
         //open more display
@@ -143,7 +145,7 @@ class RecipeForm extends Component {
         }
         // redux debugging
         const received = this.props.received;
-        const {recipes, isFetching, errorMessage, hasMore} = this.props.recipeEntity;
+        const {isFetching, errorMessage, hasMore} = this.props.recipeEntity;
 
         return (
             <div style={center} >
@@ -180,7 +182,7 @@ class RecipeForm extends Component {
                     isFetching={isFetching}
                     errorMessage={errorMessage}
                     loadMore={this.loadRecipes}
-                    hasMore={hasMore}
+                    hasMore={this.props.recipes.recipes.length <= 100}
                     >
                     {this.createRecipes()}
                     
