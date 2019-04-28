@@ -1,3 +1,4 @@
+/* This file was taken from https://github.com/shotaK/redux-lazy-scroll*/
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';

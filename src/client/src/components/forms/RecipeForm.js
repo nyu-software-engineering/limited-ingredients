@@ -26,26 +26,7 @@ class RecipeForm extends Component {
             hasMore: true,
             isLoading: false
         }
-        /*
-        window.onscroll = () => {
-            const {
-                loadRecipes,
-                state: {
-                    error,
-                    isLoading,
-                    hasMore,
-                },
-            } = this;
-            if (error || isLoading || !hasMore) return;
-                // Checks that the page has scrolled to the bottom
-            if (
-                window.innerHeight + document.documentElement.scrollTop
-                === document.documentElement.offsetHeight
-            ) {
-                loadRecipes();
-            }
-        };
-        */
+       
        this.loadRecipes = this.loadRecipes.bind(this);
     }
     onChange = e => {
@@ -55,22 +36,29 @@ class RecipeForm extends Component {
         //set loading state
         e.preventDefault();
         //const {skip, limit} = this.props.recipeEntity;
+        
         const newQuery = {
             query: this.state.query,
             limit: this.props.recipeEntity.limit,
             skip: this.props.recipeEntity.skip + this.props.recipeEntity.limit
         };
-        
+        if (this.props.recipes.recipes.length == 0){
+            newQuery.skip = 0;
+        }
         //submit form using redux way
         this.props.search(newQuery);
     };
     loadRecipes() {
+        console.log("in loadRecipe");
         if (this.state.query){
             const newQuery = {
                 query: this.state.query,
                 limit: this.props.recipeEntity.limit,
                 skip: this.props.recipeEntity.skip + this.props.recipeEntity.limit
             };    
+            if (this.props.recipes.recipes.length == 0){
+                newQuery.skip = 0;
+            }
             this.props.search(newQuery);
         }
        
@@ -177,7 +165,7 @@ class RecipeForm extends Component {
                 </div> 
                 */}
                 {
-                <div className="container posts-lazy-scroll">
+                <div className="recipes">
                     <ReduxLazyScroll
                     isFetching={isFetching}
                     errorMessage={errorMessage}
@@ -228,10 +216,6 @@ RecipeForm.propTypes = {
             //payload: state.payload
 
         }
-        
-       
-
-      
   }
     
 /*

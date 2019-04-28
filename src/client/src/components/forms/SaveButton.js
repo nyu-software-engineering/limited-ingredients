@@ -44,8 +44,8 @@ class SaveButton extends Component{
         //     alert("already saved this recipe");
         // }
         if (this.props.recipe){
-            console.log("auth: ", this.props.auth.user);
-            console.log("recipes: ", this.props.recipes);
+            //console.log("auth: ", this.props.auth.user);
+            //console.log("recipes: ", this.props.recipes);
             /*
             if (this.props.recipes.recipes.includes(this.props.recipe)){
                 this.setState({imgSrc: selectedRecipeImg});
