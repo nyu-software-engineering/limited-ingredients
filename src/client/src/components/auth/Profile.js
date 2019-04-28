@@ -92,28 +92,7 @@ class Profile extends Component{
         
     }
     componentDidMount () {
-        // const allRecipes = this.props.recipes.recipes;
-        // const query = {userId: this.props.auth.user.id};
-        // const localRecipeSaveImageSrc = this.state.recipeSaveImageSrc;
-        // console.log("query: ", query);
-        // axios.post("api/findUser", query)
-        //     .then((res) => {
-        //         allRecipes.forEach((dbrecipe, index) => {
-        //             if (res.recipes.includes(dbrecipe)){
-        //                 //this.setState({recipeSaveImageSrc: update (this.state.recipeSaveImageSrc, {index: {selectedRecipeImg}})});
-        //                 localRecipeSaveImageSrc[index] = selectedRecipeImg;
-        //             } 
-        //             else{
-        //                 localRecipeSaveImageSrc[index] = unselectedRecipeImg;
-        //             }
-        //         });
-        //         this.setState({recipeSaveImageSrc: localRecipeSaveImageSrc});
-        //         console.log("recipeimgarray: ", this.state.recipeSaveImageSrc);
-        //         console.log("local: ", localRecipeSaveImageSrc);
-        //     });
-    }
-    
-    render() {
+
         const { user } = this.props.auth;
 
         axios.get("api/getRecipesUser", {
