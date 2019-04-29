@@ -10,16 +10,13 @@ function saveRecipe (req, res){
     const error = {};
     User.findOne({_id: userId}).then (user => {
         if (user){
-            console.log("user recipe item type: ", typeof(user.recipes[0]));
             const convertToId = mongoose.Types.ObjectId(recipeId);
             console.log("recipeid: ", convertToId);
-            const alreadySavedRecipe = user.recipes.some(function (recipeId){
-                return recipeId.equals(convertToId);
-            });
+            const alreadySavedRecipe = user.recipes.includes('recipeId')
             console.log("user contains recipe? : ", alreadySavedRecipe);
             if (alreadySavedRecipe) {
                 error.duplicate = "User already saved this recipe";
-                res.status(400).json(error);
+                res.status(300).json(error);
             } 
             else{
                 user["recipes"].push(recipeId);
@@ -31,6 +28,7 @@ function saveRecipe (req, res){
         }
         else{
             console.log("could not find user");
+            res.json("error- could not find user");
         }
     })
 }

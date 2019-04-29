@@ -60,9 +60,11 @@ class ReduxLazyScroll extends Component {
     return (totalContainerHeight - bottomScrollPos);
   }
 
+  //Height
+
   scrollListener() {
     const bottomPosition = this.props.isParentScrollable ? this.parentScrollListener() : this.windowScrollListener();
-
+    //const screenHeight = 
     if (bottomPosition < Number(this.props.threshold)) {
       this.detachScrollListener();
       this.props.loadMore();

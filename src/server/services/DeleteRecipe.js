@@ -5,10 +5,8 @@ const User = mongoose.model('User');
 function deleteRecipe(req,res){
     User.findOne({_id: req.body.userId}).then(user => {
         if (user){
-            const convertToId = mongoose.Types.ObjectId(req.body.recipeId);
-            user.recipes.remove(convertToId);
+            user.recipes.remove(req.body.recipe);
             user.save().then(user => {
-                console.log(user);
                 res.json(user);
             })
         }

@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import {deleteRecipe} from "../../actions/delete";
 import axios from "axios";
+
 class DeleteButton extends Component {
     constructor (props){
         super(props);

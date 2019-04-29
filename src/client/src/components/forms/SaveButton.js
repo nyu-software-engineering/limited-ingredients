@@ -13,7 +13,9 @@ class SaveButton extends Component{
         this.save = this.save.bind(this);
         this.state = {
             imgSrc: unselectedRecipeImg,
+            alreadySaved: this.props.saved,
         }
+        //the problem is constuctor isn't run twice
         //this.imgSrcList = new Array(this.props.lenofitems);
     }
 
@@ -21,40 +23,49 @@ class SaveButton extends Component{
         // send the request. this.props.recipe contains only the recipe id
         const newQuery = {recipe: this.props.recipe, userId: this.props.auth.user.id};
         // this.props.saveRecipe(newQuery);
-        
-        axios.post("api/saveRecipe", newQuery)
-         .then(res => {
-            console.log("SAVE RECIPE RESPONSE:", res);
-            if (res.status == 200){
-                console.log("setting imgSrc");
-                this.setState({imgSrc: selectedRecipeImg});
-                alert("saved!");
-            }
-         }).catch(err => {
-            console.log("err in saveRecipe: ", err);
-            alert("Already saved this recipe");
-         });
+        if(!this.state.alreadySaved){
+            console.log("SAVE RECIPE: "+this.props.recipe)
+            axios.post("/api/saveRecipe", newQuery)
+            .then(res => {
+               console.log("SAVE RECIPE RESPONSE:", res);
+               if (res.status == 200){
+                   this.setState({imgSrc: selectedRecipeImg, alreadySaved: true});
+               }
+            }).catch(err => {
+               console.log("err in saveRecipe: ", err);
+            });
+        }else{
+            console.log("REMOVE RECIPE: "+this.props.recipe)
+            axios.post("/api/deleteRecipe", newQuery)
+            .then(res => {
+               console.log("REMOVE RECIPE RESPONSE:", res);
+               if (res.status == 200){
+                   this.setState({imgSrc: unselectedRecipeImg, alreadySaved: false});
+               }
+            }).catch(err => {
+               console.log("err in removeRecipe: ", err);
+            });
+        }
          
     }
-
+    // componentDidMount(){
+    //     console.log(this.props.save);
+    // }
+    // componentWillReceiveProps(nextProps){
+    //     console.log('mount');
+    //     this.setState({alreadySaved: this.props.saved});
+    // }
     render () {
-        
-        // if (this.props.errors){
-        //     //console.log("props.errors: ", this.props.errors);
-        //     alert("already saved this recipe");
-        // }
-        if (this.props.recipe){
-            //console.log("auth: ", this.props.auth.user);
-            //console.log("recipes: ", this.props.recipes);
-            /*
-            if (this.props.recipes.recipes.includes(this.props.recipe)){
-                this.setState({imgSrc: selectedRecipeImg});
-            }
-            */
+        if(!this.state.alreadySaved){
+            return (
+                <img src={unselectedRecipeImg} onClick={this.save}/>
+            );
+        }else{
+            return (
+                <img src={selectedRecipeImg} onClick={this.save}/>
+            );
         }
-        return (
-            <img src={this.state.imgSrc} onClick={this.save}/>
-        );
+        
     }
 
 }

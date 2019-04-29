@@ -24,7 +24,9 @@ class RecipeForm extends Component {
             selectedRecipeId: -1,
             error: false,
             hasMore: true,
-            isLoading: false
+            isLoading: false,
+            savedRecipes: [], // this array indicates whether the recipe be displayed as saved or not
+            // this array indicates whether the recipe be displayed as saved or not
         }
        
        this.loadRecipes = this.loadRecipes.bind(this);
@@ -46,6 +48,7 @@ class RecipeForm extends Component {
             newQuery.skip = 0;
         }
         //submit form using redux way
+        this.loadSavedRecipes();
         this.props.search(newQuery);
     };
     loadRecipes() {
@@ -116,17 +119,38 @@ class RecipeForm extends Component {
                             {this.renderSubMenu(rec)}
                         </div>
                         <div className='recipe-right'>
-                            {/*this.renderLikeButton(rec)*/}
-                            <SaveButton key={i} recipe={rec._id} userId={this.props.auth.user.id}></SaveButton>
-                            {/* The delete button is rendered here for testing, it would ideally be in the user dashboard */}
-                            <DeleteButton recipeId={rec._id} userId={this.props.auth.user.id} clicked={false}></DeleteButton>
+                            {this.renderHeart(rec._id)}
                         </div>
                     </div>
 
         });
         
     }
-   
+    renderHeart(recId){
+        const savedRecipes = this.state.savedRecipes;
+        if(savedRecipes.includes(recId)){
+            return  (<SaveButton key={recId} recipe={recId} saved={true}></SaveButton>)
+        }else{
+            return  (<SaveButton key={recId} recipe={recId} saved={false}></SaveButton>)
+        }
+    }
+   loadSavedRecipes () {
+        const { user } = this.props.auth;
+
+        axios.get("api/getRecipesUser", {
+            params: {
+                userId: user.id,
+                justIds: true
+            }
+        })
+        .then((res) => {
+            this.setState({savedRecipes: res.data});
+        });
+    }
+    componentDidMount(){
+        this.loadSavedRecipes();
+    }
+
     render() {
         const center = {
             margin: "20px 20% 20% 20%",
@@ -159,11 +183,11 @@ class RecipeForm extends Component {
                         </button>
                     </div>
                 </form>
-                {/*
+                {/* {
                 <div className="recipes">
                     {this.createRecipes()}
                 </div> 
-                */}
+                } */}
                 {
                 <div className="recipes">
                     <ReduxLazyScroll
