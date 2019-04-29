@@ -78,8 +78,8 @@ class RecipeForm extends Component {
         //console.log("recipes in createRecipes: ", recipes);
         //issue: reloading the page does not reflect that a saved recipe was saved
         
-        console.log(this.state.savedRecipes);
-        console.log(recipes);
+        // (this.state.savedRecipes);
+        // console.log(recipes);console.log
         return recipes.map( (rec, i) => {
             
             return <div key = {i} className='recipe-container'>
@@ -103,9 +103,9 @@ class RecipeForm extends Component {
     renderHeart(recId){
         const savedRecipes = this.state.savedRecipes;
         if(savedRecipes.includes(recId)){
-            return  <SaveButton recipe={recId} saved={true}></SaveButton>
+            return  (<SaveButton key={recId} recipe={recId} saved={true}></SaveButton>)
         }else{
-            return  <SaveButton recipe={recId} saved={false}></SaveButton>
+            return  (<SaveButton key={recId} recipe={recId} saved={false}></SaveButton>)
         }
     }
    loadSavedRecipes () {

@@ -15,6 +15,7 @@ class SaveButton extends Component{
             imgSrc: unselectedRecipeImg,
             alreadySaved: this.props.saved,
         }
+        //the problem is constuctor isn't run twice
         //this.imgSrcList = new Array(this.props.lenofitems);
     }
 
@@ -47,18 +48,24 @@ class SaveButton extends Component{
         }
          
     }
-    componentDidMount(){
-        if(this.state.alreadySaved){
-            this.setState({imgSrc: selectedRecipeImg});
-        }else{
-            this.setState({imgSrc: unselectedRecipeImg});
-        }
-    
-    }
+    // componentDidMount(){
+    //     console.log(this.props.save);
+    // }
+    // componentWillReceiveProps(nextProps){
+    //     console.log('mount');
+    //     this.setState({alreadySaved: this.props.saved});
+    // }
     render () {
+        if(!this.state.alreadySaved){
             return (
-                <img src={this.state.imgSrc} onClick={this.save}/>
+                <img src={unselectedRecipeImg} onClick={this.save}/>
             );
+        }else{
+            return (
+                <img src={selectedRecipeImg} onClick={this.save}/>
+            );
+        }
+        
     }
 
 }
