@@ -13,7 +13,7 @@ class SaveButton extends Component{
         this.save = this.save.bind(this);
         this.state = {
             imgSrc: unselectedRecipeImg,
-            alreadySaved: false,
+            alreadySaved: this.props.saved,
         }
         //this.imgSrcList = new Array(this.props.lenofitems);
     }
@@ -23,51 +23,46 @@ class SaveButton extends Component{
         const newQuery = {recipe: this.props.recipe, userId: this.props.auth.user.id};
         // this.props.saveRecipe(newQuery);
         if(!this.state.alreadySaved){
-            axios.post("api/saveRecipe", newQuery)
+            console.log("SAVE RECIPE: "+this.props.recipe)
+            axios.post("/api/saveRecipe", newQuery)
             .then(res => {
                console.log("SAVE RECIPE RESPONSE:", res);
                if (res.status == 200){
-                   console.log("setting imgSrc");
-                   this.setState({imgSrc: selectedRecipeImg});
-                   alert("saved!");
+                   this.setState({imgSrc: selectedRecipeImg, alreadySaved: true});
                }
             }).catch(err => {
                console.log("err in saveRecipe: ", err);
-               alert("Already saved this recipe");
             });
         }else{
-            axios.post("api/saveRecipe", newQuery)
+            console.log("REMOVE RECIPE: "+this.props.recipe)
+            axios.post("/api/deleteRecipe", newQuery)
             .then(res => {
-               console.log("SAVE RECIPE RESPONSE:", res);
+               console.log("REMOVE RECIPE RESPONSE:", res);
                if (res.status == 200){
-                   console.log("setting imgSrc");
-                   this.setState({imgSrc: selectedRecipeImg});
-                   alert("saved!");
+                   this.setState({imgSrc: unselectedRecipeImg, alreadySaved: false});
                }
             }).catch(err => {
-               console.log("err in saveRecipe: ", err);
-               alert("Already saved this recipe");
+               console.log("err in removeRecipe: ", err);
             });
         }
          
     }
-
-    render () {
+    componentDidMount(){
         if(this.state.alreadySaved){
-
+            this.setState({imgSrc: selectedRecipeImg});
         }else{
+            this.setState({imgSrc: unselectedRecipeImg});
+        }
+    
+    }
+    render () {
             return (
                 <img src={this.state.imgSrc} onClick={this.save}/>
             );
-        }
     }
 
 }
-function componentDidMount(){
-    this.setState({alreadySaved: this.props.saved});
-    console.log(this.state.alreadySaved)
 
-}
 SaveButton.propTypes = {
     saveRecipe: PropTypes.func.isRequired
   };

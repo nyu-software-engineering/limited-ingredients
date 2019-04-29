@@ -15,6 +15,7 @@ class Profile extends Component{
             results: [],
             selectedRecipeId: -1,
             savedRecipes: [], // this array indicates whether the recipe be displayed as saved or not
+            savedRecipesIds: []
         }
     }
     onLogoutClick = e => {
@@ -63,12 +64,7 @@ class Profile extends Component{
         }
     } 
     createRecipes () {
-        console.log("this.props: ", this.props);
         const recipes = this.state.savedRecipes;
-        //console.log(recipes);
-        //console.log("recipes in createRecipes: ", recipes);
-        //issue: reloading the page does not reflect that a saved recipe was saved
-
         
         return recipes.map( (rec, i) => {
             
@@ -83,13 +79,20 @@ class Profile extends Component{
                             {this.renderSubMenu(rec)}
                         </div>
                         <div className='recipe-right'>
-                            {/*this.renderLikeButton(rec)*/}
-                            <SaveButton key={i} recipe={rec._id} userId={this.props.auth.user.id}></SaveButton>
+                            {this.renderHeart(rec._id)}
                         </div>
                     </div>
 
         });
         
+    }
+    renderHeart(recId){
+        const savedRecipesIds = this.state.savedRecipesIds;
+        if(savedRecipesIds.includes(recId)){
+            return  <SaveButton recipe={recId} saved={true}></SaveButton>
+        }else{
+            return  <SaveButton recipe={recId} saved={false}></SaveButton>
+        }
     }
     componentDidMount () {
 
@@ -102,6 +105,14 @@ class Profile extends Component{
         })
         .then((res) => {
             this.setState({savedRecipes: res.data});
+        });
+        axios.get("api/getRecipesUser", {
+            params: {
+                userId: user.id,justIds: true
+            }
+        })
+        .then((res) => {
+            this.setState({savedRecipesIds: res.data});
         });
     }
     render() {

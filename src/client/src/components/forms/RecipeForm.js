@@ -108,48 +108,6 @@ class RecipeForm extends Component {
             return  <SaveButton recipe={recId} saved={false}></SaveButton>
         }
     }
-    /*
-    renderLikeButton = (rec) =>{
-        // if(rec._id in user.savedRecipes){
-            // return <img src={selectedRecipeImg}/>
-        // }else{
-        return <img  src={unselectedRecipeImg} onClick={this.saveRecipe}/> 
-    }
-    */
-   /*
-    saveRecipe(recipe){
-       // const recipe = this.state.recipe;
-        //console.log("recipe: ", recipe);
-        //console.log("user id: ", this.props.auth.user.id);
-        const newQuery = {recipe: recipe, userId: this.props.auth.user.id};
-        this.props.saveRecipe(newQuery);
-    }
-    */
-    /*
-    componentDidMount () {
-        const allRecipes = this.props.recipes.recipes;
-        const query = {userId: this.props.auth.user.id};
-        const localRecipeSaveImageSrc = this.state.recipeSaveImageSrc;
-        
-        console.log("query: ", query);
-        axios.post("api/findUser", query)
-            .then((res) => {
-                allRecipes.forEach((dbrecipe, index) => {
-                    if (res.recipes.includes(dbrecipe)){
-                        //this.setState({recipeSaveImageSrc: update (this.state.recipeSaveImageSrc, {index: {selectedRecipeImg}})});
-                        localRecipeSaveImageSrc[index] = selectedRecipeImg;
-                    } 
-                    else{
-                        localRecipeSaveImageSrc[index] = unselectedRecipeImg;
-                    }
-                });
-                this.setState({recipeSaveImageSrc: localRecipeSaveImageSrc});
-                console.log("recipeimgarray: ", this.state.recipeSaveImageSrc);
-                console.log("local: ", localRecipeSaveImageSrc);
-            });
-        
-    }
-    */
    loadSavedRecipes () {
         const { user } = this.props.auth;
 
