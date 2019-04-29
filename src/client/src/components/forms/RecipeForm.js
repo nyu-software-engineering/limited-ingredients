@@ -5,7 +5,6 @@ import { saveRecipe } from "../../actions/save";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import SaveButton from "./SaveButton";
-import DeleteButton from "../dashboard/DeleteButton";
 import classnames from "classnames";
 import '../../recipes.css';
 import selectedRecipeImg from '../../selected-recipe.png';
@@ -20,7 +19,8 @@ class RecipeForm extends Component {
             query: "",
             results: [],
             selectedRecipeId: -1,
-            recipeSaveImageSrc: [], // this array indicates whether the recipe be displayed as saved or not
+            savedRecipes: [], // this array indicates whether the recipe be displayed as saved or not
+            // this array indicates whether the recipe be displayed as saved or not
         }
     }
     onChange = e => {
@@ -34,6 +34,7 @@ class RecipeForm extends Component {
         };
         console.log(newQuery);
         //submit form using redux way
+        this.loadSavedRecipes();
         this.props.search(newQuery);
     };
     onRecipeClick = (e,recId) => {
@@ -76,8 +77,9 @@ class RecipeForm extends Component {
         const recipes = this.props.recipes.recipes;
         //console.log("recipes in createRecipes: ", recipes);
         //issue: reloading the page does not reflect that a saved recipe was saved
-
         
+        console.log(this.state.savedRecipes);
+        console.log(recipes);
         return recipes.map( (rec, i) => {
             
             return <div key = {i} className='recipe-container'>
@@ -91,15 +93,20 @@ class RecipeForm extends Component {
                             {this.renderSubMenu(rec)}
                         </div>
                         <div className='recipe-right'>
-                            {/*this.renderLikeButton(rec)*/}
-                            <SaveButton key={i} recipe={rec._id} userId={this.props.auth.user.id}></SaveButton>
-                            {/* The delete button is rendered here for testing, it would ideally be in the user dashboard */}
-                            <DeleteButton recipeId={rec._id} userId={this.props.auth.user.id} clicked={false}></DeleteButton>
+                            {this.renderHeart(rec._id)}
                         </div>
                     </div>
 
         });
         
+    }
+    renderHeart(recId){
+        const savedRecipes = this.state.savedRecipes;
+        if(savedRecipes.includes(recId)){
+            return  <SaveButton recipe={recId} saved={true}></SaveButton>
+        }else{
+            return  <SaveButton recipe={recId} saved={false}></SaveButton>
+        }
     }
     /*
     renderLikeButton = (rec) =>{
@@ -143,6 +150,23 @@ class RecipeForm extends Component {
         
     }
     */
+   loadSavedRecipes () {
+        const { user } = this.props.auth;
+
+        axios.get("api/getRecipesUser", {
+            params: {
+                userId: user.id,
+                justIds: true
+            }
+        })
+        .then((res) => {
+            this.setState({savedRecipes: res.data});
+        });
+    }
+    componentDidMount(){
+        this.loadSavedRecipes();
+    }
+
     render() {
         const center = {
             margin: "20px 20% 20% 20%",
