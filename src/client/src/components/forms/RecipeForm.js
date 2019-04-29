@@ -5,7 +5,6 @@ import { saveRecipe } from "../../actions/save";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import SaveButton from "./SaveButton";
-import DeleteButton from "../dashboard/DeleteButton";
 import classnames from "classnames";
 import '../../recipes.css';
 import selectedRecipeImg from '../../selected-recipe.png';
@@ -20,7 +19,8 @@ class RecipeForm extends Component {
             query: "",
             results: [],
             selectedRecipeId: -1,
-            recipeSaveImageSrc: [], // this array indicates whether the recipe be displayed as saved or not
+            savedRecipes: [], // this array indicates whether the recipe be displayed as saved or not
+            // this array indicates whether the recipe be displayed as saved or not
         }
     }
     onChange = e => {
@@ -34,6 +34,7 @@ class RecipeForm extends Component {
         };
         console.log(newQuery);
         //submit form using redux way
+        this.loadSavedRecipes();
         this.props.search(newQuery);
     };
     onRecipeClick = (e,recId) => {
@@ -76,8 +77,9 @@ class RecipeForm extends Component {
         const recipes = this.props.recipes.recipes;
         //console.log("recipes in createRecipes: ", recipes);
         //issue: reloading the page does not reflect that a saved recipe was saved
-
         
+        // (this.state.savedRecipes);
+        // console.log(recipes);console.log
         return recipes.map( (rec, i) => {
             
             return <div key = {i} className='recipe-container'>
@@ -91,58 +93,38 @@ class RecipeForm extends Component {
                             {this.renderSubMenu(rec)}
                         </div>
                         <div className='recipe-right'>
-                            {/*this.renderLikeButton(rec)*/}
-                            <SaveButton key={i} recipe={rec._id} userId={this.props.auth.user.id}></SaveButton>
-                            {/* The delete button is rendered here for testing, it would ideally be in the user dashboard */}
-                            <DeleteButton recipeId={rec._id} userId={this.props.auth.user.id} clicked={false}></DeleteButton>
+                            {this.renderHeart(rec._id)}
                         </div>
                     </div>
 
         });
         
     }
-    /*
-    renderLikeButton = (rec) =>{
-        // if(rec._id in user.savedRecipes){
-            // return <img src={selectedRecipeImg}/>
-        // }else{
-        return <img  src={unselectedRecipeImg} onClick={this.saveRecipe}/> 
+    renderHeart(recId){
+        const savedRecipes = this.state.savedRecipes;
+        if(savedRecipes.includes(recId)){
+            return  (<SaveButton key={recId} recipe={recId} saved={true}></SaveButton>)
+        }else{
+            return  (<SaveButton key={recId} recipe={recId} saved={false}></SaveButton>)
+        }
     }
-    */
-   /*
-    saveRecipe(recipe){
-       // const recipe = this.state.recipe;
-        //console.log("recipe: ", recipe);
-        //console.log("user id: ", this.props.auth.user.id);
-        const newQuery = {recipe: recipe, userId: this.props.auth.user.id};
-        this.props.saveRecipe(newQuery);
+   loadSavedRecipes () {
+        const { user } = this.props.auth;
+
+        axios.get("api/getRecipesUser", {
+            params: {
+                userId: user.id,
+                justIds: true
+            }
+        })
+        .then((res) => {
+            this.setState({savedRecipes: res.data});
+        });
     }
-    */
-    /*
-    componentDidMount () {
-        const allRecipes = this.props.recipes.recipes;
-        const query = {userId: this.props.auth.user.id};
-        const localRecipeSaveImageSrc = this.state.recipeSaveImageSrc;
-        
-        console.log("query: ", query);
-        axios.post("api/findUser", query)
-            .then((res) => {
-                allRecipes.forEach((dbrecipe, index) => {
-                    if (res.recipes.includes(dbrecipe)){
-                        //this.setState({recipeSaveImageSrc: update (this.state.recipeSaveImageSrc, {index: {selectedRecipeImg}})});
-                        localRecipeSaveImageSrc[index] = selectedRecipeImg;
-                    } 
-                    else{
-                        localRecipeSaveImageSrc[index] = unselectedRecipeImg;
-                    }
-                });
-                this.setState({recipeSaveImageSrc: localRecipeSaveImageSrc});
-                console.log("recipeimgarray: ", this.state.recipeSaveImageSrc);
-                console.log("local: ", localRecipeSaveImageSrc);
-            });
-        
+    componentDidMount(){
+        this.loadSavedRecipes();
     }
-    */
+
     render() {
         const center = {
             margin: "20px 20% 20% 20%",
