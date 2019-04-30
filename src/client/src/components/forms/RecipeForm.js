@@ -88,7 +88,7 @@ class RecipeForm extends Component {
                         </div>
                         <div className='recipe-middle'>
                             <h3>{rec.name}</h3>
-                            <p>Prep Time: {rec.prepTime.replace("PT", "")} Cook Time: {rec.cookTime.replace("PT", "")} Total Time: {rec.totalTimereplace("PT", "")}</p>
+                            <p>Prep Time: {rec.prepTime.replace("PT", "").replace("M"," minutes")} Cook Time: {rec.cookTime.replace("PT", "").replace("M"," minutes")} Total Time: {rec.totalTimereplace("PT", "").replace("M"," minutes")}</p>
                             {this.renderMoreButton(rec)}
                             {this.renderSubMenu(rec)}
                         </div>
