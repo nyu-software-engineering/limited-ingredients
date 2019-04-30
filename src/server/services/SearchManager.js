@@ -7,7 +7,7 @@ function makeQueryRecipeSearchQuery(recipeArray) {
     recipeArray.forEach(element => {
         recipeArray.push(element + ",");
     });
-    return [{
+    $q = [{
         "$project": {
             "_id": 1,
             "URL": 1,
@@ -21,27 +21,31 @@ function makeQueryRecipeSearchQuery(recipeArray) {
             "URL": 1,
             "imageURL": 1,
             "prepTime": 1,
-            "matchCount": {
-                "$size": {
-                    "$setIntersection": [{
-                        "$split": [{
-                            "$reduce": {
-                                "input": "$ingredients",
-                                "initialValue": '',
-                                "in": { "$concat": ["$$value", "$$this"] }
-                            }
-                        }, " "]
-                    }, recipeArray]
-                }
+            "matchPerc": { 
+                "$cond": [ { "$eq": [ {"$size": "$ingredients"}, 0 ] }, 0, 
+                    {
+                        "$divide": [{ "$size": {
+                            "$setIntersection": [{
+                                "$split": [{
+                                    "$reduce": {
+                                        "input": "$ingredients",
+                                        "initialValue": '',
+                                        "in": { "$concat": ["$$value", "$$this"] }
+                                    }
+                                }, " "]
+                            }, recipeArray]
+                        }},{"$size": "$ingredients"}]
+                    } ]
             }
         }
     },{
         "$sort": {
-            "matchCount": -1
+            "matchPerc": -1
         }
     },{
         "$limit": 5
     }];
+    return $q
 }
 
 
