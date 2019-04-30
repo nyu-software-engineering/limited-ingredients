@@ -39,7 +39,7 @@ class ReduxLazyScroll extends Component {
     const el = this.targetElement();
     el.addEventListener('scroll', this.scrollFunction, true);
     el.addEventListener('resize', this.scrollFunction, true);
-    this.scrollListener();
+    // this.scrollListener();
   }
 
   windowScrollListener() {
@@ -68,6 +68,12 @@ class ReduxLazyScroll extends Component {
     console.log("bottom position: ",bottomPosition);
     if (bottomPosition < Number(this.props.threshold)) {
       this.detachScrollListener();
+      this.props.loadMore();
+    }
+  }
+
+  searchListener () {
+    if (this.props.goloadmore){
       this.props.loadMore();
     }
   }
