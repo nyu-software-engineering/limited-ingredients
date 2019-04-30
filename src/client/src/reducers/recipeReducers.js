@@ -21,8 +21,8 @@ export default function (state = ingredientState, action) {
             console.log("action: ", action);
             return Object.assign({}, state, {
                 isFetching: false,
-                recipes: action.payload.recipes.concat(state.recipes),
-                // state.recipes.concat(action.payload.recipes),
+                //recipes: action.payload.recipes.concat(state.recipes),
+                recipes: state.recipes.concat(action.payload.recipes),
                 hasMore: action.hasMore,
                 skip: state.skip + state.limit
             })

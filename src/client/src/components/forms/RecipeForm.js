@@ -36,6 +36,7 @@ class RecipeForm extends Component {
       };
     onSubmit = e => {
         //set loading state
+        this.props.recipes.recipes = [];
         e.preventDefault();
         //const {skip, limit} = this.props.recipeEntity;
         
