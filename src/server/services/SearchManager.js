@@ -50,7 +50,7 @@ function makeQueryRecipeSearchQuery(recipeArray) {
 
 
 function searchRecipes(req, res) {
-    const data = req.body.query.split(" ");
+    const data = req.body.query.split(/[^A-Za-z]/).filter(Boolean);
     console.log("query on server: ", data);
     const query = makeQueryRecipeSearchQuery(data);
     Recipes.aggregate(query, (err, results) => {
