@@ -9,6 +9,7 @@ import {
 } from "./types";
 // search recipes
 export const search = (query) => dispatch => {
+  console.log('search query: ', query);
   axios
     .post("api/search", query)
     .then(res => {
@@ -16,7 +17,7 @@ export const search = (query) => dispatch => {
       dispatch(setResults(res));
     }) 
     .catch(err => {
-      console.log('catch err');
+      //console.log('catch err');
       console.log(err);
       dispatch({
         type: GET_ERRORS,
@@ -25,7 +26,7 @@ export const search = (query) => dispatch => {
     });
 };
 
-export const setResults = (recipes) =>{
+export const setResults = (recipes) => {
   return {
     type: UPDATE_RECIPE,
     payload: {

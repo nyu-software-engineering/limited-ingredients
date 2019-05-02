@@ -5,6 +5,8 @@ import { saveRecipe } from "../../actions/save";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import SaveButton from "./SaveButton";
+import DeleteButton from "../dashboard/DeleteButton";
+import ReduxLazyScroll from "../lazyscroll/ReduxLazyScroll";
 import classnames from "classnames";
 import '../../recipes.css';
 import selectedRecipeImg from '../../selected-recipe.png';
@@ -15,28 +17,56 @@ import { UPDATE_RECIPE } from "../../actions/types";
 class RecipeForm extends Component {
     constructor(props) {
         super(props);
+        //this.search = this.props.search.bind(this);
         this.state = {
             query: "",
             results: [],
             selectedRecipeId: -1,
+            error: false,
+            hasMore: true,
+            isLoading: false,
             savedRecipes: [], // this array indicates whether the recipe be displayed as saved or not
             // this array indicates whether the recipe be displayed as saved or not
         }
+       
+       this.loadRecipes = this.loadRecipes.bind(this);
     }
     onChange = e => {
         this.setState({ [e.target.id]: e.target.value });
       };
     onSubmit = e => {
         //set loading state
+        this.props.recipes.recipes = [];
         e.preventDefault();
+        //const {skip, limit} = this.props.recipeEntity;
+        
         const newQuery = {
-            query: this.state.query
+            query: this.state.query,
+            limit: this.props.recipeEntity.limit,
+            skip: this.props.recipeEntity.skip + this.props.recipeEntity.limit
         };
-        console.log(newQuery);
+        if (this.props.recipes.recipes.length == 0){
+            newQuery.skip = 0;
+        }
         //submit form using redux way
         this.loadSavedRecipes();
         this.props.search(newQuery);
     };
+    loadRecipes() {
+        console.log("in loadRecipe");
+        if (this.state.query){
+            const newQuery = {
+                query: this.state.query,
+                limit: this.props.recipeEntity.limit,
+                skip: this.props.recipeEntity.skip + this.props.recipeEntity.limit
+            };    
+            if (this.props.recipes.recipes.length == 0){
+                newQuery.skip = 0;
+            }
+            this.props.search(newQuery);
+        }
+       
+    }
     onRecipeClick = (e,recId) => {
         //open more display
         // e.target.style['display'] = 'none';
@@ -75,11 +105,9 @@ class RecipeForm extends Component {
     createRecipes () {
         //console.log("this.props: ", this.props);
         const recipes = this.props.recipes.recipes;
-        //console.log("recipes in createRecipes: ", recipes);
+        console.log("recipes in createRecipes: ", recipes);
         //issue: reloading the page does not reflect that a saved recipe was saved
 
-        // (this.state.savedRecipes);
-        // console.log(recipes);console.log
         return recipes.map( (rec, i) => {
 
             return <div key = {i} className='recipe-container'>
@@ -90,7 +118,7 @@ class RecipeForm extends Component {
                             <h3>{rec.name}</h3>
                             <p>Prep Time: {rec.prepTime.replace("PT", "").replace("M"," minutes")}</p>
                             <p>Cook Time: {rec.cookTime.replace("PT", "").replace("M"," minutes")}</p> 
-                            <p>Total Time: {rec.totalTimereplace("PT", "").replace("M"," minutes")}</p>
+                            <p>Total Time: {rec.totalTime.replace("PT", "").replace("M"," minutes")}</p>
                             {this.renderMoreButton(rec)}
                             {this.renderSubMenu(rec)}
                         </div>
@@ -133,7 +161,8 @@ class RecipeForm extends Component {
         }
         // redux debugging
         const received = this.props.received;
-        //console.log("Rendering Recipei Form");
+        const {isFetching, errorMessage, hasMore} = this.props.recipeEntity;
+
         return (
             <div style={center} >
                 <form noValidate onSubmit={this.onSubmit}>
@@ -158,24 +187,62 @@ class RecipeForm extends Component {
                         </button>
                     </div>
                 </form>
+                {/* {
                 <div className="recipes">
                     {this.createRecipes()}
-                    {this.props.recieved}
-                </div>
+                </div> 
+                } */}
+                {
+                <div className="recipes">
+                    <ReduxLazyScroll
+                    isFetching={isFetching}
+                    errorMessage={errorMessage}
+                    loadMore={this.loadRecipes}
+                    hasMore={this.props.recipes.recipes.length <= 100}
+                    >
+                    {this.createRecipes()}
+                    
+                    </ReduxLazyScroll>
+                    <div className="row posts-lazy-scroll__messages">
+                    {isFetching && <div className="alert alert-info"> Loading more recipes... </div>}
+
+                    {!hasMore && !errorMessage &&
+                        <div className="alert alert-success">All the recipes have been loaded successfully.</div>
+                    }
+
+                    {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
+                    </div>
+                </div> 
+                }
+                
             </div>
         );
     }
 }
 
 RecipeForm.propTypes = {
+    
+    recipeEntity: PropTypes.shape({
+        errorMessage: PropTypes.string,
+        isFetching: PropTypes.bool,
+        limit: PropTypes.number,
+        skip: PropTypes.number,
+        recipes: PropTypes.array,
+        hasMore: PropTypes.bool
+    }),
+    
     search: PropTypes.func.isRequired
   };
   const mapStateToProps = state => {
-        //console.log("state: ", state);
+        console.log("state: ", state);
+        
         return {
             auth: state.auth,
             errors: state.errors,
-            recipes: state.recipe
+            recipes: state.recipe,
+            recipeEntity: state.recipe
+            //payload: state.payload
+
         }
 
   }
