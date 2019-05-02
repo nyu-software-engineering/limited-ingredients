@@ -98,7 +98,7 @@ class RecipeForm extends Component {
             }
             return <a style={moreButton} className='more-button' onClick={(e)=>this.onRecipeClick(e,rec._id)}>More +</a>
         }
-    } 
+    }
 
 
     //render the recipes
@@ -107,15 +107,18 @@ class RecipeForm extends Component {
         const recipes = this.props.recipes.recipes;
         console.log("recipes in createRecipes: ", recipes);
         //issue: reloading the page does not reflect that a saved recipe was saved
+
         return recipes.map( (rec, i) => {
-            
+
             return <div key = {i} className='recipe-container'>
                         <div className='recipe-left'>
                             <img src={rec.imageURL} />
                         </div>
                         <div className='recipe-middle'>
                             <h3>{rec.name}</h3>
-                            <p>Prep Time: {rec.prepTime} Cook Time: {rec.cookTime} Total Time: {rec.totalTime}</p>
+                            <p>Prep Time: {rec.prepTime.replace("PT", "").replace("M"," minutes")}</p>
+                            <p>Cook Time: {rec.cookTime.replace("PT", "").replace("M"," minutes")}</p> 
+                            <p>Total Time: {rec.totalTimereplace("PT", "").replace("M"," minutes")}</p>
                             {this.renderMoreButton(rec)}
                             {this.renderSubMenu(rec)}
                         </div>
@@ -125,7 +128,7 @@ class RecipeForm extends Component {
                     </div>
 
         });
-        
+
     }
     renderHeart(recId){
         const savedRecipes = this.state.savedRecipes;
@@ -241,8 +244,9 @@ RecipeForm.propTypes = {
             //payload: state.payload
 
         }
+
   }
-    
+
 /*
 export default connect (
     mapStateToProps,
