@@ -53,8 +53,8 @@ function makeQueryRecipeSearchQuery(recipeArray, skip) {
 
 
 function searchRecipes(req, res) {
-    const data = req.body.query.split(" ");
-    console.log("query on server: ", req.body);
+    const data = req.body.query.split(/[^A-Za-z]/).filter(Boolean);
+    console.log("query on server: ", data);
     const query = makeQueryRecipeSearchQuery(data, req.body.skip);
     Recipes.aggregate(query, (err, results) => {
         if (err) {
