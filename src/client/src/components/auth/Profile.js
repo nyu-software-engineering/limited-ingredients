@@ -74,7 +74,10 @@ class Profile extends Component{
                         </div>
                         <div className='recipe-middle'>
                             <h3>{rec.name}</h3>
-                            <p>Prep Time: {rec.prepTime} Cook Time: {rec.cookTime} Total Time: {rec.totalTime}</p>
+                            <p class='cook-time'>Prep Time: {rec.prepTime.replace("PT", "").replace("M"," minutes").replace("H"," hours ")}</p>
+                            <p class='cook-time'>Cook Time: {rec.cookTime.replace("PT", "").replace("M"," minutes").replace("H"," hours ")}</p> 
+                            <p class='cook-time'>Total Time: {rec.totalTime.replace("PT", "").replace("M"," minutes").replace("H"," hours ")}</p>
+                            <br></br>
                             {this.renderMoreButton(rec)}
                             {this.renderSubMenu(rec)}
                         </div>

@@ -116,9 +116,10 @@ class RecipeForm extends Component {
                         </div>
                         <div className='recipe-middle'>
                             <h3>{rec.name}</h3>
-                            <p>Prep Time: {rec.prepTime.replace("PT", "").replace("M"," minutes")}</p>
-                            <p>Cook Time: {rec.cookTime.replace("PT", "").replace("M"," minutes")}</p> 
-                            <p>Total Time: {rec.totalTime.replace("PT", "").replace("M"," minutes")}</p>
+                            <p class='cook-time'>Prep Time: {rec.prepTime.replace("PT", "").replace("M"," minutes").replace("H"," hours ")}</p>
+                            <p class='cook-time'>Cook Time: {rec.cookTime.replace("PT", "").replace("M"," minutes").replace("H"," hours ")}</p> 
+                            <p class='cook-time'>Total Time: {rec.totalTime.replace("PT", "").replace("M"," minutes").replace("H"," hours ")}</p>
+                            <br></br>
                             {this.renderMoreButton(rec)}
                             {this.renderSubMenu(rec)}
                         </div>
@@ -157,7 +158,7 @@ class RecipeForm extends Component {
 
     render() {
         const center = {
-            margin: "20px 20% 20% 20%",
+            margin: "80px 20% 20% 20%",
         }
         // redux debugging
         const received = this.props.received;
@@ -207,7 +208,7 @@ class RecipeForm extends Component {
                     {isFetching && <div className="alert alert-info"> Loading more recipes... </div>}
 
                     {!hasMore && !errorMessage &&
-                        <div className="alert alert-success">All the recipes have been loaded successfully.</div>
+                        <div className="alert alert-success all-loaded">All the recipes have been loaded successfully.</div>
                     }
 
                     {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
