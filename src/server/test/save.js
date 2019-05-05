@@ -19,7 +19,7 @@ testUser.password = "12345678";
 recipeId = "5ca660bb48b950aaa4769f01";
 let newQuery = {};
 newQuery.recipe = recipeId;
-describe("Save Recipe Testing" , () => {
+describe("Save and Delete Recipe Testing" , () => {
     beforeEach((done) => {
         //empty the db before each test
           User.remove({}, (err) => {
@@ -31,6 +31,7 @@ describe("Save Recipe Testing" , () => {
             testUser.save().then (
                 function (err, result){
                     if (err){
+                        //done(err);
                         logger.log(err);
                     }
                     else{
@@ -42,21 +43,44 @@ describe("Save Recipe Testing" , () => {
                                 .send(newQuery)
                                 .end((err, res) => {
                                     if (err){
-                                        done(err);
+                                        logger.log(err);
                                     }
                                     else{
                                         logger.log(res);
                                         res.should.have.status(400);
                                         res.body.should.have.property('recipes').deep.equal({
                                             "recipes": [mongoose.Types.ObjectId(recipeId)]
-                                        });
+                                        });    
                                     }
                                     done();
                                 });
                         });
                     }
                 })
-            })
+            });
     });  
+    /*
+    describe ('POST api/deleteRecipe', () => {
+        it ("should delete a recipe in the user's account", function () {                                        
+            chai.request(server)
+            .post("api/deleteRecipe")
+            .send(newQuery)
+            .end((err, res) => {
+                if (err){
+                    logger.log(err);
+                }
+                else{
+                    logger.log("res after deleting recipe:");
+                    logger.success(res);
+                    res.should.have.status(400);
+                    res.body.should.have.property('recipes').deep.equal({
+                        "recipes": []
+                    });
+                }
+                done();
+            });
+        });
+    })
+    */
 
 });
