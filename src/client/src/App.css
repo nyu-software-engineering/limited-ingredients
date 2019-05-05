@@ -1,0 +1,14 @@
+.cook-time{
+    display: inline-block; margin-right: 10px;
+    margin-bottom: 4px; margin-top:0;
+}
+.all-loaded{
+    width: 100%;
+    text-align: center;
+    margin-top: 240px;
+    font-size: 24px;
+    color: gray;
+}
+.brand-logo{
+    margin-left: 24px;
+}
