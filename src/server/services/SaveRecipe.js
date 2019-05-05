@@ -12,23 +12,23 @@ function saveRecipe (req, res){
         if (user){
             const convertToId = mongoose.Types.ObjectId(recipeId);
             console.log("recipeid: ", convertToId);
-            const alreadySavedRecipe = user.recipes.includes('recipeId')
+            const alreadySavedRecipe = user.recipes.includes(convertToId);
             console.log("user contains recipe? : ", alreadySavedRecipe);
             if (alreadySavedRecipe) {
                 error.duplicate = "User already saved this recipe";
-                res.status(300).json(error);
+                return res.status(300).json(error);
             } 
             else{
                 user["recipes"].push(recipeId);
                 user.save().then (user => {
-                    res.json(user);
                     console.log(user);
+                    return res.json(user);
                 });
             }
         }
         else{
             console.log("could not find user");
-            res.json("error- could not find user");
+            return res.json("error- could not find user");
         }
     })
 }
