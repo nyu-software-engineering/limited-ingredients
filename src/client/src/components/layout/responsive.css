@@ -1,0 +1,12 @@
+@media screen and (max-width: 644px) {
+    .logo-responsive {
+        left: 0% !important;
+        transform: none !important;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .logo-responsive {
+        font-size:0px !important;
+    }
+}
