@@ -102,7 +102,7 @@ function loginUser(req, res) {
   User.findOne({email}).then(user => {
     // Check if user exists
     if (!user) {
-      return res.status(400).json({ emailnotfound: "Email not found SUCKS" });
+      return res.status(400).json({ emailnotfound: "Email not found" });
     }
     console.log ("found user!");
 
