@@ -1,0 +1,39 @@
+#label-overflow {
+    width: 90%;
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: hidden;
+}
+
+button {
+    max-width: 150px !important;
+    width: 30vw !important;
+    padding: 0 1vw !important;
+}
+
+@media screen and (max-width: 990px) {
+    #body{
+        margin: 10vw 5vw !important;
+    }
+    #image-icon{
+        max-width: 15vw;
+        max-height:15vw;
+        left:0;
+    }
+    #recipe-name{
+        font-size:5vw;
+        margin:0;
+        margin-bottom:10px
+    }
+    .container{
+        margin-top:0px;
+    }
+    
+}
+@media screen and (max-width:400px){
+    .cook-time-responsive{
+        margin:0;
+        font-size:2vw;
+    }
+}
+
