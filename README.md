@@ -23,7 +23,7 @@ npm install
 
 Install modules (in the client directory)
 ```js
-cd src/client
+cd ../client 
 npm install 
 ```
 Run MongoDB (in another Terminal tab)
